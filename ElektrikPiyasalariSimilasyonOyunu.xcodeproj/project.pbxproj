@@ -1,0 +1,380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA125E0727CE64AF0087201D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA125E0627CE64AF0087201D /* AppDelegate.swift */; };
+		EA125E0927CE64AF0087201D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA125E0827CE64AF0087201D /* SceneDelegate.swift */; };
+		EA125E0B27CE64AF0087201D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA125E0A27CE64AF0087201D /* ViewController.swift */; };
+		EA125E0E27CE64AF0087201D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA125E0C27CE64AF0087201D /* Main.storyboard */; };
+		EA125E1127CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA125E0F27CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu.xcdatamodeld */; };
+		EA125E1327CE64B00087201D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA125E1227CE64B00087201D /* Assets.xcassets */; };
+		EA125E1627CE64B00087201D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA125E1427CE64B00087201D /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EA125E0327CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElektrikPiyasalariSimilasyonOyunu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA125E0627CE64AF0087201D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA125E0827CE64AF0087201D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EA125E0A27CE64AF0087201D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA125E0D27CE64AF0087201D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA125E1027CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ElektrikPiyasalariSimilasyonOyunu.xcdatamodel; sourceTree = "<group>"; };
+		EA125E1227CE64B00087201D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA125E1527CE64B00087201D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA125E1727CE64B00087201D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA125E0027CE64AF0087201D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA125DFA27CE64AF0087201D = {
+			isa = PBXGroup;
+			children = (
+				EA125E0527CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu */,
+				EA125E0427CE64AF0087201D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA125E0427CE64AF0087201D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA125E0327CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA125E0527CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu */ = {
+			isa = PBXGroup;
+			children = (
+				EA125E0627CE64AF0087201D /* AppDelegate.swift */,
+				EA125E0827CE64AF0087201D /* SceneDelegate.swift */,
+				EA125E0A27CE64AF0087201D /* ViewController.swift */,
+				EA125E0C27CE64AF0087201D /* Main.storyboard */,
+				EA125E1227CE64B00087201D /* Assets.xcassets */,
+				EA125E1427CE64B00087201D /* LaunchScreen.storyboard */,
+				EA125E1727CE64B00087201D /* Info.plist */,
+				EA125E0F27CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu.xcdatamodeld */,
+			);
+			path = ElektrikPiyasalariSimilasyonOyunu;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA125E0227CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA125E1A27CE64B00087201D /* Build configuration list for PBXNativeTarget "ElektrikPiyasalariSimilasyonOyunu" */;
+			buildPhases = (
+				EA125DFF27CE64AF0087201D /* Sources */,
+				EA125E0027CE64AF0087201D /* Frameworks */,
+				EA125E0127CE64AF0087201D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ElektrikPiyasalariSimilasyonOyunu;
+			productName = ElektrikPiyasalariSimilasyonOyunu;
+			productReference = EA125E0327CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA125DFB27CE64AF0087201D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					EA125E0227CE64AF0087201D = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = EA125DFE27CE64AF0087201D /* Build configuration list for PBXProject "ElektrikPiyasalariSimilasyonOyunu" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA125DFA27CE64AF0087201D;
+			productRefGroup = EA125E0427CE64AF0087201D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA125E0227CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA125E0127CE64AF0087201D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA125E1627CE64B00087201D /* LaunchScreen.storyboard in Resources */,
+				EA125E1327CE64B00087201D /* Assets.xcassets in Resources */,
+				EA125E0E27CE64AF0087201D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA125DFF27CE64AF0087201D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA125E1127CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu.xcdatamodeld in Sources */,
+				EA125E0B27CE64AF0087201D /* ViewController.swift in Sources */,
+				EA125E0727CE64AF0087201D /* AppDelegate.swift in Sources */,
+				EA125E0927CE64AF0087201D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EA125E0C27CE64AF0087201D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA125E0D27CE64AF0087201D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA125E1427CE64B00087201D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA125E1527CE64B00087201D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA125E1827CE64B00087201D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA125E1927CE64B00087201D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA125E1B27CE64B00087201D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ElektrikPiyasalariSimilasyonOyunu/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bitirmeodevi.ElektrikPiyasalariSimilasyonOyunu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA125E1C27CE64B00087201D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ElektrikPiyasalariSimilasyonOyunu/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bitirmeodevi.ElektrikPiyasalariSimilasyonOyunu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA125DFE27CE64AF0087201D /* Build configuration list for PBXProject "ElektrikPiyasalariSimilasyonOyunu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA125E1827CE64B00087201D /* Debug */,
+				EA125E1927CE64B00087201D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA125E1A27CE64B00087201D /* Build configuration list for PBXNativeTarget "ElektrikPiyasalariSimilasyonOyunu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA125E1B27CE64B00087201D /* Debug */,
+				EA125E1C27CE64B00087201D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EA125E0F27CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EA125E1027CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu.xcdatamodel */,
+			);
+			currentVersion = EA125E1027CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu.xcdatamodel */;
+			path = ElektrikPiyasalariSimilasyonOyunu.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EA125DFB27CE64AF0087201D /* Project object */;
+}
