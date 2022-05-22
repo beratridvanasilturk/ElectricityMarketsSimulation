@@ -14,7 +14,7 @@ class YoneticiViewModel {
     ///
     static let shared = YoneticiViewModel()
     
-    var kullaniciIsmi : String?
+    var kullaniciIsmi : String!
     
     let oyuncular :  [String] = [
         
@@ -120,8 +120,14 @@ class YoneticiViewModel {
         "Fazul Güçal Manço Akar"
     ]
     
-    lazy var randomOyuncularGetir : [String] = {
-        return oyuncular.shuffled().prefix(10).map { $0 }
+    lazy var secilenOyuncularGetir : [String] = {
+        var secilenOyuncular = oyuncular.shuffled().prefix(9).map { $0 }
+        
+        secilenOyuncular.insert(kullaniciIsmi, at: 0)
+        
+        return secilenOyuncular
+        
     }()
+    
     
 }

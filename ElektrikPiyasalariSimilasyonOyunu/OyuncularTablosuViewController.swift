@@ -11,18 +11,15 @@ import UIKit
 
 class OyuncularTablosuViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-
-    var oyuncular = YoneticiViewModel.shared.randomOyuncularGetir
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     
-        return YoneticiViewModel.shared.randomOyuncularGetir.count
+        return YoneticiViewModel.shared.secilenOyuncularGetir.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
  
         let cell = tableView.dequeueReusableCell(withIdentifier: "OyuncularHucresi", for: indexPath)
-        cell.textLabel?.text = oyuncular[indexPath.row]
+        cell.textLabel?.text = YoneticiViewModel.shared.secilenOyuncularGetir[indexPath.row]
         return cell
     }
     
@@ -36,7 +33,6 @@ class OyuncularTablosuViewController : UIViewController, UITableViewDelegate, UI
         
         tableView.delegate = self
         tableView.dataSource = self
-        
-        oyuncular.insert(YoneticiViewModel.shared.kullaniciIsmi!, at: 0)
+    
     }
 }

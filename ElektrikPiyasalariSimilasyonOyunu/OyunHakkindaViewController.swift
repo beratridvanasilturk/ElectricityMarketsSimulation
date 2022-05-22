@@ -11,7 +11,7 @@ class OyunHakkindaViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(YoneticiViewModel.shared.randomOyuncularGetir)
+        print(YoneticiViewModel.shared.secilenOyuncularGetir)
     }
     
 }
