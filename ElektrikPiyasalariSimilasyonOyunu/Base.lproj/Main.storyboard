@@ -1,24 +1,259 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fnf-cc-ul6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Kullanici Girisi View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="KullaniciGirisEkrani" id="BYZ-38-t0r" customClass="KullaniciGirisiViewController" customModule="ElektrikPiyasalariSimilasyonOyunu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="KULLANICI GİRİŞİ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rE1-yO-22C">
+                                <rect key="frame" x="116" y="207" width="182" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="İsim &amp; Soyisim Giriniz" textAlignment="center" minimumFontSize="17" disabledBackground="pencil" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="k93-rK-b8Y">
+                                <rect key="frame" x="20" y="431" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" textContentType="username"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="KAYIT OL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3I-Au-5TR">
+                                <rect key="frame" x="170" y="242" width="75" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rox-Mh-00S">
+                                <rect key="frame" x="135" y="724" width="145" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Devam"/>
+                                <connections>
+                                    <action selector="devamTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="WlV-Hm-wm9"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="hPa-CC-6WE"/>
+                    <connections>
+                        <outlet property="isimGirisTextField" destination="k93-rK-b8Y" id="mKE-Ec-Fwp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
+        </scene>
+        <!--Oyun Hakkinda View Controller-->
+        <scene sceneID="LOI-3y-jSn">
+            <objects>
+                <viewController storyboardIdentifier="OyunHakkindaViewController" id="ZTP-z7-bex" customClass="OyunHakkindaViewController" customModule="ElektrikPiyasalariSimilasyonOyunu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zSY-55-WyY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zsM-kG-UPQ">
+                                <rect key="frame" x="20" y="159" width="374" height="569"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <string key="text">Elektrik Piyasası Simülasyonu Oyunu, insanlara elektrik piyasasının temelini öğretmek ve onlara gerçek market ortamında alıştırma yapma şansını vermek amacı ile tasarlanmıştır. Oyun içerisinde yatırım ve ticaret yapabilirsiniz. Oyun içerisinde ticaretini yapabileceğiniz enerji santralleri şunlardır; Uranyum, Kömür, Bio-Yakıt, Nükleer ve Güneş Enerji Santrali. Bir satın alma işlemi yapmadan önce, her bir santralin
+özelliklerini kontrol edebilirsiniz. Bu özellikler arasinda santralin yatırım maaliyeti, santralin
+MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası gibi bilgiler yer almaktadır. Karbon cezasının asıl amacı oyuncuları yenilenebilir enerjilere teşvik etmektir. Her periyotta oyuncuya verilen oyun süresi dolmadan santral yatırımı veya santral ticareti yapmalısınız. Oyun stratejisi her oyuncuya göre değişiklik gösterebilir, her periyot sonunda kendi stratejinizi yeniden belirleyebilirsiniz. Oyun 10 periyot olup her periyot 1 yılı temsil etmektedir. Oyun sonunda ticaretten en fazla kar elde eden ve bütçesi en fazla olan oyuncu Elektrik Piyasaları Similasyon Oyununu kazanan oyuncu olur. Not: İzin verilen maksimum teklif fiyatı 200 $ 'dır. </string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y10-0h-jdX">
+                                <rect key="frame" x="150" y="795" width="115" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="İleri"/>
+                                <connections>
+                                    <segue destination="BO8-IM-Fi4" kind="show" id="hct-C3-4sJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEW-vb-Uqj">
+                                <rect key="frame" x="37" y="75" width="341" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="EPSO Hakkında Bilgilendirme">
+                                        <attributes>
+                                            <font key="NSFont" size="21" name="Futura-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iD8-eF-fZG"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="udn-1B-0N5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Is9-Y2-S1J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="858" y="98"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="E4U-Ru-94S">
+            <objects>
+                <viewController id="BO8-IM-Fi4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OT0-Gh-BOu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Oyuncular Yükleniyor Lütfen Bekleyin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALi-mC-LA7">
+                                <rect key="frame" x="41" y="318" width="333" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OXp-VA-DP8"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tAt-JC-brt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Llb-Go-0Xx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1737.68115942029" y="97.767857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pzj-2H-X2i">
+            <objects>
+                <navigationController id="fnf-cc-ul6" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3aK-Jf-PmP">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gfb-MF-Vrh" kind="relationship" relationship="rootViewController" id="4tY-yF-wh4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f6I-h3-why" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1743" y="98"/>
+        </scene>
+        <!--After Lunch View Controller-->
+        <scene sceneID="SgB-jd-tih">
+            <objects>
+                <viewController id="gfb-MF-Vrh" customClass="AfterLunchViewController" customModule="ElektrikPiyasalariSimilasyonOyunu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FGR-bq-FVB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="51718604_10156701058127626_5041139983038021632_n" translatesAutoresizingMaskIntoConstraints="NO" id="BXV-pG-LYM">
+                                <rect key="frame" x="-343" y="298" width="1100" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="95Q-Do-ZgO"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="GJ7-z1-oem"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="aja-JF-hiR">
+                                <rect key="frame" x="62" y="747" width="290" height="65"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr. Öğr. Üyesi Saltuk Buğra SELÇUKLU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0l6-Am-dkQ">
+                                        <rect key="frame" x="1" y="0.0" width="288.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Berat Rıdvan Asiltürk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ap0-er-v3H">
+                                        <rect key="frame" x="67.5" y="44.5" width="155" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="3DX-Jy-u1O"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="DDr-Yv-kBQ">
+                                <rect key="frame" x="35" y="136" width="344" height="157"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ERCİYES ÜNİVERSİTESİ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbi-yt-MZg">
+                                        <rect key="frame" x="47.5" y="0.0" width="249" height="27.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                        <color key="textColor" systemColor="systemYellowColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENERJİ SİSTEMLERİ MÜHENDİSLİĞİ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ajr-o4-ul2">
+                                        <rect key="frame" x="0.0" y="67.5" width="344" height="25.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                        <color key="textColor" red="0.0" green="0.76215248520000001" blue="0.99325615170000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EPSO BİTİRME PROJESİ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q0r-pN-qJm">
+                                        <rect key="frame" x="62.5" y="133" width="219" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <color key="textColor" red="0.91976243257522583" green="0.45703244741518956" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="344" id="dd1-2a-iCL"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rN8-mo-hYO"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="rN8-mo-hYO" firstAttribute="bottom" secondItem="aja-JF-hiR" secondAttribute="bottom" constant="50" id="GBB-Ks-j2n"/>
+                            <constraint firstItem="DDr-Yv-kBQ" firstAttribute="leading" secondItem="rN8-mo-hYO" secondAttribute="leading" constant="35" id="Tau-pS-NRi"/>
+                            <constraint firstItem="DDr-Yv-kBQ" firstAttribute="top" secondItem="rN8-mo-hYO" secondAttribute="top" constant="48" id="Txa-45-Pil"/>
+                            <constraint firstItem="rN8-mo-hYO" firstAttribute="trailing" secondItem="DDr-Yv-kBQ" secondAttribute="trailing" constant="35" id="aJU-R7-zum"/>
+                            <constraint firstItem="BXV-pG-LYM" firstAttribute="centerY" secondItem="FGR-bq-FVB" secondAttribute="centerY" id="c6N-JE-RSn"/>
+                            <constraint firstItem="aja-JF-hiR" firstAttribute="leading" secondItem="rN8-mo-hYO" secondAttribute="leading" constant="62" id="eG1-3i-LDt"/>
+                            <constraint firstItem="BXV-pG-LYM" firstAttribute="centerX" secondItem="FGR-bq-FVB" secondAttribute="centerX" id="fOd-rK-gdg"/>
+                            <constraint firstItem="rN8-mo-hYO" firstAttribute="trailing" secondItem="aja-JF-hiR" secondAttribute="trailing" constant="62" id="o6k-Ev-eGZ"/>
+                            <constraint firstItem="rN8-mo-hYO" firstAttribute="bottom" secondItem="aja-JF-hiR" secondAttribute="bottom" constant="50" id="r3Q-YV-Wlf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SwN-sk-7vh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cpb-3z-ZQl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-781" y="98"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="51718604_10156701058127626_5041139983038021632_n" width="1100" height="869"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

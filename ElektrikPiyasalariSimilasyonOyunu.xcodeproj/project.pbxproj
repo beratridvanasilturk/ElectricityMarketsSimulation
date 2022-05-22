@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA0AE0B9283A77860049D13E /* YoneticiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0AE0B8283A77860049D13E /* YoneticiViewModel.swift */; };
+		EA0AE0BB283A7AA90049D13E /* OyunHakkindaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0AE0BA283A7AA90049D13E /* OyunHakkindaViewController.swift */; };
 		EA125E0727CE64AF0087201D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA125E0627CE64AF0087201D /* AppDelegate.swift */; };
 		EA125E0927CE64AF0087201D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA125E0827CE64AF0087201D /* SceneDelegate.swift */; };
 		EA125E0B27CE64AF0087201D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA125E0A27CE64AF0087201D /* ViewController.swift */; };
@@ -14,9 +16,13 @@
 		EA125E1127CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA125E0F27CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu.xcdatamodeld */; };
 		EA125E1327CE64B00087201D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA125E1227CE64B00087201D /* Assets.xcassets */; };
 		EA125E1627CE64B00087201D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA125E1427CE64B00087201D /* LaunchScreen.storyboard */; };
+		EADEA5D827D14D77003E0EF3 /* AfterLunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADEA5D627D14D77003E0EF3 /* AfterLunchViewController.swift */; };
+		EADEA5DB27D161CE003E0EF3 /* KullaniciGirisiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADEA5DA27D161CE003E0EF3 /* KullaniciGirisiViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA0AE0B8283A77860049D13E /* YoneticiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoneticiViewModel.swift; sourceTree = "<group>"; };
+		EA0AE0BA283A7AA90049D13E /* OyunHakkindaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OyunHakkindaViewController.swift; sourceTree = "<group>"; };
 		EA125E0327CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElektrikPiyasalariSimilasyonOyunu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA125E0627CE64AF0087201D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA125E0827CE64AF0087201D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +32,8 @@
 		EA125E1227CE64B00087201D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA125E1527CE64B00087201D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA125E1727CE64B00087201D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EADEA5D627D14D77003E0EF3 /* AfterLunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterLunchViewController.swift; sourceTree = "<group>"; };
+		EADEA5DA27D161CE003E0EF3 /* KullaniciGirisiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KullaniciGirisiViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,10 @@
 				EA125E0627CE64AF0087201D /* AppDelegate.swift */,
 				EA125E0827CE64AF0087201D /* SceneDelegate.swift */,
 				EA125E0A27CE64AF0087201D /* ViewController.swift */,
+				EA0AE0BA283A7AA90049D13E /* OyunHakkindaViewController.swift */,
+				EADEA5DA27D161CE003E0EF3 /* KullaniciGirisiViewController.swift */,
+				EADEA5D627D14D77003E0EF3 /* AfterLunchViewController.swift */,
+				EA0AE0B8283A77860049D13E /* YoneticiViewModel.swift */,
 				EA125E0C27CE64AF0087201D /* Main.storyboard */,
 				EA125E1227CE64B00087201D /* Assets.xcassets */,
 				EA125E1427CE64B00087201D /* LaunchScreen.storyboard */,
@@ -141,9 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA0AE0BB283A7AA90049D13E /* OyunHakkindaViewController.swift in Sources */,
 				EA125E1127CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu.xcdatamodeld in Sources */,
+				EADEA5D827D14D77003E0EF3 /* AfterLunchViewController.swift in Sources */,
+				EADEA5DB27D161CE003E0EF3 /* KullaniciGirisiViewController.swift in Sources */,
 				EA125E0B27CE64AF0087201D /* ViewController.swift in Sources */,
 				EA125E0727CE64AF0087201D /* AppDelegate.swift in Sources */,
+				EA0AE0B9283A77860049D13E /* YoneticiViewModel.swift in Sources */,
 				EA125E0927CE64AF0087201D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
