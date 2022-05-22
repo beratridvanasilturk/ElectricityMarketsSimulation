@@ -120,8 +120,8 @@ class YoneticiViewModel {
         "Fazul Güçal Manço Akar"
     ]
     
-    func randomOyuncularGetir() -> [String] {
+    lazy var randomOyuncularGetir : [String] = {
         return oyuncular.shuffled().prefix(10).map { $0 }
-    }
+    }()
     
 }
