@@ -112,10 +112,10 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
             </objects>
             <point key="canvasLocation" x="858" y="98"/>
         </scene>
-        <!--View Controller-->
+        <!--Loading View Controller-->
         <scene sceneID="E4U-Ru-94S">
             <objects>
-                <viewController id="BO8-IM-Fi4" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoadingViewController" id="BO8-IM-Fi4" customClass="LoadingViewController" customModule="ElektrikPiyasalariSimilasyonOyunu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OT0-Gh-BOu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -136,6 +136,46 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Llb-Go-0Xx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1737.68115942029" y="97.767857142857139"/>
+        </scene>
+        <!--Oyuncular Tablosu View Controller-->
+        <scene sceneID="RGh-71-yu2">
+            <objects>
+                <viewController storyboardIdentifier="OyuncularTablosuViewController" id="jrL-nt-dLH" customClass="OyuncularTablosuViewController" customModule="ElektrikPiyasalariSimilasyonOyunu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b0x-xu-i6e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="a2n-fk-C2c">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="OyuncularHucresi" id="CB9-CB-AMR">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CB9-CB-AMR" id="5gw-Y3-jBV">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NoO-Zf-zZi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="a2n-fk-C2c" firstAttribute="trailing" secondItem="NoO-Zf-zZi" secondAttribute="trailing" id="00f-Uh-Mhe"/>
+                            <constraint firstItem="a2n-fk-C2c" firstAttribute="top" secondItem="b0x-xu-i6e" secondAttribute="top" id="99F-N0-Gzo"/>
+                            <constraint firstItem="a2n-fk-C2c" firstAttribute="leading" secondItem="NoO-Zf-zZi" secondAttribute="leading" id="CUh-hT-gGK"/>
+                            <constraint firstAttribute="bottom" secondItem="a2n-fk-C2c" secondAttribute="bottom" id="XDu-m0-BL4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="a2n-fk-C2c" id="Adx-gk-tPD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qRl-vb-elw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2573.913043478261" y="97.767857142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pzj-2H-X2i">

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		EA0AE0B9283A77860049D13E /* YoneticiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0AE0B8283A77860049D13E /* YoneticiViewModel.swift */; };
 		EA0AE0BB283A7AA90049D13E /* OyunHakkindaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0AE0BA283A7AA90049D13E /* OyunHakkindaViewController.swift */; };
+		EA0AE0BD283A82390049D13E /* OyuncularTablosuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0AE0BC283A82390049D13E /* OyuncularTablosuViewController.swift */; };
+		EA0AE0BF283A83830049D13E /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0AE0BE283A83830049D13E /* LoadingViewController.swift */; };
 		EA125E0727CE64AF0087201D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA125E0627CE64AF0087201D /* AppDelegate.swift */; };
 		EA125E0927CE64AF0087201D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA125E0827CE64AF0087201D /* SceneDelegate.swift */; };
 		EA125E0B27CE64AF0087201D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA125E0A27CE64AF0087201D /* ViewController.swift */; };
@@ -23,6 +25,8 @@
 /* Begin PBXFileReference section */
 		EA0AE0B8283A77860049D13E /* YoneticiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoneticiViewModel.swift; sourceTree = "<group>"; };
 		EA0AE0BA283A7AA90049D13E /* OyunHakkindaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OyunHakkindaViewController.swift; sourceTree = "<group>"; };
+		EA0AE0BC283A82390049D13E /* OyuncularTablosuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OyuncularTablosuViewController.swift; sourceTree = "<group>"; };
+		EA0AE0BE283A83830049D13E /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		EA125E0327CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElektrikPiyasalariSimilasyonOyunu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA125E0627CE64AF0087201D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA125E0827CE64AF0087201D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 		EA125E0527CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu */ = {
 			isa = PBXGroup;
 			children = (
+				EA0AE0BE283A83830049D13E /* LoadingViewController.swift */,
+				EA0AE0BC283A82390049D13E /* OyuncularTablosuViewController.swift */,
 				EA125E0627CE64AF0087201D /* AppDelegate.swift */,
 				EA125E0827CE64AF0087201D /* SceneDelegate.swift */,
 				EA125E0A27CE64AF0087201D /* ViewController.swift */,
@@ -155,10 +161,12 @@
 			files = (
 				EA0AE0BB283A7AA90049D13E /* OyunHakkindaViewController.swift in Sources */,
 				EA125E1127CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu.xcdatamodeld in Sources */,
+				EA0AE0BD283A82390049D13E /* OyuncularTablosuViewController.swift in Sources */,
 				EADEA5D827D14D77003E0EF3 /* AfterLunchViewController.swift in Sources */,
 				EADEA5DB27D161CE003E0EF3 /* KullaniciGirisiViewController.swift in Sources */,
 				EA125E0B27CE64AF0087201D /* ViewController.swift in Sources */,
 				EA125E0727CE64AF0087201D /* AppDelegate.swift in Sources */,
+				EA0AE0BF283A83830049D13E /* LoadingViewController.swift in Sources */,
 				EA0AE0B9283A77860049D13E /* YoneticiViewModel.swift in Sources */,
 				EA125E0927CE64AF0087201D /* SceneDelegate.swift in Sources */,
 			);
