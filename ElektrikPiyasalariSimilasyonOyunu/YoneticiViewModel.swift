@@ -10,6 +10,31 @@ import Foundation
     /// uygulama icerisinde saklanacak sinif
 class YoneticiViewModel {
     
+    
+    enum Megawatt : Int {
+        
+        case nukleer = 900
+        case ruzgar = 80
+        case gunes = 60
+        case komur = 600
+        case bio = 300
+    }
+    
+  
+    let yildakiSaat = 8766
+    
+   
+    
+    func gelir(teklif: Int, megawatt: Megawatt) -> Int {
+        return teklif * megawatt.rawValue * yildakiSaat
+    }
+    
+    func minimumTeklifFiyati(megawatt: Megawatt) -> Int {
+        
+        (70...130).randomElement() ?? 90
+    }
+    
+    
     /// viewcontroller siniflari arasinda paylasilacak obje
     ///
     static let shared = YoneticiViewModel()
