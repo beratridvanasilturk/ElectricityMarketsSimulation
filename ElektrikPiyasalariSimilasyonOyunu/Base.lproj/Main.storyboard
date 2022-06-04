@@ -68,10 +68,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zsM-kG-UPQ">
-                                <rect key="frame" x="20" y="159" width="374" height="569"/>
+                                <rect key="frame" x="20" y="159" width="374" height="719"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
-                                <string key="text">Elektrik Piyasası Simülasyonu Oyunu, insanlara elektrik piyasasının temelini öğretmek ve onlara gerçek market ortamında alıştırma yapma şansını vermek amacı ile tasarlanmıştır. Oyun içerisinde yatırım ve ticaret yapabilirsiniz. Oyun içerisinde ticaretini yapabileceğiniz enerji santralleri şunlardır; Uranyum, Kömür, Bio-Yakıt, Nükleer ve Güneş Enerji Santrali. Bir satın alma işlemi yapmadan önce, her bir santralin
+                                <string key="text">Elektrik Piyasası Simülasyonu Oyunu, insanlara elektrik piyasasının temelini öğretmek ve onlara gerçek market ortamında alıştırma yapma şansını vermek amacı ile tasarlanmıştır. Oyun içerisinde yatırım ve ticaret yapabilirsiniz. Oyun içerisinde ticaretini yapabileceğiniz enerji santralleri şunlardır; Rüzgar Enerjisi, Kömür, Bio-Yakıt, Nükleer ve Güneş Enerji Santrali. Bir satın alma işlemi yapmadan önce, her bir santralin
 özelliklerini kontrol edebilirsiniz. Bu özellikler arasinda santralin yatırım maaliyeti, santralin
 MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası gibi bilgiler yer almaktadır. Karbon cezasının asıl amacı oyuncuları yenilenebilir enerjilere teşvik etmektir. Her periyotta oyuncuya verilen oyun süresi dolmadan santral yatırımı veya santral ticareti yapmalısınız. Oyun stratejisi her oyuncuya göre değişiklik gösterebilir, her periyot sonunda kendi stratejinizi yeniden belirleyebilirsiniz. Oyun 10 periyot olup her periyot 1 yılı temsil etmektedir. Oyun sonunda ticaretten en fazla kar elde eden ve bütçesi en fazla olan oyuncu Elektrik Piyasaları Similasyon Oyununu kazanan oyuncu olur. Not: İzin verilen maksimum teklif fiyatı 200 $ 'dır. </string>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -148,6 +148,15 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="a2n-fk-C2c">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="1zb-Ln-4Ui">
+                                    <rect key="frame" x="0.0" y="110.5" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="BAŞLA"/>
+                                    <connections>
+                                        <segue destination="Fvj-XW-K75" kind="show" id="p8B-OF-fSQ"/>
+                                    </connections>
+                                </button>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="OyuncularHucresi" id="CB9-CB-AMR">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
@@ -176,6 +185,86 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qRl-vb-elw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2573.913043478261" y="97.767857142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tJC-FC-1N4">
+            <objects>
+                <viewController id="Fvj-XW-K75" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u1L-6F-Cw1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YATIRIM ARAÇLARI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CiS-6G-ZcZ">
+                                <rect key="frame" x="128" y="94" width="158" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="sy5-pR-WcY">
+                                <rect key="frame" x="47" y="174" width="324" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kömür Santrali" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBQ-wV-PCz">
+                                <rect key="frame" x="147" y="232" width="112" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="mqd-Nz-BLK">
+                                <rect key="frame" x="47" y="261" width="324" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bio-Yakıt Santrali" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7K-4Y-MxY">
+                                <rect key="frame" x="143" y="332" width="129" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="vgw-9o-tNQ">
+                                <rect key="frame" x="42" y="361" width="322" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="1iI-qv-2J5">
+                                <rect key="frame" x="42" y="446" width="322" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="Vlp-F5-fCd">
+                                <rect key="frame" x="42" y="548" width="322" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rüzgar Enerji Santrali" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQy-pB-8am">
+                                <rect key="frame" x="122" y="417" width="162" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nükleer Santrali" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03Y-se-CfT">
+                                <rect key="frame" x="143" y="514" width="121" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Güneş Enerji Santrali" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mV-a7-Jzy">
+                                <rect key="frame" x="129" y="145" width="157" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nl3-mX-bv5"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="f6B-4V-srd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Hb-95-quW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3544.9275362318845" y="97.767857142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pzj-2H-X2i">
