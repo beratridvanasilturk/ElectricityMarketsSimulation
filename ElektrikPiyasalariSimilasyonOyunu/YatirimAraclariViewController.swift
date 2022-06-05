@@ -40,6 +40,14 @@ class YatirimAraclariViewController: UIViewController {
     var bioTeklifim = 0
     
     
+    
+    @IBAction func santralYatirimButtonTapped(_ sender: UIButton) {
+        
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let destination = storyBoard.instantiateViewController(withIdentifier: "YatirimEkraniViewController") as! YatirimEkraniViewController
+        present(destination, animated: true, completion: nil)
+    }
+    
     @IBAction func onaylaButton(_ sender: UIButton) {
         
         if periyot == 10 {

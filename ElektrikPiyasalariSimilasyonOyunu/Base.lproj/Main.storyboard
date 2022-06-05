@@ -343,6 +343,15 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                                     <action selector="onaylaButton:" destination="Fvj-XW-K75" eventType="touchUpInside" id="XEh-wI-RIK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKS-a3-0dG">
+                                <rect key="frame" x="136" y="232" width="149" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Santral Yatirimi Yap"/>
+                                <connections>
+                                    <action selector="santralYatirimButtonTapped:" destination="Fvj-XW-K75" eventType="touchUpInside" id="Wn1-Te-HQM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nl3-mX-bv5"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
@@ -366,6 +375,110 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Hb-95-quW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3544.9275362318845" y="97.767857142857139"/>
+        </scene>
+        <!--Yatirim Ekrani View Controller-->
+        <scene sceneID="CEO-ch-MwB">
+            <objects>
+                <viewController storyboardIdentifier="YatirimEkraniViewController" id="ZxX-ww-ebP" customClass="YatirimEkraniViewController" customModule="ElektrikPiyasalariSimilasyonOyunu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2uF-IO-hNf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mlg-d6-6ML">
+                                <rect key="frame" x="171" y="257" width="74" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Satin Al"/>
+                                <connections>
+                                    <action selector="gunesButtonTapped:" destination="ZxX-ww-ebP" eventType="touchUpInside" id="jyz-2P-BJY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BqK-c4-QsD">
+                                <rect key="frame" x="171" y="471" width="74" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Satin Al"/>
+                                <connections>
+                                    <action selector="bioButtonTapped:" destination="ZxX-ww-ebP" eventType="touchUpInside" id="pnk-i8-a1g"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bio-Yakıt Santrali (300 MW)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3NK-hX-l8l">
+                                <rect key="frame" x="103" y="454" width="211" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qri-cJ-3Bl">
+                                <rect key="frame" x="172" y="600" width="74" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Satin Al"/>
+                                <connections>
+                                    <action selector="ruzgarButtonTapped:" destination="ZxX-ww-ebP" eventType="touchUpInside" id="yNK-89-uAy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXx-TB-wTs">
+                                <rect key="frame" x="172" y="709" width="74" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Satin Al"/>
+                                <connections>
+                                    <action selector="nukleerButtonTapped:" destination="ZxX-ww-ebP" eventType="touchUpInside" id="IHx-2t-yU7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Güneş Enerji Santrali (60 MW)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Fh-9A-bCm">
+                                <rect key="frame" x="93" y="228" width="229" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kömür Santrali (600 MW)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rc3-Fb-4Gv">
+                                <rect key="frame" x="110" y="342" width="194" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rüzgar Enerji Santrali (80 MW)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fem-Vf-tbw">
+                                <rect key="frame" x="90" y="571" width="234" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nükleer Santrali (900 MW)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykG-7J-Wnn">
+                                <rect key="frame" x="106" y="683" width="203" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAH-d2-e0h">
+                                <rect key="frame" x="171" y="371" width="74" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Satin Al"/>
+                                <connections>
+                                    <action selector="komurButtonTapped:" destination="ZxX-ww-ebP" eventType="touchUpInside" id="x0J-Oj-4Db"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ybo-ZS-jz5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="bioButton" destination="BqK-c4-QsD" id="eMM-V0-tKm"/>
+                        <outlet property="gunesButton" destination="Mlg-d6-6ML" id="1js-Ve-M1a"/>
+                        <outlet property="komurButton" destination="FAH-d2-e0h" id="tx2-8K-AbL"/>
+                        <outlet property="nukleerButton" destination="AXx-TB-wTs" id="DVO-tj-Gbh"/>
+                        <outlet property="ruzgarButton" destination="qri-cJ-3Bl" id="oed-ez-Ozc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3cd-XQ-38u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4493" y="98"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pzj-2H-X2i">
@@ -469,7 +582,7 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
     </scenes>
     <resources>
         <image name="51718604_10156701058127626_5041139983038021632_n" width="1100" height="869"/>
-        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="pencil" catalog="system" width="32" height="32"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

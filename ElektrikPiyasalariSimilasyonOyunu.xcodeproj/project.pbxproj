@@ -18,6 +18,7 @@
 		EA125E1127CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA125E0F27CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu.xcdatamodeld */; };
 		EA125E1327CE64B00087201D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA125E1227CE64B00087201D /* Assets.xcassets */; };
 		EA125E1627CE64B00087201D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA125E1427CE64B00087201D /* LaunchScreen.storyboard */; };
+		EA65EEB3284D386D006B60BD /* YatirimEkraniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA65EEB2284D386D006B60BD /* YatirimEkraniViewController.swift */; };
 		EADEA5D827D14D77003E0EF3 /* AfterLunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADEA5D627D14D77003E0EF3 /* AfterLunchViewController.swift */; };
 		EADEA5DB27D161CE003E0EF3 /* KullaniciGirisiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADEA5DA27D161CE003E0EF3 /* KullaniciGirisiViewController.swift */; };
 		EAE1DA2F284BF4350060D75C /* YatirimAraclariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE1DA2E284BF4350060D75C /* YatirimAraclariViewController.swift */; };
@@ -37,6 +38,7 @@
 		EA125E1227CE64B00087201D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA125E1527CE64B00087201D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA125E1727CE64B00087201D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA65EEB2284D386D006B60BD /* YatirimEkraniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YatirimEkraniViewController.swift; sourceTree = "<group>"; };
 		EADEA5D627D14D77003E0EF3 /* AfterLunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterLunchViewController.swift; sourceTree = "<group>"; };
 		EADEA5DA27D161CE003E0EF3 /* KullaniciGirisiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KullaniciGirisiViewController.swift; sourceTree = "<group>"; };
 		EAE1DA2E284BF4350060D75C /* YatirimAraclariViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YatirimAraclariViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				EADEA5D627D14D77003E0EF3 /* AfterLunchViewController.swift */,
 				EA0AE0B8283A77860049D13E /* YoneticiViewModel.swift */,
 				EAE1DA2E284BF4350060D75C /* YatirimAraclariViewController.swift */,
+				EA65EEB2284D386D006B60BD /* YatirimEkraniViewController.swift */,
 				EA125E0C27CE64AF0087201D /* Main.storyboard */,
 				EA125E1227CE64B00087201D /* Assets.xcassets */,
 				EA125E1427CE64B00087201D /* LaunchScreen.storyboard */,
@@ -170,6 +173,7 @@
 				EADEA5DB27D161CE003E0EF3 /* KullaniciGirisiViewController.swift in Sources */,
 				EA125E0B27CE64AF0087201D /* ViewController.swift in Sources */,
 				EA125E0727CE64AF0087201D /* AppDelegate.swift in Sources */,
+				EA65EEB3284D386D006B60BD /* YatirimEkraniViewController.swift in Sources */,
 				EA0AE0BF283A83830049D13E /* LoadingViewController.swift in Sources */,
 				EA0AE0B9283A77860049D13E /* YoneticiViewModel.swift in Sources */,
 				EA125E0927CE64AF0087201D /* SceneDelegate.swift in Sources */,
