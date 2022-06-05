@@ -7,8 +7,8 @@
 
 import UIKit
 
-class YatirimAraclariViewController: UIViewController {
-    
+class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControllerDelegate {
+  
     
     @IBOutlet weak var nukleerLabel: UILabel!
     @IBOutlet weak var ruzgarLabel: UILabel!
@@ -45,6 +45,7 @@ class YatirimAraclariViewController: UIViewController {
         
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let destination = storyBoard.instantiateViewController(withIdentifier: "YatirimEkraniViewController") as! YatirimEkraniViewController
+        destination.delegate = self
         present(destination, animated: true, completion: nil)
     }
     
@@ -86,6 +87,7 @@ class YatirimAraclariViewController: UIViewController {
         butceLabel.text = "\(butce)$"
         periyot += 1
         periyotLabel.text = "\(periyot)"
+        
         
         
         
@@ -145,6 +147,13 @@ class YatirimAraclariViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    func satinAlindi(enerjiTuru: YoneticiViewModel.EnerjiTurleri) {
+        butce -= enerjiTuru.satinAlmaMaaliyeti
+        
+        butceLabel.text = "\(butce)$"
+    }
+    
     
 
     /*

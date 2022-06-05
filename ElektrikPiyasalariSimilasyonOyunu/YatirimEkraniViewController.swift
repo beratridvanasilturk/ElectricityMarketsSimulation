@@ -7,6 +7,11 @@
 
 import UIKit
 
+protocol YatirimEkraniViewControllerDelegate : AnyObject {
+    
+    func satinAlindi(enerjiTuru : YoneticiViewModel.EnerjiTurleri)
+}
+
 class YatirimEkraniViewController: UIViewController {
     
     @IBOutlet weak var gunesButton: UIButton!
@@ -14,6 +19,9 @@ class YatirimEkraniViewController: UIViewController {
     @IBOutlet weak var ruzgarButton: UIButton!
     @IBOutlet weak var bioButton: UIButton!
     @IBOutlet weak var komurButton: UIButton!
+    
+    
+    weak var delegate : YatirimEkraniViewControllerDelegate?
     
     @IBAction func gunesButtonTapped(_ sender: UIButton) {
         alert(enerjiTuru: .gunes)
@@ -49,6 +57,8 @@ class YatirimEkraniViewController: UIViewController {
         let vazgec = UIAlertAction(title: "Vazgec", style: .cancel)
         let satinAl = UIAlertAction(title: "Satin Al", style: .default) { action in
             print("Satin Al Tiklandi")
+            self.delegate?.satinAlindi(enerjiTuru: enerjiTuru)
+            self.dismiss(animated: true, completion: nil)
         }
         let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
    
