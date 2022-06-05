@@ -32,6 +32,9 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
     var periyot = 1
     
     var butce = 200000000
+    var yatirimlarim : [YoneticiViewModel.EnerjiTurleri] = []
+    
+    
     
     var komurTeklifim = 0
     var gunesTeklifim = 0
@@ -47,6 +50,7 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
         let destination = storyBoard.instantiateViewController(withIdentifier: "YatirimEkraniViewController") as! YatirimEkraniViewController
         destination.delegate = self
         present(destination, animated: true, completion: nil)
+        
     }
     
     @IBAction func onaylaButton(_ sender: UIButton) {
@@ -144,6 +148,7 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        sliderGuncelle()
 
         // Do any additional setup after loading the view.
     }
@@ -171,21 +176,51 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
         }
         
         butce -= enerjiTuru.satinAlmaMaaliyeti
-        
-        
         butceLabel.text = "\(butce)$"
+        
+        yatirimlarim.append(enerjiTuru)
+        sliderGuncelle()
+        
+    }
+    
+    
+    /// Bu method yatirim yapildiktan sonra her bir enerji santrali icin o santralin sliderinin kullanimini duzenler
+    
+    func sliderGuncelle() {
+    
+        if yatirimlarim.contains(.nukleer) {
+            nukleerSliderOutlet.isUserInteractionEnabled = true
+        } else {
+            nukleerSliderOutlet.isUserInteractionEnabled = false
+        }
+        if yatirimlarim.contains(.ruzgar) {
+            ruzgarSliderOutlet.isUserInteractionEnabled = true
+        } else {
+            ruzgarSliderOutlet.isUserInteractionEnabled = false
+        }
+        
+        if yatirimlarim.contains(.bio) {
+            bioSliderOutlet.isUserInteractionEnabled = true
+        } else {
+            bioSliderOutlet.isUserInteractionEnabled = false
+        }
+        
+        if yatirimlarim.contains(.komur) {
+            komurSliderOutlet.isUserInteractionEnabled = true
+        } else {
+            komurSliderOutlet.isUserInteractionEnabled = false
+        }
+        
+        if yatirimlarim.contains(.gunes) {
+            gunesSliderOutlet.isUserInteractionEnabled = true
+        } else {
+            gunesSliderOutlet.isUserInteractionEnabled = false
+        }
+        
+        
     }
     
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
