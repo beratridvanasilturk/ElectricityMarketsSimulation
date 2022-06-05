@@ -11,13 +11,45 @@ import Foundation
 class YoneticiViewModel {
     
     
-    enum Megawatt : Int {
+   
+    enum EnerjiTurleri {
         
-        case nukleer = 900
-        case ruzgar = 80
-        case gunes = 60
-        case komur = 600
-        case bio = 300
+        case nukleer
+        case ruzgar
+        case gunes
+        case komur
+        case bio
+        
+        var megawatt : Int {
+            switch self {
+            case .nukleer:
+                return 900
+            case .ruzgar:
+                return 80
+            case .gunes:
+                return 60
+            case .komur:
+                return 600
+            case .bio:
+                return 300
+            }
+        }
+        
+        var satinAlmaMaaliyeti : Int {
+            switch self {
+            case .nukleer:
+               return 800_000_000
+            case .ruzgar:
+               return 70_000_000
+            case .gunes:
+                return 60_000_000
+            case .komur:
+                return 170_000_000
+            case .bio:
+                return 100_000_000
+            }
+        }
+        
     }
     
   
@@ -25,11 +57,11 @@ class YoneticiViewModel {
     
    
     
-    func gelir(teklif: Int, megawatt: Megawatt) -> Int {
-        return teklif * megawatt.rawValue * yildakiSaat
+    func gelir(teklif: Int, enerjiTuru: EnerjiTurleri) -> Int {
+        return teklif * enerjiTuru.megawatt * yildakiSaat
     }
     
-    func minimumTeklifFiyati(megawatt: Megawatt) -> Int {
+    func minimumTeklifFiyati(enerjiTuru: EnerjiTurleri) -> Int {
         
         (70...130).randomElement() ?? 90
     }

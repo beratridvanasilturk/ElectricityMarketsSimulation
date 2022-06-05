@@ -50,30 +50,30 @@ class YatirimAraclariViewController: UIViewController {
             return
         }
         
-        if bioTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(megawatt: .bio) {
-            butce -= YoneticiViewModel.shared.gelir(teklif: bioTeklifim, megawatt: .bio)
+        if bioTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(enerjiTuru: .bio) {
+            butce -= YoneticiViewModel.shared.gelir(teklif: bioTeklifim, enerjiTuru: .bio)
             
-            print("🔥  Bio Teklifim Kabul Edildi ")
+            print("✅  Bio Teklifim Kabul Edildi ")
         }
         
-        if gunesTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(megawatt: .gunes) {
-            butce -= YoneticiViewModel.shared.gelir(teklif: gunesTeklifim, megawatt: .gunes)
-            print("🔥  Gunes Teklifim Kabul Edildi ")
+        if gunesTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(enerjiTuru: .gunes) {
+            butce -= YoneticiViewModel.shared.gelir(teklif: gunesTeklifim, enerjiTuru: .gunes)
+            print("✅  Gunes Teklifim Kabul Edildi ")
         }
         
-        if komurTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(megawatt: .komur) {
-            butce -= YoneticiViewModel.shared.gelir(teklif: komurTeklifim, megawatt: .komur)
-            print("🔥  Komur Teklifim Kabul Edildi ")
+        if komurTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(enerjiTuru: .komur) {
+            butce -= YoneticiViewModel.shared.gelir(teklif: komurTeklifim, enerjiTuru: .komur)
+            print("✅  Komur Teklifim Kabul Edildi ")
         }
         
-        if nukleerTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(megawatt: .nukleer) {
-            butce -= YoneticiViewModel.shared.gelir(teklif: nukleerTeklifim, megawatt: .nukleer)
-            print("🔥  Nuk Teklifim Kabul Edildi ")
+        if nukleerTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(enerjiTuru: .nukleer) {
+            butce -= YoneticiViewModel.shared.gelir(teklif: nukleerTeklifim, enerjiTuru: .nukleer)
+            print("✅  Nuk Teklifim Kabul Edildi ")
         }
         
-        if ruzgarTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(megawatt: .ruzgar) {
-            butce -= YoneticiViewModel.shared.gelir(teklif: ruzgarTeklifim, megawatt: .ruzgar)
-            print("🔥  Ruzgar Teklifim Kabul Edildi ")
+        if ruzgarTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(enerjiTuru: .ruzgar) {
+            butce -= YoneticiViewModel.shared.gelir(teklif: ruzgarTeklifim, enerjiTuru: .ruzgar)
+            print("✅  Ruzgar Teklifim Kabul Edildi ")
         }
         butceLabel.text = "\(butce)$"
         periyot += 1
