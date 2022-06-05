@@ -149,7 +149,29 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
     }
     
     func satinAlindi(enerjiTuru: YoneticiViewModel.EnerjiTurleri) {
+        
+        if enerjiTuru.satinAlmaMaaliyeti > butce {
+                
+            print("Alinmak Istenen Santrale Butce Yok")
+            
+            let title = "Alinmak Istenen Santrale Butce Yok"
+            let tamam = UIAlertAction(title: "Tamam", style: .cancel)
+
+            let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
+       
+            alert.addAction(tamam)
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1 ) {
+                self.present(alert, animated: true, completion: nil)
+            }
+        
+        
+            
+            return
+        }
+        
         butce -= enerjiTuru.satinAlmaMaaliyeti
+        
         
         butceLabel.text = "\(butce)$"
     }
