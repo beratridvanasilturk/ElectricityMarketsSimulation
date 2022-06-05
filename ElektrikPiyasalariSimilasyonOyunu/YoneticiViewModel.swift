@@ -7,11 +7,12 @@
 
 import Foundation
 
-    /// uygulama icerisinde saklanacak sinif
+    /// uygulamada ekranlar arasinda kullanici verilerini yoneten sinif
 class YoneticiViewModel {
     
     
-   
+    
+    /// Oyunda var olan enerji santralleri
     enum EnerjiTurleri {
         
         case nukleer
@@ -20,6 +21,8 @@ class YoneticiViewModel {
         case komur
         case bio
         
+        
+        /// Her bir santralin sahip oldugu MW degeri
         var megawatt : Int {
             switch self {
             case .nukleer:
@@ -35,7 +38,9 @@ class YoneticiViewModel {
             }
         }
         
-        var satinAlmaMaaliyeti : Int {
+        
+        /// Her bir santralin maliyeti
+        var satinAlmaMaliyeti : Int {
             switch self {
             case .nukleer:
                return 800_000_000
@@ -57,22 +62,31 @@ class YoneticiViewModel {
     
    
     
+    /// Kullaniciya donen o turdaki gelir hesabi
+    /// - Parameters:
+    ///   - teklif: kullanicinin verdigi teklif
+    ///   - enerjiTuru: kullanicinin teklif verdigi santral turu
+    /// - Returns: Kullaniciya hesaplanan gelir doner
     func gelir(teklif: Int, enerjiTuru: EnerjiTurleri) -> Int {
         return teklif * enerjiTuru.megawatt * yildakiSaat
     }
     
+    
+    /// Mevcut periyot icin sistemin her bir enerji turune dondugu fiyat
     func minimumTeklifFiyati(enerjiTuru: EnerjiTurleri) -> Int {
         
         (70...130).randomElement() ?? 90
     }
     
     
-    /// viewcontroller siniflari arasinda paylasilacak obje
-    ///
+    /// viewcontroller siniflari arasinda paylasilan obje
     static let shared = YoneticiViewModel()
+    
     
     var kullaniciIsmi : String!
     
+    
+    /// Sistemin sahip oldugu 100 kullanici ismi
     let oyuncular :  [String] = [
         
         "Sezgin Eken",
@@ -177,6 +191,8 @@ class YoneticiViewModel {
         "Fazıl Akar"
     ]
     
+    
+    /// Ana oyuncu haric 9 kisiyi random secen degisken
     lazy var secilenOyuncularGetir : [String] = {
         var secilenOyuncular = oyuncular.shuffled().prefix(9).map { $0 }
         

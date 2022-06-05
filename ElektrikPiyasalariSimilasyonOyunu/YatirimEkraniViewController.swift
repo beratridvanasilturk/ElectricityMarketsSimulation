@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// Bir onceki ekrana hangi enerji santralinin alindiginin bilgisini donmesi icin kullanilir
 protocol YatirimEkraniViewControllerDelegate : AnyObject {
     
     func satinAlindi(enerjiTuru : YoneticiViewModel.EnerjiTurleri)
@@ -40,6 +41,9 @@ class YatirimEkraniViewController: UIViewController {
         alert(enerjiTuru: .nukleer)
     }
     
+    
+    /// Satin alma islemini onaylamak icin kullanici uyarilir
+    /// - Parameter enerjiTuru: Satin alinmasi istenen enerji turu
     func alert(enerjiTuru: YoneticiViewModel.EnerjiTurleri) {
         
         var enerjiIsmi : String{
@@ -53,6 +57,8 @@ class YatirimEkraniViewController: UIViewController {
             }
         
         }
+        
+        ///Ekrana verilen uyarilardaki buton icerikleri
         let title = enerjiIsmi + "Enerji Santralini Satin Almak Istiyor Musunuz?"
         let vazgec = UIAlertAction(title: "Vazgec", style: .cancel)
         let satinAl = UIAlertAction(title: "Satin Al", style: .default) { action in
@@ -60,6 +66,8 @@ class YatirimEkraniViewController: UIViewController {
             self.delegate?.satinAlindi(enerjiTuru: enerjiTuru)
             self.dismiss(animated: true, completion: nil)
         }
+        
+        /// Alinmak istenen enerji santrali icin oyuncu uyarilir ve bildirim ekrana basilir
         let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
    
         alert.addAction(vazgec)
@@ -68,24 +76,12 @@ class YatirimEkraniViewController: UIViewController {
     
     }
     
-    
-    
-
+    /// Bu ekran ilk acildigi an tetiklenen methoddur, Oyun ilk acildiginda default degerler atanmalidir
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+    
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

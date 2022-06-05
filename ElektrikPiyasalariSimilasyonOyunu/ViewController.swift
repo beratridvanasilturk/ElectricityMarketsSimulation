@@ -9,9 +9,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    /// Bu ekran ilk acildigi an tetiklenen methoddur
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
 

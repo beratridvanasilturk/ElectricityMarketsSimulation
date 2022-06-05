@@ -8,7 +8,7 @@
 import UIKit
 
 class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControllerDelegate {
-  
+    
     
     @IBOutlet weak var nukleerLabel: UILabel!
     @IBOutlet weak var ruzgarLabel: UILabel!
@@ -31,11 +31,17 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
     
     var periyot = 1
     
+    
+    /// Oyun baslangicinda kullaniciya verilen butce
     var butce = 200000000
+    
+    /// Oyuncunun yatirim yaptigi enerji santralleri
+    /// Satin alinan santraller bu degiskende tutulur
     var yatirimlarim : [YoneticiViewModel.EnerjiTurleri] = []
     
     
     
+    /// Default Teklif Degerleri
     var komurTeklifim = 0
     var gunesTeklifim = 0
     var ruzgarTeklifim = 0
@@ -44,6 +50,7 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
     
     
     
+    /// Santal Yatirimi Butonu Tiklandiginda Tetiklenir ve Oyuncunun Alabilecegi Santaller Ekrana Gelir
     @IBAction func santralYatirimButtonTapped(_ sender: UIButton) {
         
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
@@ -53,12 +60,14 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
         
     }
     
+    /// Oyuncunun o periyottaki teklifini onaylatmak icin kullanilan butondur.
     @IBAction func onaylaButton(_ sender: UIButton) {
         
+        // Oyunun toplam tur sayisi
         if periyot == 10 {
             return
         }
-        
+        // Butcenin sifirin altina dusmesi durumunda oyun sonlanir
         if butce <= 0 {
             return
         }
@@ -88,6 +97,8 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
             butce -= YoneticiViewModel.shared.gelir(teklif: ruzgarTeklifim, enerjiTuru: .ruzgar)
             print("✅  Ruzgar Teklifim Kabul Edildi ")
         }
+        
+        // Her periyotta Ui guncellenir
         butceLabel.text = "\(butce)$"
         periyot += 1
         periyotLabel.text = "\(periyot)"
@@ -95,35 +106,31 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
         
         
         
-        
+        // Default degerler atanir
         komurTeklifim = 0
         gunesTeklifim = 0
         ruzgarTeklifim = 0
         nukleerTeklifim = 0
         bioTeklifim = 0
         
-        
+        //Default degerler atanir
         bioSliderOutlet.setValue(0, animated: true)
         komurSliderOutlet.setValue(0, animated: true)
         gunesSliderOutlet.setValue(0, animated: true)
         ruzgarSliderOutlet.setValue(0, animated: true)
         nukleerSliderOutlet.setValue(0, animated: true)
         
-        
+        //Default degerler atanir
         nukleerLabel.text = "$"
-       ruzgarLabel.text = "$"
-       bioLabel.text = "$"
-       komurLabel.text = "$"
-       gunesLabel.text = "$"
-        
-        // TODO: defult degerleri sifirla
+        ruzgarLabel.text = "$"
+        bioLabel.text = "$"
+        komurLabel.text = "$"
+        gunesLabel.text = "$"
         
     }
     
     
-    
-    
-    
+    // Sliderlarin Oyuncunun Sectigi Tekliflere Gore Ui Guncellenir
     @IBAction func komurSlider(_ sender: UISlider) {
         komurTeklifim = Int(sender.value)
         komurLabel.text = "\(komurTeklifim)$"
@@ -146,36 +153,40 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
         ruzgarTeklifim = Int(sender.value)
         ruzgarLabel.text = "\(ruzgarTeklifim)$"
     }
+    
+    /// Bu ekran ilk acildigi an tetiklenen methoddur, Oyun ilk acildiginda default degerler atanmalidir
     override func viewDidLoad() {
         super.viewDidLoad()
         sliderGuncelle()
-
-        // Do any additional setup after loading the view.
     }
     
+    /// Yatirim Ekranindan Enerji Santrali Satin Alindiginda Tetiklenir,
+    /// Butcenin olmadigi durumda kullaniciya uyari gider, ancak butce varsa satin alma islemi gerceklesir
+    /// Oyun geregi kullanici bir santral aldiginda teklif vermeye baslayabilir
     func satinAlindi(enerjiTuru: YoneticiViewModel.EnerjiTurleri) {
         
-        if enerjiTuru.satinAlmaMaaliyeti > butce {
-                
+        ///Alinmak istenen santralin maliyeti o anki butceden buyukse oyuncuya uyari bildirimi atilir
+        if enerjiTuru.satinAlmaMaliyeti > butce {
+            
             print("Alinmak Istenen Santrale Butce Yok")
             
             let title = "Alinmak Istenen Santrale Butce Yok"
             let tamam = UIAlertAction(title: "Tamam", style: .cancel)
-
+            
             let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
-       
+            
             alert.addAction(tamam)
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 1 ) {
                 self.present(alert, animated: true, completion: nil)
             }
-        
-        
+            
+            
             
             return
         }
-        
-        butce -= enerjiTuru.satinAlmaMaaliyeti
+        /// Yatirim sonrasi butce ve ui guncellenir
+        butce -= enerjiTuru.satinAlmaMaliyeti
         butceLabel.text = "\(butce)$"
         
         yatirimlarim.append(enerjiTuru)
@@ -185,9 +196,8 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
     
     
     /// Bu method yatirim yapildiktan sonra her bir enerji santrali icin o santralin sliderinin kullanimini duzenler
-    
     func sliderGuncelle() {
-    
+        
         if yatirimlarim.contains(.nukleer) {
             nukleerSliderOutlet.isUserInteractionEnabled = true
         } else {
@@ -221,6 +231,6 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
     }
     
     
-
-
+    
+    
 }
