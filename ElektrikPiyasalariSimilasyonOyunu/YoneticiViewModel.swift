@@ -71,6 +71,21 @@ class YoneticiViewModel {
             }
         }
         
+        var santralinAktiflesmeDonemi : Int {
+            switch self {
+            case .nukleer:
+                return 4
+            case .ruzgar:
+                return 2
+            case .gunes:
+                return 1
+            case .komur:
+                return 1
+            case .bio:
+                return 3
+            }
+        }
+        
         
         
     }

@@ -31,6 +31,14 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
     
     var periyot = 1
     
+    var bioSatinAlinanPeriyot = 0
+    var komurSatinAlinanPeriyot = 0
+    var nukSatinAlinanPeriyot = 0
+    var ruzgarSatinAlinanPeriyot = 0
+    var gunesSatinAlinanPeriyot = 0
+    
+    
+    
     
     /// Oyun baslangicinda kullaniciya verilen butce
     var butce = 200000000
@@ -76,8 +84,8 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
         if bioTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(enerjiTuru: .bio) {
         
             
-            if YoneticiViewModel.EnerjiTurleri.bio.santralinOmru >= periyot {
-                
+            if YoneticiViewModel.EnerjiTurleri.bio.santralinOmru >= periyot ,
+               YoneticiViewModel.EnerjiTurleri.bio.santralinAktiflesmeDonemi + bioSatinAlinanPeriyot <= periyot {
                 butce += YoneticiViewModel.shared.gelir(teklif: bioTeklifim, enerjiTuru: .bio)
                 print("✅  Bio Teklifim Kabul Edildi ")
             }
@@ -86,33 +94,36 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
         if gunesTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(enerjiTuru: .gunes) {
            
             
-            if YoneticiViewModel.EnerjiTurleri.gunes.santralinOmru >= periyot {
+            if YoneticiViewModel.EnerjiTurleri.gunes.santralinOmru >= periyot,
+               YoneticiViewModel.EnerjiTurleri.bio.santralinAktiflesmeDonemi + gunesSatinAlinanPeriyot <= periyot {
                 butce += YoneticiViewModel.shared.gelir(teklif: gunesTeklifim, enerjiTuru: .gunes)
                 print("✅  Gunes Teklifim Kabul Edildi ")
             }
         }
         
         if komurTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(enerjiTuru: .komur) {
-            if YoneticiViewModel.EnerjiTurleri.komur.santralinOmru >= periyot        {
+            if YoneticiViewModel.EnerjiTurleri.komur.santralinOmru >= periyot,
+               YoneticiViewModel.EnerjiTurleri.bio.santralinAktiflesmeDonemi + komurSatinAlinanPeriyot <= periyot {
                 
                 butce += YoneticiViewModel.shared.gelir(teklif: komurTeklifim, enerjiTuru: .komur)
                 print("✅  Komur Teklifim Kabul Edildi ")
             }
         }
             
-        
-        
         if nukleerTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(enerjiTuru: .nukleer) {
             
             
-            if YoneticiViewModel.EnerjiTurleri.nukleer.santralinOmru >= periyot {
+            if YoneticiViewModel.EnerjiTurleri.nukleer.santralinOmru >= periyot,
+               YoneticiViewModel.EnerjiTurleri.bio.santralinAktiflesmeDonemi + nukSatinAlinanPeriyot <= periyot {
                 butce += YoneticiViewModel.shared.gelir(teklif: nukleerTeklifim, enerjiTuru: .nukleer)
                 print("✅  Nuk Teklifim Kabul Edildi ")
             }
         }
         
         if ruzgarTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(enerjiTuru: .ruzgar) {
-            if YoneticiViewModel.EnerjiTurleri.ruzgar.santralinOmru >= periyot {
+            if YoneticiViewModel.EnerjiTurleri.ruzgar.santralinOmru >= periyot,
+               YoneticiViewModel.EnerjiTurleri.bio.santralinAktiflesmeDonemi + ruzgarSatinAlinanPeriyot <= periyot {
+                
                 butce += YoneticiViewModel.shared.gelir(teklif: ruzgarTeklifim, enerjiTuru: .ruzgar)
                 print("✅  Ruzgar Teklifim Kabul Edildi ")
             }
@@ -212,6 +223,19 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
         yatirimlarim.append(enerjiTuru)
         sliderGuncelle()
         
+        
+        switch enerjiTuru {
+        case .ruzgar :
+            ruzgarSatinAlinanPeriyot = periyot
+        case .nukleer :
+            nukSatinAlinanPeriyot = periyot
+        case .bio :
+            bioSatinAlinanPeriyot = periyot
+        case .gunes :
+            gunesSatinAlinanPeriyot = periyot
+        case .komur :
+            komurSatinAlinanPeriyot = periyot
+        }
     }
     
     
