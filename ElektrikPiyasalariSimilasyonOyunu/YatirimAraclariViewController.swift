@@ -31,6 +31,7 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
     
     var periyot = 1
     
+    ///Her bir santral icin default atanan baslangic degerleri
     var bioSatinAlinanPeriyot = 0
     var komurSatinAlinanPeriyot = 0
     var nukSatinAlinanPeriyot = 0
@@ -80,48 +81,57 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
             return
         }
         
-        // Verilen teklifin sistemde onaylanmasi durumu
+        // Her bi santral icin verilen teklifin sistemde onaylanmasi kosulu
         if bioTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(enerjiTuru: .bio) {
         
-            
-            if YoneticiViewModel.EnerjiTurleri.bio.santralinOmru >= periyot ,
+            /// Bio Yakit santarlin omru toplam periyottan kucuk esitse ve
+            /// Bio Yakit santralin aktiflesme donemi ile satin alinan andaki periyotun oyun geneli toplam periyottan kucuk ve esit olmasi kosulunda ancak kodu calistiran kosul
+            if YoneticiViewModel.EnerjiTurleri.bio.santralinOmru <= periyot ,
                YoneticiViewModel.EnerjiTurleri.bio.santralinAktiflesmeDonemi + bioSatinAlinanPeriyot <= periyot {
                 butce += YoneticiViewModel.shared.gelir(teklif: bioTeklifim, enerjiTuru: .bio)
                 print("✅  Bio Teklifim Kabul Edildi ")
             }
         }
-        
+        // Her bi santral icin verilen teklifin sistemde onaylanmasi kosulu
         if gunesTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(enerjiTuru: .gunes) {
            
-            
-            if YoneticiViewModel.EnerjiTurleri.gunes.santralinOmru >= periyot,
+            /// Gunes santarlin omru toplam periyottan kucuk esitse ve
+            /// Gunes santralin aktiflesme donemi ile satin alinan andaki periyotun oyun geneli toplam periyottan kucuk ve esit olmasi kosulunda ancak kodu calistiran kosul
+            if YoneticiViewModel.EnerjiTurleri.gunes.santralinOmru <= periyot,
                YoneticiViewModel.EnerjiTurleri.bio.santralinAktiflesmeDonemi + gunesSatinAlinanPeriyot <= periyot {
                 butce += YoneticiViewModel.shared.gelir(teklif: gunesTeklifim, enerjiTuru: .gunes)
                 print("✅  Gunes Teklifim Kabul Edildi ")
             }
         }
-        
+        // Her bi santral icin verilen teklifin sistemde onaylanmasi kosulu
         if komurTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(enerjiTuru: .komur) {
-            if YoneticiViewModel.EnerjiTurleri.komur.santralinOmru >= periyot,
+            
+            /// Komur santarlin omru toplam periyottan kucuk esitse ve
+            /// Komur santralin aktiflesme donemi ile satin alinan andaki periyotun oyun geneli toplam periyottan kucuk ve esit olmasi kosulunda ancak kodu calistiran kosul
+            if YoneticiViewModel.EnerjiTurleri.komur.santralinOmru <= periyot,
                YoneticiViewModel.EnerjiTurleri.bio.santralinAktiflesmeDonemi + komurSatinAlinanPeriyot <= periyot {
                 
                 butce += YoneticiViewModel.shared.gelir(teklif: komurTeklifim, enerjiTuru: .komur)
                 print("✅  Komur Teklifim Kabul Edildi ")
             }
         }
-            
+        // Her bi santral icin verilen teklifin sistemde onaylanmasi kosulu
         if nukleerTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(enerjiTuru: .nukleer) {
             
-            
-            if YoneticiViewModel.EnerjiTurleri.nukleer.santralinOmru >= periyot,
+            /// Nukleer santarlin omru toplam periyottan kucuk esitse ve
+            /// Nukleer santralin aktiflesme donemi ile satin alinan andaki periyotun oyun geneli toplam periyottan kucuk ve esit olmasi kosulunda ancak kodu calistiran kosul
+            if YoneticiViewModel.EnerjiTurleri.nukleer.santralinOmru <= periyot,
                YoneticiViewModel.EnerjiTurleri.bio.santralinAktiflesmeDonemi + nukSatinAlinanPeriyot <= periyot {
                 butce += YoneticiViewModel.shared.gelir(teklif: nukleerTeklifim, enerjiTuru: .nukleer)
                 print("✅  Nuk Teklifim Kabul Edildi ")
             }
         }
-        
+        // Her bi santral icin verilen teklifin sistemde onaylanmasi kosulu
         if ruzgarTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(enerjiTuru: .ruzgar) {
-            if YoneticiViewModel.EnerjiTurleri.ruzgar.santralinOmru >= periyot,
+            
+            /// Ruzgar santarlin omru toplam periyottan kucuk esitse ve
+            /// ruzgar santralin aktiflesme donemi ile satin alinan andaki periyotun oyun geneli toplam periyottan kucuk ve esit olmasi kosulunda ancak kodu calistiran kosul
+            if YoneticiViewModel.EnerjiTurleri.ruzgar.santralinOmru <= periyot,
                YoneticiViewModel.EnerjiTurleri.bio.santralinAktiflesmeDonemi + ruzgarSatinAlinanPeriyot <= periyot {
                 
                 butce += YoneticiViewModel.shared.gelir(teklif: ruzgarTeklifim, enerjiTuru: .ruzgar)
@@ -223,7 +233,7 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
         yatirimlarim.append(enerjiTuru)
         sliderGuncelle()
         
-        
+        ///Her bir santralin ne zaman satin alindigini belirleyen durum
         switch enerjiTuru {
         case .ruzgar :
             ruzgarSatinAlinanPeriyot = periyot

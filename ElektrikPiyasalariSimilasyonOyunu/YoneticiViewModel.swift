@@ -71,6 +71,7 @@ class YoneticiViewModel {
             }
         }
         
+        /// Her bir santralin aktif olacagi donem
         var santralinAktiflesmeDonemi : Int {
             switch self {
             case .nukleer:
