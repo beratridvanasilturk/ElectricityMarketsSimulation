@@ -54,6 +54,24 @@ class YoneticiViewModel {
                 return 100_000_000
             }
         }
+        /// Her bir santralin kullnaim omru
+        var santralinOmru : Int {
+            
+            switch self {
+            case .nukleer:
+                return 7
+            case .ruzgar:
+                return 4
+            case .gunes:
+                return 6
+            case .komur:
+                return 9
+            case .bio:
+                return 10
+            }
+        }
+        
+        
         
     }
     

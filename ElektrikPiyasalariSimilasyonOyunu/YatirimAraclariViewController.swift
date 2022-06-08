@@ -72,30 +72,50 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
             return
         }
         
+        // Verilen teklifin sistemde onaylanmasi durumu
         if bioTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(enerjiTuru: .bio) {
-            butce -= YoneticiViewModel.shared.gelir(teklif: bioTeklifim, enerjiTuru: .bio)
+        
             
-            print("✅  Bio Teklifim Kabul Edildi ")
+            if YoneticiViewModel.EnerjiTurleri.bio.santralinOmru >= periyot {
+                
+                butce += YoneticiViewModel.shared.gelir(teklif: bioTeklifim, enerjiTuru: .bio)
+                print("✅  Bio Teklifim Kabul Edildi ")
+            }
         }
         
         if gunesTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(enerjiTuru: .gunes) {
-            butce -= YoneticiViewModel.shared.gelir(teklif: gunesTeklifim, enerjiTuru: .gunes)
-            print("✅  Gunes Teklifim Kabul Edildi ")
+           
+            
+            if YoneticiViewModel.EnerjiTurleri.gunes.santralinOmru >= periyot {
+                butce += YoneticiViewModel.shared.gelir(teklif: gunesTeklifim, enerjiTuru: .gunes)
+                print("✅  Gunes Teklifim Kabul Edildi ")
+            }
         }
         
         if komurTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(enerjiTuru: .komur) {
-            butce -= YoneticiViewModel.shared.gelir(teklif: komurTeklifim, enerjiTuru: .komur)
-            print("✅  Komur Teklifim Kabul Edildi ")
+            if YoneticiViewModel.EnerjiTurleri.komur.santralinOmru >= periyot        {
+                
+                butce += YoneticiViewModel.shared.gelir(teklif: komurTeklifim, enerjiTuru: .komur)
+                print("✅  Komur Teklifim Kabul Edildi ")
+            }
         }
+            
+        
         
         if nukleerTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(enerjiTuru: .nukleer) {
-            butce -= YoneticiViewModel.shared.gelir(teklif: nukleerTeklifim, enerjiTuru: .nukleer)
-            print("✅  Nuk Teklifim Kabul Edildi ")
+            
+            
+            if YoneticiViewModel.EnerjiTurleri.nukleer.santralinOmru >= periyot {
+                butce += YoneticiViewModel.shared.gelir(teklif: nukleerTeklifim, enerjiTuru: .nukleer)
+                print("✅  Nuk Teklifim Kabul Edildi ")
+            }
         }
         
         if ruzgarTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(enerjiTuru: .ruzgar) {
-            butce -= YoneticiViewModel.shared.gelir(teklif: ruzgarTeklifim, enerjiTuru: .ruzgar)
-            print("✅  Ruzgar Teklifim Kabul Edildi ")
+            if YoneticiViewModel.EnerjiTurleri.ruzgar.santralinOmru >= periyot {
+                butce += YoneticiViewModel.shared.gelir(teklif: ruzgarTeklifim, enerjiTuru: .ruzgar)
+                print("✅  Ruzgar Teklifim Kabul Edildi ")
+            }
         }
         
         // Her periyotta Ui guncellenir
