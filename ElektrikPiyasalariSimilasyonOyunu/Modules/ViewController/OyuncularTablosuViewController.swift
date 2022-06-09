@@ -15,7 +15,7 @@ class OyuncularTablosuViewController : UIViewController, UITableViewDelegate, UI
     /// Random secilen oyuncular sayisi kadar ekranda satir olusturur
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     
-        return YoneticiViewModel.shared.secilenOyuncularGetir.count
+        return YoneticiViewModel.shared.oyuncular.count
     }
     
     
@@ -23,7 +23,7 @@ class OyuncularTablosuViewController : UIViewController, UITableViewDelegate, UI
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
  
         let cell = tableView.dequeueReusableCell(withIdentifier: "OyuncularHucresi", for: indexPath)
-        cell.textLabel?.text = YoneticiViewModel.shared.secilenOyuncularGetir[indexPath.row].isim
+        cell.textLabel?.text = YoneticiViewModel.shared.oyuncular[indexPath.row].isim
         return cell
     }
     
@@ -39,6 +39,9 @@ class OyuncularTablosuViewController : UIViewController, UITableViewDelegate, UI
         // Satirlari olusturmak icin gerekli altyapiyi saglar
         tableView.delegate = self
         tableView.dataSource = self
+        
+        YoneticiViewModel.shared.oyunculariOlustur()
+        tableView.reloadData()
     
     }
 }

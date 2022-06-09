@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Loaf
 
 class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControllerDelegate {
     
@@ -66,7 +67,7 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
            YoneticiViewModel.EnerjiTurleri.bio.santralinOmru >= YoneticiViewModel.shared.periyot,
            YoneticiViewModel.EnerjiTurleri.gunes.santralinAktiflesmeDonemi + bioSatinAlinanPeriyot <= YoneticiViewModel.shared.periyot {
             butce += YoneticiViewModel.shared.gelir(teklif: bioTeklifim, enerjiTuru: .bio)
-            print("✅  Bio Teklifi Kabul Edildi ")
+            Loaf(" Bio Santral Teklifi Kabul Edildi", state: .success, sender: self).show(.custom(1))
         }
         /// Gunes santarlin omru toplam periyottan kucuk esitse ve
         /// Gunes santralin aktiflesme donemi ile satin alinan andaki periyotun oyun geneli toplam periyottan kucuk ve esit olmasi kosulunda ancak kodu calistiran kosul
@@ -75,7 +76,7 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
            YoneticiViewModel.EnerjiTurleri.gunes.santralinOmru >= YoneticiViewModel.shared.periyot,
            YoneticiViewModel.EnerjiTurleri.gunes.santralinAktiflesmeDonemi + gunesSatinAlinanPeriyot <= YoneticiViewModel.shared.periyot {
             butce += YoneticiViewModel.shared.gelir(teklif: gunesTeklifim, enerjiTuru: .gunes)
-            print("✅  Gunes Teklifi Kabul Edildi ")
+            Loaf(" Gunes Santral Teklifi Kabul Edildi", state: .success, sender: self).show(.custom(1.4))
         }
         
         /// Komur santarlin omru toplam periyottan kucuk esitse ve
@@ -85,7 +86,7 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
            YoneticiViewModel.EnerjiTurleri.komur.santralinOmru >= YoneticiViewModel.shared.periyot,
            YoneticiViewModel.EnerjiTurleri.komur.santralinAktiflesmeDonemi + komurSatinAlinanPeriyot <= YoneticiViewModel.shared.periyot {
             butce += YoneticiViewModel.shared.gelir(teklif: komurTeklifim, enerjiTuru: .komur)
-            print("✅  Komur Teklifi Kabul Edildi ")
+            Loaf(" Komur Santral Teklifi Kabul Edildi", state: .success, sender: self).show(.custom(1.4))
         }
         /// Nukleer santarlin omru toplam periyottan kucuk esitse ve
         /// Nukleer santralin aktiflesme donemi ile satin alinan andaki periyotun oyun geneli toplam periyottan kucuk ve esit olmasi kosulunda ancak kodu calistiran kosul
@@ -94,7 +95,7 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
            YoneticiViewModel.EnerjiTurleri.nukleer.santralinOmru >= YoneticiViewModel.shared.periyot,
            YoneticiViewModel.EnerjiTurleri.nukleer.santralinAktiflesmeDonemi + nukSatinAlinanPeriyot <= YoneticiViewModel.shared.periyot {
             butce += YoneticiViewModel.shared.gelir(teklif: nukleerTeklifim, enerjiTuru: .nukleer)
-            print("✅  Nuk Teklifi Kabul Edildi ")
+            Loaf(" Nukleer Santral Teklifi Kabul Edildi", state: .success, sender: self).show(.custom(1.4))
         }
         /// Ruzgar santarlin omru toplam periyottan kucuk esitse ve
         /// ruzgar santralin aktiflesme donemi ile satin alinan andaki periyotun oyun geneli toplam periyottan kucuk ve esit olmasi kosulunda ancak kodu calistiran kosul
@@ -104,7 +105,7 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
            YoneticiViewModel.EnerjiTurleri.ruzgar.santralinAktiflesmeDonemi + ruzgarSatinAlinanPeriyot <= YoneticiViewModel.shared.periyot {
             
             butce += YoneticiViewModel.shared.gelir(teklif: ruzgarTeklifim, enerjiTuru: .ruzgar)
-            print("✅  Ruzgar Teklifi Kabul Edildi ")
+            Loaf(" Ruzgar Santral Teklifi Kabul Edildi", state: .success, sender: self).show(.custom(1.4))
         }
     }
     
@@ -144,6 +145,9 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
         
         // Oyunun toplam tur sayisi
         if YoneticiViewModel.shared.periyot == 10 {
+            print("OYUN BITTI !!!")
+            print("KAZANAN OYUNCU: \(YoneticiViewModel.shared.butceyeGoreSiralananOyuncular.first) ")
+            print("ISTE BUTCEYE GORE SIRALAMA: \(YoneticiViewModel.shared.butceyeGoreSiralananOyuncular) ")
             return
         }
         // Butcenin sifirin altina dusmesi durumunda oyun sonlanir
@@ -154,7 +158,7 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
         kullaniciGelirleriniHesapla()
         uiGuncelle()
         
-        YoneticiViewModel.shared.secilenOyuncularGetir.forEach { $0.teklifiOnayla() }
+        YoneticiViewModel.shared.oyuncular.forEach { $0.teklifiOnayla() }
         
     }
     

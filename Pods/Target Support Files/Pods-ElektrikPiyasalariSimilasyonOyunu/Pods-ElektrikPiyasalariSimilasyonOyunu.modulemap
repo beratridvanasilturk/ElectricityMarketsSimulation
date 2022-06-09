@@ -1,0 +1,6 @@
+framework module Pods_ElektrikPiyasalariSimilasyonOyunu {
+  umbrella header "Pods-ElektrikPiyasalariSimilasyonOyunu-umbrella.h"
+
+  export *
+  module * { export * }
+}

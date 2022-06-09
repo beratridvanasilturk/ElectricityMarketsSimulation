@@ -117,7 +117,7 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
             <objects>
                 <viewController storyboardIdentifier="LoadingViewController" id="BO8-IM-Fi4" customClass="LoadingViewController" customModule="ElektrikPiyasalariSimilasyonOyunu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OT0-Gh-BOu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Oyuncular Yükleniyor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALi-mC-LA7">
@@ -204,7 +204,7 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
             <objects>
                 <viewController storyboardIdentifier="YatirimAraclariViewController.swift" id="Fvj-XW-K75" customClass="YatirimAraclariViewController" customModule="ElektrikPiyasalariSimilasyonOyunu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u1L-6F-Cw1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TRADE ARAÇLARI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CiS-6G-ZcZ">
@@ -564,7 +564,7 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
             <objects>
                 <tableViewController storyboardIdentifier="SiralamaTableViewController" id="ckC-Bo-NUr" customClass="SiralamaTableViewController" customModule="ElektrikPiyasalariSimilasyonOyunu" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="u3t-Sv-Jda">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -593,7 +593,6 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
             <objects>
                 <navigationController id="fnf-cc-ul6" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3aK-Jf-PmP">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

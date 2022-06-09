@@ -1,0 +1,16 @@
+PODS:
+  - Loaf (0.7.0)
+
+DEPENDENCIES:
+  - Loaf
+
+SPEC REPOS:
+  trunk:
+    - Loaf
+
+SPEC CHECKSUMS:
+  Loaf: d69937cd00649f3fa260beb8b7aef0a1feb861ef
+
+PODFILE CHECKSUM: 12c087c335eacd2bef6c48a377a8785b292c8b4e
+
+COCOAPODS: 1.11.3

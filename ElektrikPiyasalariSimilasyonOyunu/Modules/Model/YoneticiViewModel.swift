@@ -21,6 +21,17 @@ class YoneticiViewModel {
         YoneticiViewModel.EnerjiTurleri.nukleer,
     ]}
     
+    /// Oyunda yer alacak oyuncular dizisidir
+    var oyuncular = [Oyuncu]()
+    
+    
+    /// Oyun sona erdiginde kullanilacak olan , butceye gore siralanan dizi
+    var butceyeGoreSiralananOyuncular : [Oyuncu] {
+        oyuncular.sorted { i, j in
+            i.butce > j.butce
+        }
+    }
+    
     /// Oyunda var olan enerji santralleri
     enum EnerjiTurleri {
         
@@ -123,7 +134,7 @@ class YoneticiViewModel {
             return 0
         }
         
-        let fiyat = (70...160).randomElement()!
+        let fiyat = (0...300).randomElement()!
         print("* sistemin teklifi: \(enerjiTuru) \(fiyat)")
         return fiyat
     }
@@ -243,7 +254,7 @@ class YoneticiViewModel {
     
     
     /// Ana oyuncu haric 9 kisiyi random secen degisken
-    lazy var secilenOyuncularGetir : [Oyuncu] = {
+    func oyunculariOlustur() {
         var secilenOyuncular = oyuncuIsimleri.shuffled().prefix(9).map { isim in
             Oyuncu(isim: isim, butce: baslangicButcesi)
         }
@@ -252,9 +263,8 @@ class YoneticiViewModel {
         
         secilenOyuncular.append(kullanici)
         
-        return secilenOyuncular
+        oyuncular = secilenOyuncular
         
-    }()
-    
+    }
     
 }

@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3372BF399CB0F8C35EE6B31E7A47CD88 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EE140329D6B1B48AB8FC458E418154 /* Controller.swift */; };
+		3AE00189AEACB5B7F70C1561341CA52E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		4B0F3E6E84D784B3E9BB4A6D5C635B0C /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCECFA968367C99A5B8EE84F3AD4A3A /* Animator.swift */; };
+		83FCEDF72741412BF4E21C82082B9890 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F091276448AF619831AB82C9C283C /* Icons.swift */; };
+		87799D55B3CE2E9D89BD7AD4333A47A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A07FC03BC8500097988DC565A26DEA10 /* Loaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044472ED41450E3ACC5A04B5CFCB46A3 /* Loaf.swift */; };
+		A0B533D9DAB6DCE4A92D751A02D08E36 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B42CE5434D13DD46C7967C0D853792 /* Extensions.swift */; };
+		B2B62FD9A9A9B94B09F988685188BA63 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049F474C12ED02A21DB6CCAD80E5F89D /* Manager.swift */; };
+		B68E88DAC7C36E6673A70287A4BAC004 /* Pods-ElektrikPiyasalariSimilasyonOyunu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD02F29653F5AB2EF57EE0437A5A2DF /* Pods-ElektrikPiyasalariSimilasyonOyunu-dummy.m */; };
+		B92937D4AD0CD125C518A3DA3DD55A34 /* Loaf-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA2C4E085121C498CC955AF36985540 /* Loaf-dummy.m */; };
+		D833EE7EBC9C1CD2359E683330700BFB /* Pods-ElektrikPiyasalariSimilasyonOyunu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D548F835BB85EA41C1BC1D44AB30BC11 /* Pods-ElektrikPiyasalariSimilasyonOyunu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7DBECA0688DD7A47971A094A8242DA2 /* Loaf-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A49A8437F6FC61CEFA8A4BF792250FC /* Loaf-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ABFFC0712BA73BD3A52BC31D5D5E92B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E12D5ED3565D8FCC3DD9B9DD89246A9;
+			remoteInfo = Loaf;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		044472ED41450E3ACC5A04B5CFCB46A3 /* Loaf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Loaf.swift; path = Sources/Loaf/Loaf.swift; sourceTree = "<group>"; };
+		049F474C12ED02A21DB6CCAD80E5F89D /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Sources/Loaf/Presenter/Manager.swift; sourceTree = "<group>"; };
+		05B42CE5434D13DD46C7967C0D853792 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Sources/Loaf/Extensions.swift; sourceTree = "<group>"; };
+		19F498F9B368CF03355C06969607E58D /* Loaf.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Loaf.modulemap; sourceTree = "<group>"; };
+		2DE36BD0162746B2A3C337A7F3781362 /* Pods-ElektrikPiyasalariSimilasyonOyunu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElektrikPiyasalariSimilasyonOyunu.release.xcconfig"; sourceTree = "<group>"; };
+		2F1F091276448AF619831AB82C9C283C /* Icons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Icons.swift; path = Sources/Loaf/Icons.swift; sourceTree = "<group>"; };
+		31EE140329D6B1B48AB8FC458E418154 /* Controller.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Controller.swift; path = Sources/Loaf/Presenter/Controller.swift; sourceTree = "<group>"; };
+		35DB898A705BDCE7FD8B6EF1FB8C6246 /* Pods-ElektrikPiyasalariSimilasyonOyunu-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ElektrikPiyasalariSimilasyonOyunu-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3E4C337658371E86D4D819EC94A373DC /* Loaf-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Loaf-Info.plist"; sourceTree = "<group>"; };
+		4B0B51C1FB93F1849851544E338E789E /* Pods-ElektrikPiyasalariSimilasyonOyunu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ElektrikPiyasalariSimilasyonOyunu.modulemap"; sourceTree = "<group>"; };
+		4BE730510F6EBDAEF7EF02CB99F4B209 /* Loaf */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Loaf; path = Loaf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AAEA17BAEA04724429322D616BEC5B0 /* Pods-ElektrikPiyasalariSimilasyonOyunu-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ElektrikPiyasalariSimilasyonOyunu-acknowledgements.plist"; sourceTree = "<group>"; };
+		5FD02F29653F5AB2EF57EE0437A5A2DF /* Pods-ElektrikPiyasalariSimilasyonOyunu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ElektrikPiyasalariSimilasyonOyunu-dummy.m"; sourceTree = "<group>"; };
+		60D665D2DC770FD3BF4C964524679042 /* Loaf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Loaf.debug.xcconfig; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		749C20ED5D0392DA7CE74A0CCD77921F /* Pods-ElektrikPiyasalariSimilasyonOyunu-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ElektrikPiyasalariSimilasyonOyunu-frameworks.sh"; sourceTree = "<group>"; };
+		7A49A8437F6FC61CEFA8A4BF792250FC /* Loaf-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Loaf-umbrella.h"; sourceTree = "<group>"; };
+		7F298A1650674BD5942B06CC3507FDAC /* Pods-ElektrikPiyasalariSimilasyonOyunu */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ElektrikPiyasalariSimilasyonOyunu"; path = Pods_ElektrikPiyasalariSimilasyonOyunu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9856DC9A162988C2086AEF0E72A1E39E /* Pods-ElektrikPiyasalariSimilasyonOyunu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ElektrikPiyasalariSimilasyonOyunu-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A9EE600E4CBCB0CC5B1FB65AB2016FB7 /* Loaf.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Loaf.release.xcconfig; sourceTree = "<group>"; };
+		AC832D1D9C80BA2697198B43A2D6EEE9 /* Loaf-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Loaf-prefix.pch"; sourceTree = "<group>"; };
+		D548F835BB85EA41C1BC1D44AB30BC11 /* Pods-ElektrikPiyasalariSimilasyonOyunu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ElektrikPiyasalariSimilasyonOyunu-umbrella.h"; sourceTree = "<group>"; };
+		DEA2C4E085121C498CC955AF36985540 /* Loaf-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Loaf-dummy.m"; sourceTree = "<group>"; };
+		ECCECFA968367C99A5B8EE84F3AD4A3A /* Animator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animator.swift; path = Sources/Loaf/Presenter/Animator.swift; sourceTree = "<group>"; };
+		FCEDB9BDBB0CFA8D745BDFA436CC3A21 /* Pods-ElektrikPiyasalariSimilasyonOyunu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElektrikPiyasalariSimilasyonOyunu.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A48DF49A65D0D7D4F357207852149A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AE00189AEACB5B7F70C1561341CA52E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5E6A686B06F7DE473746928E69AC0ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87799D55B3CE2E9D89BD7AD4333A47A2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		103A554640007EDA59E46159D6877C78 /* Loaf */ = {
+			isa = PBXGroup;
+			children = (
+				ECCECFA968367C99A5B8EE84F3AD4A3A /* Animator.swift */,
+				31EE140329D6B1B48AB8FC458E418154 /* Controller.swift */,
+				05B42CE5434D13DD46C7967C0D853792 /* Extensions.swift */,
+				2F1F091276448AF619831AB82C9C283C /* Icons.swift */,
+				044472ED41450E3ACC5A04B5CFCB46A3 /* Loaf.swift */,
+				049F474C12ED02A21DB6CCAD80E5F89D /* Manager.swift */,
+				E40BF20408B9E6AE66B083B60D1167D2 /* Support Files */,
+			);
+			name = Loaf;
+			path = Loaf;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		65E1AE99FCA577F082037F20C8E26781 /* Pods-ElektrikPiyasalariSimilasyonOyunu */ = {
+			isa = PBXGroup;
+			children = (
+				4B0B51C1FB93F1849851544E338E789E /* Pods-ElektrikPiyasalariSimilasyonOyunu.modulemap */,
+				35DB898A705BDCE7FD8B6EF1FB8C6246 /* Pods-ElektrikPiyasalariSimilasyonOyunu-acknowledgements.markdown */,
+				5AAEA17BAEA04724429322D616BEC5B0 /* Pods-ElektrikPiyasalariSimilasyonOyunu-acknowledgements.plist */,
+				5FD02F29653F5AB2EF57EE0437A5A2DF /* Pods-ElektrikPiyasalariSimilasyonOyunu-dummy.m */,
+				749C20ED5D0392DA7CE74A0CCD77921F /* Pods-ElektrikPiyasalariSimilasyonOyunu-frameworks.sh */,
+				9856DC9A162988C2086AEF0E72A1E39E /* Pods-ElektrikPiyasalariSimilasyonOyunu-Info.plist */,
+				D548F835BB85EA41C1BC1D44AB30BC11 /* Pods-ElektrikPiyasalariSimilasyonOyunu-umbrella.h */,
+				FCEDB9BDBB0CFA8D745BDFA436CC3A21 /* Pods-ElektrikPiyasalariSimilasyonOyunu.debug.xcconfig */,
+				2DE36BD0162746B2A3C337A7F3781362 /* Pods-ElektrikPiyasalariSimilasyonOyunu.release.xcconfig */,
+			);
+			name = "Pods-ElektrikPiyasalariSimilasyonOyunu";
+			path = "Target Support Files/Pods-ElektrikPiyasalariSimilasyonOyunu";
+			sourceTree = "<group>";
+		};
+		6FB600350F2C2F6C18828FF139117094 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				103A554640007EDA59E46159D6877C78 /* Loaf */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8E64925B620D0D7DE6B37501448A8FA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BE730510F6EBDAEF7EF02CB99F4B209 /* Loaf */,
+				7F298A1650674BD5942B06CC3507FDAC /* Pods-ElektrikPiyasalariSimilasyonOyunu */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A77C039FD472FDF9F756CB18C59012C8 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				65E1AE99FCA577F082037F20C8E26781 /* Pods-ElektrikPiyasalariSimilasyonOyunu */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				6FB600350F2C2F6C18828FF139117094 /* Pods */,
+				8E64925B620D0D7DE6B37501448A8FA9 /* Products */,
+				A77C039FD472FDF9F756CB18C59012C8 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E40BF20408B9E6AE66B083B60D1167D2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				19F498F9B368CF03355C06969607E58D /* Loaf.modulemap */,
+				DEA2C4E085121C498CC955AF36985540 /* Loaf-dummy.m */,
+				3E4C337658371E86D4D819EC94A373DC /* Loaf-Info.plist */,
+				AC832D1D9C80BA2697198B43A2D6EEE9 /* Loaf-prefix.pch */,
+				7A49A8437F6FC61CEFA8A4BF792250FC /* Loaf-umbrella.h */,
+				60D665D2DC770FD3BF4C964524679042 /* Loaf.debug.xcconfig */,
+				A9EE600E4CBCB0CC5B1FB65AB2016FB7 /* Loaf.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Loaf";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		25D03C497BCDD1082A0CE4D34192F3FD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7DBECA0688DD7A47971A094A8242DA2 /* Loaf-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AAD4BE0B59BF4250E295E0AECF02F4E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D833EE7EBC9C1CD2359E683330700BFB /* Pods-ElektrikPiyasalariSimilasyonOyunu-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3E12D5ED3565D8FCC3DD9B9DD89246A9 /* Loaf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A5F42E6E153E1DDFDDB689B6418FFA8 /* Build configuration list for PBXNativeTarget "Loaf" */;
+			buildPhases = (
+				25D03C497BCDD1082A0CE4D34192F3FD /* Headers */,
+				30D24F6209E2ABACAB5D7EB5FA6DF650 /* Sources */,
+				2A48DF49A65D0D7D4F357207852149A1 /* Frameworks */,
+				8266BB56EE2D63D2AFDBC99AFF6195AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Loaf;
+			productName = Loaf;
+			productReference = 4BE730510F6EBDAEF7EF02CB99F4B209 /* Loaf */;
+			productType = "com.apple.product-type.framework";
+		};
+		6158F44348A6B239765C6A826FFF73EA /* Pods-ElektrikPiyasalariSimilasyonOyunu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD92022A803AA697D69BD7A3A6106A61 /* Build configuration list for PBXNativeTarget "Pods-ElektrikPiyasalariSimilasyonOyunu" */;
+			buildPhases = (
+				2AAD4BE0B59BF4250E295E0AECF02F4E /* Headers */,
+				B1DFCAAC358D4B3E0EBDCB0600B0A403 /* Sources */,
+				F5E6A686B06F7DE473746928E69AC0ED /* Frameworks */,
+				A63FA7AD9E491E81DE4D9D0ED900F9EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5048514073A55FE083D51E9DED996B9 /* PBXTargetDependency */,
+			);
+			name = "Pods-ElektrikPiyasalariSimilasyonOyunu";
+			productName = Pods_ElektrikPiyasalariSimilasyonOyunu;
+			productReference = 7F298A1650674BD5942B06CC3507FDAC /* Pods-ElektrikPiyasalariSimilasyonOyunu */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 8E64925B620D0D7DE6B37501448A8FA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E12D5ED3565D8FCC3DD9B9DD89246A9 /* Loaf */,
+				6158F44348A6B239765C6A826FFF73EA /* Pods-ElektrikPiyasalariSimilasyonOyunu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8266BB56EE2D63D2AFDBC99AFF6195AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A63FA7AD9E491E81DE4D9D0ED900F9EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30D24F6209E2ABACAB5D7EB5FA6DF650 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B0F3E6E84D784B3E9BB4A6D5C635B0C /* Animator.swift in Sources */,
+				3372BF399CB0F8C35EE6B31E7A47CD88 /* Controller.swift in Sources */,
+				A0B533D9DAB6DCE4A92D751A02D08E36 /* Extensions.swift in Sources */,
+				83FCEDF72741412BF4E21C82082B9890 /* Icons.swift in Sources */,
+				A07FC03BC8500097988DC565A26DEA10 /* Loaf.swift in Sources */,
+				B92937D4AD0CD125C518A3DA3DD55A34 /* Loaf-dummy.m in Sources */,
+				B2B62FD9A9A9B94B09F988685188BA63 /* Manager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1DFCAAC358D4B3E0EBDCB0600B0A403 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B68E88DAC7C36E6673A70287A4BAC004 /* Pods-ElektrikPiyasalariSimilasyonOyunu-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C5048514073A55FE083D51E9DED996B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Loaf;
+			target = 3E12D5ED3565D8FCC3DD9B9DD89246A9 /* Loaf */;
+			targetProxy = ABFFC0712BA73BD3A52BC31D5D5E92B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		079341A5C5045C5B291A85C9D1C40432 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCEDB9BDBB0CFA8D745BDFA436CC3A21 /* Pods-ElektrikPiyasalariSimilasyonOyunu.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ElektrikPiyasalariSimilasyonOyunu/Pods-ElektrikPiyasalariSimilasyonOyunu-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ElektrikPiyasalariSimilasyonOyunu/Pods-ElektrikPiyasalariSimilasyonOyunu.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		51250F2F58F98CAB2EE495DCC18BC85F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DE36BD0162746B2A3C337A7F3781362 /* Pods-ElektrikPiyasalariSimilasyonOyunu.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ElektrikPiyasalariSimilasyonOyunu/Pods-ElektrikPiyasalariSimilasyonOyunu-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ElektrikPiyasalariSimilasyonOyunu/Pods-ElektrikPiyasalariSimilasyonOyunu.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		89FEB6A31677FECA1D17C9C1DD54D1AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60D665D2DC770FD3BF4C964524679042 /* Loaf.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Loaf/Loaf-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Loaf/Loaf-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Loaf/Loaf.modulemap";
+				PRODUCT_MODULE_NAME = Loaf;
+				PRODUCT_NAME = Loaf;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9553C89E183877A5CB2F3C6801BEC129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F92AE0C420BE925E1ECDB2E3F0A576CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9EE600E4CBCB0CC5B1FB65AB2016FB7 /* Loaf.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Loaf/Loaf-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Loaf/Loaf-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Loaf/Loaf.modulemap";
+				PRODUCT_MODULE_NAME = Loaf;
+				PRODUCT_NAME = Loaf;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
+				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A5F42E6E153E1DDFDDB689B6418FFA8 /* Build configuration list for PBXNativeTarget "Loaf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89FEB6A31677FECA1D17C9C1DD54D1AD /* Debug */,
+				F92AE0C420BE925E1ECDB2E3F0A576CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD92022A803AA697D69BD7A3A6106A61 /* Build configuration list for PBXNativeTarget "Pods-ElektrikPiyasalariSimilasyonOyunu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				079341A5C5045C5B291A85C9D1C40432 /* Debug */,
+				51250F2F58F98CAB2EE495DCC18BC85F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

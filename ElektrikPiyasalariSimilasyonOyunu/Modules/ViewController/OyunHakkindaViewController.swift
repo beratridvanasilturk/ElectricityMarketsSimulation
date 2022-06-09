@@ -13,7 +13,6 @@ class OyunHakkindaViewController : UIViewController {
     /// Bu ekran ilk acildigi an tetiklenen methoddur
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(YoneticiViewModel.shared.secilenOyuncularGetir)
     }
     
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		518C95F0E8047C349E7E6FE1 /* Pods_ElektrikPiyasalariSimilasyonOyunu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F05A59CC525F7E5BCCB77C6 /* Pods_ElektrikPiyasalariSimilasyonOyunu.framework */; };
 		EA0AE0B9283A77860049D13E /* YoneticiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0AE0B8283A77860049D13E /* YoneticiViewModel.swift */; };
 		EA0AE0BB283A7AA90049D13E /* OyunHakkindaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0AE0BA283A7AA90049D13E /* OyunHakkindaViewController.swift */; };
 		EA0AE0BD283A82390049D13E /* OyuncularTablosuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0AE0BC283A82390049D13E /* OyuncularTablosuViewController.swift */; };
@@ -26,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F144BF7A21A9D42BACC7CC5 /* Pods-ElektrikPiyasalariSimilasyonOyunu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElektrikPiyasalariSimilasyonOyunu.release.xcconfig"; path = "Target Support Files/Pods-ElektrikPiyasalariSimilasyonOyunu/Pods-ElektrikPiyasalariSimilasyonOyunu.release.xcconfig"; sourceTree = "<group>"; };
+		7D10D425AA8177AA262D5489 /* Pods-ElektrikPiyasalariSimilasyonOyunu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ElektrikPiyasalariSimilasyonOyunu.debug.xcconfig"; path = "Target Support Files/Pods-ElektrikPiyasalariSimilasyonOyunu/Pods-ElektrikPiyasalariSimilasyonOyunu.debug.xcconfig"; sourceTree = "<group>"; };
+		9F05A59CC525F7E5BCCB77C6 /* Pods_ElektrikPiyasalariSimilasyonOyunu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElektrikPiyasalariSimilasyonOyunu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA0AE0B8283A77860049D13E /* YoneticiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoneticiViewModel.swift; sourceTree = "<group>"; };
 		EA0AE0BA283A7AA90049D13E /* OyunHakkindaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OyunHakkindaViewController.swift; sourceTree = "<group>"; };
 		EA0AE0BC283A82390049D13E /* OyuncularTablosuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OyuncularTablosuViewController.swift; sourceTree = "<group>"; };
@@ -52,17 +56,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				518C95F0E8047C349E7E6FE1 /* Pods_ElektrikPiyasalariSimilasyonOyunu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48CA77CA9A9B554FFFE97F26 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D10D425AA8177AA262D5489 /* Pods-ElektrikPiyasalariSimilasyonOyunu.debug.xcconfig */,
+				6F144BF7A21A9D42BACC7CC5 /* Pods-ElektrikPiyasalariSimilasyonOyunu.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E013FCB9A111F29A5CBE8976 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F05A59CC525F7E5BCCB77C6 /* Pods_ElektrikPiyasalariSimilasyonOyunu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EA125DFA27CE64AF0087201D = {
 			isa = PBXGroup;
 			children = (
 				EA125E0527CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu */,
 				EA125E0427CE64AF0087201D /* Products */,
+				48CA77CA9A9B554FFFE97F26 /* Pods */,
+				E013FCB9A111F29A5CBE8976 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA125E1A27CE64B00087201D /* Build configuration list for PBXNativeTarget "ElektrikPiyasalariSimilasyonOyunu" */;
 			buildPhases = (
+				638E9489DE284096A26A4488 /* [CP] Check Pods Manifest.lock */,
 				EA125DFF27CE64AF0087201D /* Sources */,
 				EA125E0027CE64AF0087201D /* Frameworks */,
 				EA125E0127CE64AF0087201D /* Resources */,
+				6D302C7EEE1484166FA3F234 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -204,6 +231,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		638E9489DE284096A26A4488 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ElektrikPiyasalariSimilasyonOyunu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D302C7EEE1484166FA3F234 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ElektrikPiyasalariSimilasyonOyunu/Pods-ElektrikPiyasalariSimilasyonOyunu-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ElektrikPiyasalariSimilasyonOyunu/Pods-ElektrikPiyasalariSimilasyonOyunu-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ElektrikPiyasalariSimilasyonOyunu/Pods-ElektrikPiyasalariSimilasyonOyunu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EA125DFF27CE64AF0087201D /* Sources */ = {
@@ -366,6 +435,7 @@
 		};
 		EA125E1B27CE64B00087201D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D10D425AA8177AA262D5489 /* Pods-ElektrikPiyasalariSimilasyonOyunu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -393,6 +463,7 @@
 		};
 		EA125E1C27CE64B00087201D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F144BF7A21A9D42BACC7CC5 /* Pods-ElektrikPiyasalariSimilasyonOyunu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
