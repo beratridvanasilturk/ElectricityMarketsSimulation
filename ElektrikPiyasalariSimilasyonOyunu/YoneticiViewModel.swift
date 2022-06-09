@@ -75,7 +75,7 @@ class YoneticiViewModel {
         var santralinAktiflesmeDonemi : Int {
             switch self {
             case .nukleer:
-                return 4
+                return 2
             case .ruzgar:
                 return 2
             case .gunes:
@@ -108,8 +108,9 @@ class YoneticiViewModel {
     
     /// Mevcut periyot icin sistemin her bir enerji turune dondugu fiyat
     func minimumTeklifFiyati(enerjiTuru: EnerjiTurleri) -> Int {
-        
-        (70...130).randomElement() ?? 90
+        let fiyat = (70...130).randomElement() ?? 90
+        print("* sistemin teklifi: \(enerjiTuru) \(fiyat)")
+        return fiyat
     }
     
     
