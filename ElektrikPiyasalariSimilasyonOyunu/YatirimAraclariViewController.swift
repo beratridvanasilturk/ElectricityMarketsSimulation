@@ -64,15 +64,16 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
         /// Bio Yakit santarlin omru toplam periyottan kucuk esitse ve
         /// Bio Yakit santralin aktiflesme donemi ile satin alinan andaki periyotun oyun geneli toplam periyottan kucuk ve esit olmasi kosulunda ancak kodu calistiran kosul
         if let bioSatinAlinanPeriyot = bioSatinAlinanPeriyot,
-           bioTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(enerjiTuru: .bio),
-           YoneticiViewModel.EnerjiTurleri.bio.santralinOmru >= periyot {
+           bioTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(periyot, enerjiTuru: .bio),
+           YoneticiViewModel.EnerjiTurleri.bio.santralinOmru >= periyot,
+           YoneticiViewModel.EnerjiTurleri.gunes.santralinAktiflesmeDonemi + bioSatinAlinanPeriyot <= periyot {
             butce += YoneticiViewModel.shared.gelir(teklif: bioTeklifim, enerjiTuru: .bio)
             print("✅  Bio Teklifim Kabul Edildi ")
         }
         /// Gunes santarlin omru toplam periyottan kucuk esitse ve
         /// Gunes santralin aktiflesme donemi ile satin alinan andaki periyotun oyun geneli toplam periyottan kucuk ve esit olmasi kosulunda ancak kodu calistiran kosul
         if let gunesSatinAlinanPeriyot = gunesSatinAlinanPeriyot,
-           gunesTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(enerjiTuru: .gunes),
+           gunesTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(periyot, enerjiTuru: .gunes),
            YoneticiViewModel.EnerjiTurleri.gunes.santralinOmru >= periyot,
            YoneticiViewModel.EnerjiTurleri.gunes.santralinAktiflesmeDonemi + gunesSatinAlinanPeriyot <= periyot {
             butce += YoneticiViewModel.shared.gelir(teklif: gunesTeklifim, enerjiTuru: .gunes)
@@ -82,7 +83,7 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
         /// Komur santarlin omru toplam periyottan kucuk esitse ve
         /// Komur santralin aktiflesme donemi ile satin alinan andaki periyotun oyun geneli toplam periyottan kucuk ve esit olmasi kosulunda ancak kodu calistiran kosul
         if let komurSatinAlinanPeriyot = komurSatinAlinanPeriyot,
-           komurTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(enerjiTuru: .komur),
+           komurTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(periyot, enerjiTuru: .komur),
            YoneticiViewModel.EnerjiTurleri.komur.santralinOmru >= periyot,
            YoneticiViewModel.EnerjiTurleri.komur.santralinAktiflesmeDonemi + komurSatinAlinanPeriyot <= periyot {
             butce += YoneticiViewModel.shared.gelir(teklif: komurTeklifim, enerjiTuru: .komur)
@@ -91,7 +92,7 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
         /// Nukleer santarlin omru toplam periyottan kucuk esitse ve
         /// Nukleer santralin aktiflesme donemi ile satin alinan andaki periyotun oyun geneli toplam periyottan kucuk ve esit olmasi kosulunda ancak kodu calistiran kosul
         if let nukSatinAlinanPeriyot = nukSatinAlinanPeriyot,
-           nukleerTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(enerjiTuru: .nukleer),
+           nukleerTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(periyot, enerjiTuru: .nukleer),
            YoneticiViewModel.EnerjiTurleri.nukleer.santralinOmru >= periyot,
            YoneticiViewModel.EnerjiTurleri.nukleer.santralinAktiflesmeDonemi + nukSatinAlinanPeriyot <= periyot {
             butce += YoneticiViewModel.shared.gelir(teklif: nukleerTeklifim, enerjiTuru: .nukleer)
@@ -100,7 +101,7 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
         /// Ruzgar santarlin omru toplam periyottan kucuk esitse ve
         /// ruzgar santralin aktiflesme donemi ile satin alinan andaki periyotun oyun geneli toplam periyottan kucuk ve esit olmasi kosulunda ancak kodu calistiran kosul
         if let ruzgarSatinAlinanPeriyot = ruzgarSatinAlinanPeriyot,
-           ruzgarTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(enerjiTuru: .ruzgar),
+           ruzgarTeklifim > YoneticiViewModel.shared.minimumTeklifFiyati(periyot, enerjiTuru: .ruzgar),
            YoneticiViewModel.EnerjiTurleri.ruzgar.santralinOmru >= periyot,
            YoneticiViewModel.EnerjiTurleri.ruzgar.santralinAktiflesmeDonemi + ruzgarSatinAlinanPeriyot <= periyot {
             

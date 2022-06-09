@@ -107,7 +107,13 @@ class YoneticiViewModel {
     
     
     /// Mevcut periyot icin sistemin her bir enerji turune dondugu fiyat
-    func minimumTeklifFiyati(enerjiTuru: EnerjiTurleri) -> Int {
+    func minimumTeklifFiyati(_ periyot: Int, enerjiTuru: EnerjiTurleri) -> Int {
+        
+        // ilk 2 donem boyunca , piyasa arz talep dengelemesi icin , kabul edilen teklif.
+        guard periyot > 2 else {
+            return 200
+        }
+        
         let fiyat = (70...130).randomElement() ?? 90
         print("* sistemin teklifi: \(enerjiTuru) \(fiyat)")
         return fiyat
