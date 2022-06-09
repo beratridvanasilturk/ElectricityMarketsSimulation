@@ -74,8 +74,24 @@
             filePath = "ElektrikPiyasalariSimilasyonOyunu/YatirimAraclariViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "kullaniciGelirleriniHesapla()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "45211C0D-F42A-482C-A795-C600A116FDAB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ElektrikPiyasalariSimilasyonOyunu/YatirimAraclariViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "kullaniciGelirleriniHesapla()"
             landmarkType = "7">
          </BreakpointContent>

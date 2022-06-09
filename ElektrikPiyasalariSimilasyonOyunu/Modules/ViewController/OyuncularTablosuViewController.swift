@@ -23,7 +23,7 @@ class OyuncularTablosuViewController : UIViewController, UITableViewDelegate, UI
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
  
         let cell = tableView.dequeueReusableCell(withIdentifier: "OyuncularHucresi", for: indexPath)
-        cell.textLabel?.text = YoneticiViewModel.shared.secilenOyuncularGetir[indexPath.row]
+        cell.textLabel?.text = YoneticiViewModel.shared.secilenOyuncularGetir[indexPath.row].isim
         return cell
     }
     

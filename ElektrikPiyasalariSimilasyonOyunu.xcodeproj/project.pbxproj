@@ -14,11 +14,11 @@
 		EA0DEF142852546900B1F061 /* SiralamaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0DEF132852546900B1F061 /* SiralamaTableViewController.swift */; };
 		EA125E0727CE64AF0087201D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA125E0627CE64AF0087201D /* AppDelegate.swift */; };
 		EA125E0927CE64AF0087201D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA125E0827CE64AF0087201D /* SceneDelegate.swift */; };
-		EA125E0B27CE64AF0087201D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA125E0A27CE64AF0087201D /* ViewController.swift */; };
 		EA125E0E27CE64AF0087201D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA125E0C27CE64AF0087201D /* Main.storyboard */; };
 		EA125E1127CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA125E0F27CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu.xcdatamodeld */; };
 		EA125E1327CE64B00087201D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA125E1227CE64B00087201D /* Assets.xcassets */; };
 		EA125E1627CE64B00087201D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA125E1427CE64B00087201D /* LaunchScreen.storyboard */; };
+		EA1D973C2852873700BCAF65 /* Oyuncu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1D973B2852873700BCAF65 /* Oyuncu.swift */; };
 		EA65EEB3284D386D006B60BD /* YatirimEkraniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA65EEB2284D386D006B60BD /* YatirimEkraniViewController.swift */; };
 		EADEA5D827D14D77003E0EF3 /* AfterLunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADEA5D627D14D77003E0EF3 /* AfterLunchViewController.swift */; };
 		EADEA5DB27D161CE003E0EF3 /* KullaniciGirisiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADEA5DA27D161CE003E0EF3 /* KullaniciGirisiViewController.swift */; };
@@ -34,12 +34,13 @@
 		EA125E0327CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElektrikPiyasalariSimilasyonOyunu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA125E0627CE64AF0087201D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA125E0827CE64AF0087201D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA125E0A27CE64AF0087201D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA125E0D27CE64AF0087201D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA125E1027CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ElektrikPiyasalariSimilasyonOyunu.xcdatamodel; sourceTree = "<group>"; };
 		EA125E1227CE64B00087201D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA125E1527CE64B00087201D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA125E1727CE64B00087201D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA1D973B2852873700BCAF65 /* Oyuncu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oyuncu.swift; sourceTree = "<group>"; };
+		EA1D9742285298D700BCAF65 /* TODO.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TODO.md; sourceTree = "<group>"; };
 		EA65EEB2284D386D006B60BD /* YatirimEkraniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YatirimEkraniViewController.swift; sourceTree = "<group>"; };
 		EADEA5D627D14D77003E0EF3 /* AfterLunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterLunchViewController.swift; sourceTree = "<group>"; };
 		EADEA5DA27D161CE003E0EF3 /* KullaniciGirisiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KullaniciGirisiViewController.swift; sourceTree = "<group>"; };
@@ -76,25 +77,66 @@
 		EA125E0527CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu */ = {
 			isa = PBXGroup;
 			children = (
+				EA1D9742285298D700BCAF65 /* TODO.md */,
+				EA1D973F2852973000BCAF65 /* Storyboard */,
+				EA1D973E2852972400BCAF65 /* Modules */,
+				EA1D973D2852972000BCAF65 /* SupportingFiles */,
+			);
+			path = ElektrikPiyasalariSimilasyonOyunu;
+			sourceTree = "<group>";
+		};
+		EA1D973D2852972000BCAF65 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				EA125E0627CE64AF0087201D /* AppDelegate.swift */,
 				EA125E0827CE64AF0087201D /* SceneDelegate.swift */,
-				EA125E0A27CE64AF0087201D /* ViewController.swift */,
+				EA125E1427CE64B00087201D /* LaunchScreen.storyboard */,
+				EA125E1227CE64B00087201D /* Assets.xcassets */,
+				EA125E1727CE64B00087201D /* Info.plist */,
+				EA125E0F27CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu.xcdatamodeld */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		EA1D973E2852972400BCAF65 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EA1D97412852977300BCAF65 /* Model */,
+				EA1D97402852976F00BCAF65 /* ViewController */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EA1D973F2852973000BCAF65 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				EA125E0C27CE64AF0087201D /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		EA1D97402852976F00BCAF65 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
 				EA0AE0BE283A83830049D13E /* LoadingViewController.swift */,
 				EA0AE0BC283A82390049D13E /* OyuncularTablosuViewController.swift */,
 				EA0AE0BA283A7AA90049D13E /* OyunHakkindaViewController.swift */,
 				EADEA5DA27D161CE003E0EF3 /* KullaniciGirisiViewController.swift */,
 				EADEA5D627D14D77003E0EF3 /* AfterLunchViewController.swift */,
-				EA0AE0B8283A77860049D13E /* YoneticiViewModel.swift */,
 				EAE1DA2E284BF4350060D75C /* YatirimAraclariViewController.swift */,
 				EA65EEB2284D386D006B60BD /* YatirimEkraniViewController.swift */,
 				EA0DEF132852546900B1F061 /* SiralamaTableViewController.swift */,
-				EA125E0C27CE64AF0087201D /* Main.storyboard */,
-				EA125E1227CE64B00087201D /* Assets.xcassets */,
-				EA125E1427CE64B00087201D /* LaunchScreen.storyboard */,
-				EA125E1727CE64B00087201D /* Info.plist */,
-				EA125E0F27CE64AF0087201D /* ElektrikPiyasalariSimilasyonOyunu.xcdatamodeld */,
 			);
-			path = ElektrikPiyasalariSimilasyonOyunu;
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		EA1D97412852977300BCAF65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA1D973B2852873700BCAF65 /* Oyuncu.swift */,
+				EA0AE0B8283A77860049D13E /* YoneticiViewModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,9 +217,9 @@
 				EADEA5D827D14D77003E0EF3 /* AfterLunchViewController.swift in Sources */,
 				EADEA5DB27D161CE003E0EF3 /* KullaniciGirisiViewController.swift in Sources */,
 				EA0DEF142852546900B1F061 /* SiralamaTableViewController.swift in Sources */,
-				EA125E0B27CE64AF0087201D /* ViewController.swift in Sources */,
 				EA125E0727CE64AF0087201D /* AppDelegate.swift in Sources */,
 				EA65EEB3284D386D006B60BD /* YatirimEkraniViewController.swift in Sources */,
+				EA1D973C2852873700BCAF65 /* Oyuncu.swift in Sources */,
 				EA0AE0BF283A83830049D13E /* LoadingViewController.swift in Sources */,
 				EA0AE0B9283A77860049D13E /* YoneticiViewModel.swift in Sources */,
 				EA125E0927CE64AF0087201D /* SceneDelegate.swift in Sources */,
@@ -330,7 +372,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ElektrikPiyasalariSimilasyonOyunu/Info.plist;
+				INFOPLIST_FILE = ElektrikPiyasalariSimilasyonOyunu/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -357,7 +399,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ElektrikPiyasalariSimilasyonOyunu/Info.plist;
+				INFOPLIST_FILE = ElektrikPiyasalariSimilasyonOyunu/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

@@ -10,7 +10,16 @@ import Foundation
     /// uygulamada ekranlar arasinda kullanici verilerini yoneten sinif
 class YoneticiViewModel {
     
+    var periyot = 1
+    let baslangicButcesi = 2_000_000_000
     
+    var santraller: [EnerjiTurleri] {[
+        YoneticiViewModel.EnerjiTurleri.gunes,
+        YoneticiViewModel.EnerjiTurleri.ruzgar,
+        YoneticiViewModel.EnerjiTurleri.bio,
+        YoneticiViewModel.EnerjiTurleri.komur,
+        YoneticiViewModel.EnerjiTurleri.nukleer,
+    ]}
     
     /// Oyunda var olan enerji santralleri
     enum EnerjiTurleri {
@@ -43,15 +52,15 @@ class YoneticiViewModel {
         var satinAlmaMaliyeti : Int {
             switch self {
             case .nukleer:
-               return 800_000_000
+               return 8_000_000_000
             case .ruzgar:
-               return 70_000_000
+               return 700_000_000
             case .gunes:
-                return 60_000_000
+                return 600_000_000
             case .komur:
-                return 170_000_000
+                return 1_700_000_000
             case .bio:
-                return 100_000_000
+                return 1_000_000_000
             }
         }
         /// Her bir santralin kullnaim omru
@@ -111,10 +120,10 @@ class YoneticiViewModel {
         
         // ilk 2 donem boyunca , piyasa arz talep dengelemesi icin , kabul edilen teklif.
         guard periyot > 2 else {
-            return 200
+            return 0
         }
         
-        let fiyat = (70...130).randomElement() ?? 90
+        let fiyat = (70...160).randomElement()!
         print("* sistemin teklifi: \(enerjiTuru) \(fiyat)")
         return fiyat
     }
@@ -128,7 +137,7 @@ class YoneticiViewModel {
     
     
     /// Sistemin sahip oldugu 100 kullanici ismi
-    let oyuncular :  [String] = [
+    let oyuncuIsimleri :  [String] = [
         
         "Sezgin Eken",
         "Hasan Akkoyun",
@@ -234,10 +243,14 @@ class YoneticiViewModel {
     
     
     /// Ana oyuncu haric 9 kisiyi random secen degisken
-    lazy var secilenOyuncularGetir : [String] = {
-        var secilenOyuncular = oyuncular.shuffled().prefix(9).map { $0 }
+    lazy var secilenOyuncularGetir : [Oyuncu] = {
+        var secilenOyuncular = oyuncuIsimleri.shuffled().prefix(9).map { isim in
+            Oyuncu(isim: isim, butce: baslangicButcesi)
+        }
         
-        secilenOyuncular.insert(kullaniciIsmi, at: 0)
+        let kullanici = Oyuncu(isim: kullaniciIsmi, butce: baslangicButcesi)
+        
+        secilenOyuncular.append(kullanici)
         
         return secilenOyuncular
         
