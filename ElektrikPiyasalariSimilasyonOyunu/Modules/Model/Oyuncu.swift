@@ -11,7 +11,7 @@ import UIKit
 class Oyuncu: CustomDebugStringConvertible {
     
     var debugDescription: String {
-        "Isim: \(isim), Butce: \(butce) \n"
+        "İsim: \(isim), Bütçe: \(butce) \n"
     }
     
     private(set) var isim: String

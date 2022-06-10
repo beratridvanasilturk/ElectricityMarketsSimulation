@@ -11,6 +11,8 @@ import Loaf
 class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControllerDelegate {
     
     
+    
+    
     @IBOutlet weak var nukleerLabel: UILabel!
     @IBOutlet weak var ruzgarLabel: UILabel!
     @IBOutlet weak var bioLabel: UILabel!
@@ -47,6 +49,8 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
     var ruzgarTeklifim = 0
     var nukleerTeklifim = 0
     var bioTeklifim = 0
+    
+    
     
     
     /// Santal Yatirimi Butonu Tiklandiginda Tetiklenir ve Oyuncunun Alabilecegi Santaller Ekrana Gelir
@@ -152,6 +156,7 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
         }
         // Butcenin sifirin altina dusmesi durumunda oyun sonlanir
         if butce <= 0 {
+            print("Butce eksiye dustugu icin sirket bu andan itibaren batik durumdadir.")
             return
         }
 
@@ -162,8 +167,7 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
         
     }
     
-    
-    
+
     
     // Sliderlarin Oyuncunun Sectigi Tekliflere Gore Ui Guncellenir
     @IBAction func komurSlider(_ sender: UISlider) {
@@ -203,9 +207,9 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
         ///Alinmak istenen santralin maliyeti o anki butceden buyukse oyuncuya uyari bildirimi atilir
         if enerjiTuru.satinAlmaMaliyeti > butce {
             
-            print("Alinmak Istenen Santrale Butce Yok")
+            print("Alınmak İstenen Santrale Yeterli Bütçe Yok")
             
-            let title = "Alinmak Istenen Santrale Butce Yok"
+            let title = "Alınmak İstenen Santrale Yeterli Bütçe Yok"
             let tamam = UIAlertAction(title: "Tamam", style: .cancel)
             
             let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
@@ -227,7 +231,7 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
         yatirimlarim.append(enerjiTuru)
         sliderGuncelle()
         
-        print(" 🔥 Santral satin alindi : \(enerjiTuru)")
+        print(" 🔥 Şu santral satın alındı : \(enerjiTuru)")
         
         ///Her bir santralin ne zaman satin alindigini belirleyen durum
         switch enerjiTuru {
@@ -294,9 +298,7 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
             gunesSliderOutlet.isUserInteractionEnabled = false
         }
         
-        
     }
-    
     
     
     

@@ -54,7 +54,7 @@ class YoneticiViewModel {
             case .komur:
                 return 600
             case .bio:
-                return 300
+                return 800
             }
         }
         
@@ -63,13 +63,13 @@ class YoneticiViewModel {
         var satinAlmaMaliyeti : Int {
             switch self {
             case .nukleer:
-               return 8_000_000_000
+               return 2_200_000_000
             case .ruzgar:
-               return 700_000_000
+               return 500_000_000
             case .gunes:
-                return 600_000_000
+                return 450_000_000
             case .komur:
-                return 1_700_000_000
+                return 950_000_000
             case .bio:
                 return 1_000_000_000
             }
@@ -79,13 +79,13 @@ class YoneticiViewModel {
             
             switch self {
             case .nukleer:
-                return 7
+                return 8
             case .ruzgar:
                 return 4
             case .gunes:
-                return 6
+                return 3
             case .komur:
-                return 9
+                return 6
             case .bio:
                 return 10
             }
@@ -95,7 +95,7 @@ class YoneticiViewModel {
         var santralinAktiflesmeDonemi : Int {
             switch self {
             case .nukleer:
-                return 2
+                return 3
             case .ruzgar:
                 return 2
             case .gunes:
@@ -103,7 +103,7 @@ class YoneticiViewModel {
             case .komur:
                 return 1
             case .bio:
-                return 3
+                return 2
             }
         }
         
@@ -255,7 +255,7 @@ class YoneticiViewModel {
     
     /// Ana oyuncu haric 9 kisiyi random secen degisken
     func oyunculariOlustur() {
-        var secilenOyuncular = oyuncuIsimleri.shuffled().prefix(9).map { isim in
+        var secilenOyuncular = oyuncuIsimleri.shuffled().prefix(14).map { isim in
             Oyuncu(isim: isim, butce: baslangicButcesi)
         }
         
