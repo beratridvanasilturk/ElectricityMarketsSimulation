@@ -18,6 +18,7 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
     @IBOutlet weak var bioLabel: UILabel!
     @IBOutlet weak var komurLabel: UILabel!
     @IBOutlet weak var gunesLabel: UILabel!
+    
     @IBOutlet weak var butceLabel: UILabel!
     @IBOutlet weak var periyotLabel: UILabel!
     

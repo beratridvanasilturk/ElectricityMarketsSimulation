@@ -25,7 +25,6 @@ class Oyuncu: CustomDebugStringConvertible {
         self.isim = isim
         self.butce = butce
     }
-    
     /// Kullanicinin O Periyotta Verdigi Teklif
     /// Her Periyot Sifirlanir
     private var komurTeklifi = 0

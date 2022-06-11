@@ -83,11 +83,11 @@ class YoneticiViewModel {
             case .ruzgar:
                 return 4
             case .gunes:
-                return 3
+                return 5
             case .komur:
                 return 6
             case .bio:
-                return 10
+                return 8
             }
         }
         
@@ -95,9 +95,9 @@ class YoneticiViewModel {
         var santralinAktiflesmeDonemi : Int {
             switch self {
             case .nukleer:
-                return 3
-            case .ruzgar:
                 return 2
+            case .ruzgar:
+                return 1
             case .gunes:
                 return 1
             case .komur:
@@ -108,7 +108,21 @@ class YoneticiViewModel {
         }
         
         
-        
+        ///Nükleer Santralin Aktif Olması İçin Geçmesi Gereken Dönem: 3
+        ///Rüzgar Santralin Aktif Olması İçin Geçmesi Gereken Dönem: 2
+        ///Güneş Santralin Aktif Olması İçin Geçmesi Gereken Dönem: 1
+        ///Kömür Santralin Aktif Olması İçin Geçmesi Gereken Dönem: 1
+        ///Bio-Enerji Santralin Aktif Olması İçin Geçmesi Gereken Dönem: 2
+        ///
+        ///Nükleer Santralin Kullanım Ömrü: 8
+        ///Rüzgar  Santralin Kullanım Ömrü: 4
+        ///Güneş  Santralin Kullanım Ömrü: 3
+        ///Kömür  Santralin Kullanım Ömrü: 6
+        ///Bio-Enerji  Santralin Kullanım Ömrü: 10
+        ///
+        ///
+        ///
+        ///
     }
     
   
@@ -122,7 +136,7 @@ class YoneticiViewModel {
     ///   - enerjiTuru: kullanicinin teklif verdigi santral turu
     /// - Returns: Kullaniciya hesaplanan gelir doner
     func gelir(teklif: Int, enerjiTuru: EnerjiTurleri) -> Int {
-        return teklif * enerjiTuru.megawatt * yildakiSaat
+        return teklif * enerjiTuru.megawatt * yildakiSaat * 2
     }
     
     
@@ -253,12 +267,14 @@ class YoneticiViewModel {
     ]
     
     
-    /// Ana oyuncu haric 9 kisiyi random secen degisken
+    /// Ana oyuncu haric 14 kisiyi random secen degisken
     func oyunculariOlustur() {
         var secilenOyuncular = oyuncuIsimleri.shuffled().prefix(14).map { isim in
             Oyuncu(isim: isim, butce: baslangicButcesi)
         }
-        
+        if secilenOyuncular.count <= 8 {
+            return
+    }
         let kullanici = Oyuncu(isim: kullaniciIsmi, butce: baslangicButcesi)
         
         secilenOyuncular.append(kullanici)
@@ -266,5 +282,4 @@ class YoneticiViewModel {
         oyuncular = secilenOyuncular
         
     }
-    
 }

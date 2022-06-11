@@ -42,6 +42,6 @@ class OyuncularTablosuViewController : UIViewController, UITableViewDelegate, UI
         
         YoneticiViewModel.shared.oyunculariOlustur()
         tableView.reloadData()
-    
+        
     }
 }
