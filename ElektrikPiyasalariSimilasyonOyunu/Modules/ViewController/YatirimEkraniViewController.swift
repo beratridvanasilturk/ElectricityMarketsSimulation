@@ -63,8 +63,10 @@ class YatirimEkraniViewController: UIViewController {
         let vazgec = UIAlertAction(title: "Vazgeç", style: .cancel)
         let satinAl = UIAlertAction(title: "Satın Al", style: .default) { action in
             print("Satin Al Tiklandi")
-            self.delegate?.satinAlindi(enerjiTuru: enerjiTuru)
             self.dismiss(animated: true, completion: nil)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                self.delegate?.satinAlindi(enerjiTuru: enerjiTuru)
+            }
         }
         
         /// Alinmak istenen enerji santrali icin oyuncu uyarilir ve bildirim ekrana basilir

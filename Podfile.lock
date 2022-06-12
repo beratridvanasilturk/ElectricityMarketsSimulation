@@ -1,16 +1,20 @@
 PODS:
+  - Format (0.5.0)
   - Loaf (0.7.0)
 
 DEPENDENCIES:
+  - Format (~> 0.5)
   - Loaf
 
 SPEC REPOS:
   trunk:
+    - Format
     - Loaf
 
 SPEC CHECKSUMS:
+  Format: b6966297bcb3af90774ad34a8ad756cb26ebd7e3
   Loaf: d69937cd00649f3fa260beb8b7aef0a1feb861ef
 
-PODFILE CHECKSUM: 12c087c335eacd2bef6c48a377a8785b292c8b4e
+PODFILE CHECKSUM: f9aafcc99172fea916dd60cd2144ca5acc367e1a
 
 COCOAPODS: 1.11.3

@@ -14,4 +14,8 @@
 - Back yazilari kaldirilacak
 - Kullanici isminin alindigi ekranda , bosluk kabul edilmeyecek bosluk varsa sonraki ekrana gecmeyecek
 - Shared objelerin lojigi refactor edilecek
+- ✅ Birden fazla santral alinmasin
+- Santral alindigi halde slider oynamiyorsa, ne zaman aktif olacagini veya omrunun sonlanaacagini bilgisini gostersin
+- ✅ Butce noktali gorunsun finder
+
 

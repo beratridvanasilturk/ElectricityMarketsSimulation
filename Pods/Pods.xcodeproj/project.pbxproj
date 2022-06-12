@@ -7,22 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3372BF399CB0F8C35EE6B31E7A47CD88 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EE140329D6B1B48AB8FC458E418154 /* Controller.swift */; };
-		3AE00189AEACB5B7F70C1561341CA52E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		4B0F3E6E84D784B3E9BB4A6D5C635B0C /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCECFA968367C99A5B8EE84F3AD4A3A /* Animator.swift */; };
-		83FCEDF72741412BF4E21C82082B9890 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F091276448AF619831AB82C9C283C /* Icons.swift */; };
-		87799D55B3CE2E9D89BD7AD4333A47A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		A07FC03BC8500097988DC565A26DEA10 /* Loaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044472ED41450E3ACC5A04B5CFCB46A3 /* Loaf.swift */; };
-		A0B533D9DAB6DCE4A92D751A02D08E36 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B42CE5434D13DD46C7967C0D853792 /* Extensions.swift */; };
-		B2B62FD9A9A9B94B09F988685188BA63 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049F474C12ED02A21DB6CCAD80E5F89D /* Manager.swift */; };
-		B68E88DAC7C36E6673A70287A4BAC004 /* Pods-ElektrikPiyasalariSimilasyonOyunu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD02F29653F5AB2EF57EE0437A5A2DF /* Pods-ElektrikPiyasalariSimilasyonOyunu-dummy.m */; };
-		B92937D4AD0CD125C518A3DA3DD55A34 /* Loaf-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA2C4E085121C498CC955AF36985540 /* Loaf-dummy.m */; };
-		D833EE7EBC9C1CD2359E683330700BFB /* Pods-ElektrikPiyasalariSimilasyonOyunu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D548F835BB85EA41C1BC1D44AB30BC11 /* Pods-ElektrikPiyasalariSimilasyonOyunu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E7DBECA0688DD7A47971A094A8242DA2 /* Loaf-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A49A8437F6FC61CEFA8A4BF792250FC /* Loaf-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C5AF2B90650C7F0106A04BE29CADF6B /* Mass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02FC422377E7D4A56D2F468DE65DA29 /* Mass.swift */; };
+		0D0C597E93FFC583686E9452A06E4C92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FBDF5122BB463CC8AB68DE5635647CA /* Foundation.framework */; };
+		3372BF399CB0F8C35EE6B31E7A47CD88 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC65A0034487F4D56AB0CF73D30227D9 /* Controller.swift */; };
+		3AE00189AEACB5B7F70C1561341CA52E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FBDF5122BB463CC8AB68DE5635647CA /* Foundation.framework */; };
+		482BD8230CA47E08BEBBA1B1FE147B8E /* Format.h in Headers */ = {isa = PBXBuildFile; fileRef = 434E06D9CB0D049C8749E68C7206A3B4 /* Format.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B0F3E6E84D784B3E9BB4A6D5C635B0C /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFCD6B984D935DCAFACD277D815FFB /* Animator.swift */; };
+		4CE47F904F7FBD22D14BC935E8E40806 /* NumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD2A81FA1EE80B0EF3DC551577D0B7 /* NumberFormatter.swift */; };
+		6BCDEFD07520F660C47811ED6099E3E9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B1513138B844F0896EB004B452CCB7 /* Constants.swift */; };
+		6D916EBF4C030B51312E04AD9A5AE22E /* Format-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2000DB7F15FB510D460DA1ED2EF0E0A5 /* Format-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83FCEDF72741412BF4E21C82082B9890 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7CEBBA2C0D7F7F9436FE4276BDF241 /* Icons.swift */; };
+		90EB1609E19D8632EEA531DC3C40D082 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9849F990A98C1BBD60B01031E2472A /* Currency.swift */; };
+		971B90CF8EFD12243040FB93EB8015A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FBDF5122BB463CC8AB68DE5635647CA /* Foundation.framework */; };
+		9B58E963A7DD30841D9CCDD78C598752 /* AddressFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7115449155E5F97F87C05A4B5521A2F6 /* AddressFormatter.swift */; };
+		9F8F0652791B387942E8C8B1753E0F3C /* Decimals.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0418DC41F8AE781A896391A0ADB6B73 /* Decimals.swift */; };
+		A07FC03BC8500097988DC565A26DEA10 /* Loaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F472693A4A1FF8234844CB3FD84F76E /* Loaf.swift */; };
+		A0B533D9DAB6DCE4A92D751A02D08E36 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E650B7BCFCBDDFC5E4B509C3914A0DED /* Extensions.swift */; };
+		A287AD102956B7C9DED9B281531D0AA6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDE210E92208C1993026EE2D4C2DE039 /* MapKit.framework */; };
+		A60E087EC010B07430C99FA7FA833297 /* NumberExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A33D79A87E341C1A27E43F66926AD4F /* NumberExtensions.swift */; };
+		B2B62FD9A9A9B94B09F988685188BA63 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BEFEB354B18243318A3C8028C5A3E5 /* Manager.swift */; };
+		B92937D4AD0CD125C518A3DA3DD55A34 /* Loaf-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A1D66CC9A42CB133B70A74DC22D5E2 /* Loaf-dummy.m */; };
+		C9E36D71EE7F7878CBA8507365E738C4 /* Pods-ElektrikPiyasalariSimilasyonOyunu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD02F29653F5AB2EF57EE0437A5A2DF /* Pods-ElektrikPiyasalariSimilasyonOyunu-dummy.m */; };
+		CA133BAC6B1021024FC84913A8E5DEB6 /* ColorFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B51DE61D5733F2B2B3FE303672447A /* ColorFormatter.swift */; };
+		CAFEB1F7F563D8FABC01DEF4AC97B146 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ED8CC80521A2E4BB16EB6686F0C3C0B /* CoreLocation.framework */; };
+		CFC8C25CB562E552491164B049830797 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11B085CEA0A649852F508BAEBA32D99 /* AddressBook.framework */; };
+		D3F4F5825309FCCE22C7B37E29D8EAC4 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBE2A4FB579BA58150AF5AFDF24FF67 /* Contacts.framework */; };
+		DDB7D3117D4B4911897D8B13E996725A /* AddressExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69F59C83B1DF96DCD2EDFA7CA089C41 /* AddressExtensions.swift */; };
+		DE11FEE31BE749763D2BB97E581AA764 /* Format-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 64D7F8CF014E85888C7C34C4ABADB2C9 /* Format-dummy.m */; };
+		E7DBECA0688DD7A47971A094A8242DA2 /* Loaf-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 04D136256712CBD21EE5EBF5291249FA /* Loaf-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9706D983DD16B96CB57B664123196C5 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5EE647676EE4CB53A067D77A225E60 /* General.swift */; };
+		ED649FFC32A5F1DFE969D6552A8A92B3 /* Pods-ElektrikPiyasalariSimilasyonOyunu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D548F835BB85EA41C1BC1D44AB30BC11 /* Pods-ElektrikPiyasalariSimilasyonOyunu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		ABFFC0712BA73BD3A52BC31D5D5E92B2 /* PBXContainerItemProxy */ = {
+		2D651EA49F4853A0079DCA432026D11F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 279F962BFBA4F7FDC3796D5C9D99E499;
+			remoteInfo = Format;
+		};
+		E7D5EFAC996323B4D32476C64DBDB559 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -32,31 +57,54 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		044472ED41450E3ACC5A04B5CFCB46A3 /* Loaf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Loaf.swift; path = Sources/Loaf/Loaf.swift; sourceTree = "<group>"; };
-		049F474C12ED02A21DB6CCAD80E5F89D /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Sources/Loaf/Presenter/Manager.swift; sourceTree = "<group>"; };
-		05B42CE5434D13DD46C7967C0D853792 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Sources/Loaf/Extensions.swift; sourceTree = "<group>"; };
-		19F498F9B368CF03355C06969607E58D /* Loaf.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Loaf.modulemap; sourceTree = "<group>"; };
+		04BD2A81FA1EE80B0EF3DC551577D0B7 /* NumberFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NumberFormatter.swift; path = Format/NumberFormatter.swift; sourceTree = "<group>"; };
+		04D136256712CBD21EE5EBF5291249FA /* Loaf-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Loaf-umbrella.h"; sourceTree = "<group>"; };
+		12BC74618A6EBC0D45348AC2193CF250 /* Format */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Format; path = Format.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2000DB7F15FB510D460DA1ED2EF0E0A5 /* Format-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Format-umbrella.h"; sourceTree = "<group>"; };
+		21A1D66CC9A42CB133B70A74DC22D5E2 /* Loaf-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Loaf-dummy.m"; sourceTree = "<group>"; };
+		2B7CEBBA2C0D7F7F9436FE4276BDF241 /* Icons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Icons.swift; path = Sources/Loaf/Icons.swift; sourceTree = "<group>"; };
+		2C5EE647676EE4CB53A067D77A225E60 /* General.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = General.swift; path = Format/General.swift; sourceTree = "<group>"; };
 		2DE36BD0162746B2A3C337A7F3781362 /* Pods-ElektrikPiyasalariSimilasyonOyunu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElektrikPiyasalariSimilasyonOyunu.release.xcconfig"; sourceTree = "<group>"; };
-		2F1F091276448AF619831AB82C9C283C /* Icons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Icons.swift; path = Sources/Loaf/Icons.swift; sourceTree = "<group>"; };
-		31EE140329D6B1B48AB8FC458E418154 /* Controller.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Controller.swift; path = Sources/Loaf/Presenter/Controller.swift; sourceTree = "<group>"; };
+		2E9849F990A98C1BBD60B01031E2472A /* Currency.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Currency.swift; path = Format/Currency.swift; sourceTree = "<group>"; };
+		2F5DAB081772CCF7B3BCE57071A21596 /* Loaf.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Loaf.release.xcconfig; sourceTree = "<group>"; };
+		32B1513138B844F0896EB004B452CCB7 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Format/Constants.swift; sourceTree = "<group>"; };
 		35DB898A705BDCE7FD8B6EF1FB8C6246 /* Pods-ElektrikPiyasalariSimilasyonOyunu-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ElektrikPiyasalariSimilasyonOyunu-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3E4C337658371E86D4D819EC94A373DC /* Loaf-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Loaf-Info.plist"; sourceTree = "<group>"; };
+		3A33D79A87E341C1A27E43F66926AD4F /* NumberExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NumberExtensions.swift; path = Format/NumberExtensions.swift; sourceTree = "<group>"; };
+		42BEFEB354B18243318A3C8028C5A3E5 /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Sources/Loaf/Presenter/Manager.swift; sourceTree = "<group>"; };
+		434E06D9CB0D049C8749E68C7206A3B4 /* Format.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Format.h; path = Format/Format.h; sourceTree = "<group>"; };
+		4581714B32A60C736DB7B84D27A52C44 /* Loaf-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Loaf-prefix.pch"; sourceTree = "<group>"; };
+		45A9FD2355C14C4E1D47A1082BB96F20 /* Format-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Format-prefix.pch"; sourceTree = "<group>"; };
+		486C6FA0FA6BA0F2F8DB070D3F5103EB /* Format-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Format-Info.plist"; sourceTree = "<group>"; };
 		4B0B51C1FB93F1849851544E338E789E /* Pods-ElektrikPiyasalariSimilasyonOyunu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ElektrikPiyasalariSimilasyonOyunu.modulemap"; sourceTree = "<group>"; };
 		4BE730510F6EBDAEF7EF02CB99F4B209 /* Loaf */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Loaf; path = Loaf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EB07B91B4BEED24F95EFEF715C2E309 /* Loaf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Loaf.debug.xcconfig; sourceTree = "<group>"; };
+		57B51DE61D5733F2B2B3FE303672447A /* ColorFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorFormatter.swift; path = Format/ColorFormatter.swift; sourceTree = "<group>"; };
+		57C483D3E9F399C3F63B4158816CBA58 /* Format.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Format.modulemap; sourceTree = "<group>"; };
 		5AAEA17BAEA04724429322D616BEC5B0 /* Pods-ElektrikPiyasalariSimilasyonOyunu-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ElektrikPiyasalariSimilasyonOyunu-acknowledgements.plist"; sourceTree = "<group>"; };
+		5EBE2A4FB579BA58150AF5AFDF24FF67 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Contacts.framework; sourceTree = DEVELOPER_DIR; };
 		5FD02F29653F5AB2EF57EE0437A5A2DF /* Pods-ElektrikPiyasalariSimilasyonOyunu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ElektrikPiyasalariSimilasyonOyunu-dummy.m"; sourceTree = "<group>"; };
-		60D665D2DC770FD3BF4C964524679042 /* Loaf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Loaf.debug.xcconfig; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		64D7F8CF014E85888C7C34C4ABADB2C9 /* Format-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Format-dummy.m"; sourceTree = "<group>"; };
+		6B4448CA0991A5996B100F52B406651E /* Loaf.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Loaf.modulemap; sourceTree = "<group>"; };
+		7115449155E5F97F87C05A4B5521A2F6 /* AddressFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AddressFormatter.swift; path = Format/AddressFormatter.swift; sourceTree = "<group>"; };
 		749C20ED5D0392DA7CE74A0CCD77921F /* Pods-ElektrikPiyasalariSimilasyonOyunu-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ElektrikPiyasalariSimilasyonOyunu-frameworks.sh"; sourceTree = "<group>"; };
-		7A49A8437F6FC61CEFA8A4BF792250FC /* Loaf-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Loaf-umbrella.h"; sourceTree = "<group>"; };
 		7F298A1650674BD5942B06CC3507FDAC /* Pods-ElektrikPiyasalariSimilasyonOyunu */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ElektrikPiyasalariSimilasyonOyunu"; path = Pods_ElektrikPiyasalariSimilasyonOyunu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F472693A4A1FF8234844CB3FD84F76E /* Loaf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Loaf.swift; path = Sources/Loaf/Loaf.swift; sourceTree = "<group>"; };
+		7FBDF5122BB463CC8AB68DE5635647CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8076EC95C6FD7BA32CB45D1DEE0AE141 /* Loaf-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Loaf-Info.plist"; sourceTree = "<group>"; };
+		81FFCD6B984D935DCAFACD277D815FFB /* Animator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animator.swift; path = Sources/Loaf/Presenter/Animator.swift; sourceTree = "<group>"; };
 		9856DC9A162988C2086AEF0E72A1E39E /* Pods-ElektrikPiyasalariSimilasyonOyunu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ElektrikPiyasalariSimilasyonOyunu-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A9EE600E4CBCB0CC5B1FB65AB2016FB7 /* Loaf.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Loaf.release.xcconfig; sourceTree = "<group>"; };
-		AC832D1D9C80BA2697198B43A2D6EEE9 /* Loaf-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Loaf-prefix.pch"; sourceTree = "<group>"; };
+		9ED8CC80521A2E4BB16EB6686F0C3C0B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		A0418DC41F8AE781A896391A0ADB6B73 /* Decimals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decimals.swift; path = Format/Decimals.swift; sourceTree = "<group>"; };
+		A11B085CEA0A649852F508BAEBA32D99 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/AddressBook.framework; sourceTree = DEVELOPER_DIR; };
+		BDE210E92208C1993026EE2D4C2DE039 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		D0157D090BC49216D5B5F3B88FB42724 /* Format.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Format.release.xcconfig; sourceTree = "<group>"; };
 		D548F835BB85EA41C1BC1D44AB30BC11 /* Pods-ElektrikPiyasalariSimilasyonOyunu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ElektrikPiyasalariSimilasyonOyunu-umbrella.h"; sourceTree = "<group>"; };
-		DEA2C4E085121C498CC955AF36985540 /* Loaf-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Loaf-dummy.m"; sourceTree = "<group>"; };
-		ECCECFA968367C99A5B8EE84F3AD4A3A /* Animator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animator.swift; path = Sources/Loaf/Presenter/Animator.swift; sourceTree = "<group>"; };
+		DC65A0034487F4D56AB0CF73D30227D9 /* Controller.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Controller.swift; path = Sources/Loaf/Presenter/Controller.swift; sourceTree = "<group>"; };
+		E02FC422377E7D4A56D2F468DE65DA29 /* Mass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mass.swift; path = Format/Mass.swift; sourceTree = "<group>"; };
+		E650B7BCFCBDDFC5E4B509C3914A0DED /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Sources/Loaf/Extensions.swift; sourceTree = "<group>"; };
+		F69F59C83B1DF96DCD2EDFA7CA089C41 /* AddressExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AddressExtensions.swift; path = Format/AddressExtensions.swift; sourceTree = "<group>"; };
+		FA1F4E01571242FA2236488A81C3EDDB /* Format.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Format.debug.xcconfig; sourceTree = "<group>"; };
 		FCEDB9BDBB0CFA8D745BDFA436CC3A21 /* Pods-ElektrikPiyasalariSimilasyonOyunu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElektrikPiyasalariSimilasyonOyunu.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,38 +117,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F5E6A686B06F7DE473746928E69AC0ED /* Frameworks */ = {
+		AB9C4F7E24B0884B0D12E1FE66787CBF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87799D55B3CE2E9D89BD7AD4333A47A2 /* Foundation.framework in Frameworks */,
+				0D0C597E93FFC583686E9452A06E4C92 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6CD7A2B892A777AFF93B34DF654D081 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFC8C25CB562E552491164B049830797 /* AddressBook.framework in Frameworks */,
+				D3F4F5825309FCCE22C7B37E29D8EAC4 /* Contacts.framework in Frameworks */,
+				CAFEB1F7F563D8FABC01DEF4AC97B146 /* CoreLocation.framework in Frameworks */,
+				971B90CF8EFD12243040FB93EB8015A0 /* Foundation.framework in Frameworks */,
+				A287AD102956B7C9DED9B281531D0AA6 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		103A554640007EDA59E46159D6877C78 /* Loaf */ = {
+		0032E4835175F6140377D22FE3A50843 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				ECCECFA968367C99A5B8EE84F3AD4A3A /* Animator.swift */,
-				31EE140329D6B1B48AB8FC458E418154 /* Controller.swift */,
-				05B42CE5434D13DD46C7967C0D853792 /* Extensions.swift */,
-				2F1F091276448AF619831AB82C9C283C /* Icons.swift */,
-				044472ED41450E3ACC5A04B5CFCB46A3 /* Loaf.swift */,
-				049F474C12ED02A21DB6CCAD80E5F89D /* Manager.swift */,
-				E40BF20408B9E6AE66B083B60D1167D2 /* Support Files */,
+				A8354E32D880DD85D8736F14C8268870 /* Format */,
+				F062893D79D4AFD10298622BACCC6784 /* Loaf */,
 			);
-			name = Loaf;
-			path = Loaf;
-			sourceTree = "<group>";
-		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
-			);
-			name = iOS;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		65E1AE99FCA577F082037F20C8E26781 /* Pods-ElektrikPiyasalariSimilasyonOyunu */ = {
@@ -120,23 +166,6 @@
 			path = "Target Support Files/Pods-ElektrikPiyasalariSimilasyonOyunu";
 			sourceTree = "<group>";
 		};
-		6FB600350F2C2F6C18828FF139117094 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				103A554640007EDA59E46159D6877C78 /* Loaf */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		8E64925B620D0D7DE6B37501448A8FA9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4BE730510F6EBDAEF7EF02CB99F4B209 /* Loaf */,
-				7F298A1650674BD5942B06CC3507FDAC /* Pods-ElektrikPiyasalariSimilasyonOyunu */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		A77C039FD472FDF9F756CB18C59012C8 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,35 +174,107 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		CF1408CF629C7361332E53B88F7BD30C = {
+		A8354E32D880DD85D8736F14C8268870 /* Format */ = {
 			isa = PBXGroup;
 			children = (
-				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				6FB600350F2C2F6C18828FF139117094 /* Pods */,
-				8E64925B620D0D7DE6B37501448A8FA9 /* Products */,
-				A77C039FD472FDF9F756CB18C59012C8 /* Targets Support Files */,
+				F69F59C83B1DF96DCD2EDFA7CA089C41 /* AddressExtensions.swift */,
+				7115449155E5F97F87C05A4B5521A2F6 /* AddressFormatter.swift */,
+				57B51DE61D5733F2B2B3FE303672447A /* ColorFormatter.swift */,
+				32B1513138B844F0896EB004B452CCB7 /* Constants.swift */,
+				2E9849F990A98C1BBD60B01031E2472A /* Currency.swift */,
+				A0418DC41F8AE781A896391A0ADB6B73 /* Decimals.swift */,
+				434E06D9CB0D049C8749E68C7206A3B4 /* Format.h */,
+				2C5EE647676EE4CB53A067D77A225E60 /* General.swift */,
+				E02FC422377E7D4A56D2F468DE65DA29 /* Mass.swift */,
+				3A33D79A87E341C1A27E43F66926AD4F /* NumberExtensions.swift */,
+				04BD2A81FA1EE80B0EF3DC551577D0B7 /* NumberFormatter.swift */,
+				EBE18C2FDC7C2A676C2F6A22F4BCE48D /* Support Files */,
 			);
+			name = Format;
+			path = Format;
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		B94D7768568A9992200DB461E8CF687F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
+				EB7DD6850F05E70A42600B92F8B9DA92 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E40BF20408B9E6AE66B083B60D1167D2 /* Support Files */ = {
+		C41258102302E2D215DA3E94BD51EFF0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				19F498F9B368CF03355C06969607E58D /* Loaf.modulemap */,
-				DEA2C4E085121C498CC955AF36985540 /* Loaf-dummy.m */,
-				3E4C337658371E86D4D819EC94A373DC /* Loaf-Info.plist */,
-				AC832D1D9C80BA2697198B43A2D6EEE9 /* Loaf-prefix.pch */,
-				7A49A8437F6FC61CEFA8A4BF792250FC /* Loaf-umbrella.h */,
-				60D665D2DC770FD3BF4C964524679042 /* Loaf.debug.xcconfig */,
-				A9EE600E4CBCB0CC5B1FB65AB2016FB7 /* Loaf.release.xcconfig */,
+				12BC74618A6EBC0D45348AC2193CF250 /* Format */,
+				4BE730510F6EBDAEF7EF02CB99F4B209 /* Loaf */,
+				7F298A1650674BD5942B06CC3507FDAC /* Pods-ElektrikPiyasalariSimilasyonOyunu */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				B94D7768568A9992200DB461E8CF687F /* Frameworks */,
+				0032E4835175F6140377D22FE3A50843 /* Pods */,
+				C41258102302E2D215DA3E94BD51EFF0 /* Products */,
+				A77C039FD472FDF9F756CB18C59012C8 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		EB7DD6850F05E70A42600B92F8B9DA92 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A11B085CEA0A649852F508BAEBA32D99 /* AddressBook.framework */,
+				5EBE2A4FB579BA58150AF5AFDF24FF67 /* Contacts.framework */,
+				9ED8CC80521A2E4BB16EB6686F0C3C0B /* CoreLocation.framework */,
+				7FBDF5122BB463CC8AB68DE5635647CA /* Foundation.framework */,
+				BDE210E92208C1993026EE2D4C2DE039 /* MapKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EBE18C2FDC7C2A676C2F6A22F4BCE48D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				57C483D3E9F399C3F63B4158816CBA58 /* Format.modulemap */,
+				64D7F8CF014E85888C7C34C4ABADB2C9 /* Format-dummy.m */,
+				486C6FA0FA6BA0F2F8DB070D3F5103EB /* Format-Info.plist */,
+				45A9FD2355C14C4E1D47A1082BB96F20 /* Format-prefix.pch */,
+				2000DB7F15FB510D460DA1ED2EF0E0A5 /* Format-umbrella.h */,
+				FA1F4E01571242FA2236488A81C3EDDB /* Format.debug.xcconfig */,
+				D0157D090BC49216D5B5F3B88FB42724 /* Format.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Format";
+			sourceTree = "<group>";
+		};
+		F062893D79D4AFD10298622BACCC6784 /* Loaf */ = {
+			isa = PBXGroup;
+			children = (
+				81FFCD6B984D935DCAFACD277D815FFB /* Animator.swift */,
+				DC65A0034487F4D56AB0CF73D30227D9 /* Controller.swift */,
+				E650B7BCFCBDDFC5E4B509C3914A0DED /* Extensions.swift */,
+				2B7CEBBA2C0D7F7F9436FE4276BDF241 /* Icons.swift */,
+				7F472693A4A1FF8234844CB3FD84F76E /* Loaf.swift */,
+				42BEFEB354B18243318A3C8028C5A3E5 /* Manager.swift */,
+				F3C928E6C1C3A6173291308B0DE8812D /* Support Files */,
+			);
+			name = Loaf;
+			path = Loaf;
+			sourceTree = "<group>";
+		};
+		F3C928E6C1C3A6173291308B0DE8812D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B4448CA0991A5996B100F52B406651E /* Loaf.modulemap */,
+				21A1D66CC9A42CB133B70A74DC22D5E2 /* Loaf-dummy.m */,
+				8076EC95C6FD7BA32CB45D1DEE0AE141 /* Loaf-Info.plist */,
+				4581714B32A60C736DB7B84D27A52C44 /* Loaf-prefix.pch */,
+				04D136256712CBD21EE5EBF5291249FA /* Loaf-umbrella.h */,
+				4EB07B91B4BEED24F95EFEF715C2E309 /* Loaf.debug.xcconfig */,
+				2F5DAB081772CCF7B3BCE57071A21596 /* Loaf.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Loaf";
@@ -190,17 +291,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2AAD4BE0B59BF4250E295E0AECF02F4E /* Headers */ = {
+		279611D4EE24CCD70D1445D5387F720B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D833EE7EBC9C1CD2359E683330700BFB /* Pods-ElektrikPiyasalariSimilasyonOyunu-umbrella.h in Headers */,
+				482BD8230CA47E08BEBBA1B1FE147B8E /* Format.h in Headers */,
+				6D916EBF4C030B51312E04AD9A5AE22E /* Format-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		491915E0E70DDECCEC2B02859071FA05 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED649FFC32A5F1DFE969D6552A8A92B3 /* Pods-ElektrikPiyasalariSimilasyonOyunu-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		279F962BFBA4F7FDC3796D5C9D99E499 /* Format */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68FA7C4D59E69A1936DA49186C56BA5B /* Build configuration list for PBXNativeTarget "Format" */;
+			buildPhases = (
+				279611D4EE24CCD70D1445D5387F720B /* Headers */,
+				2DA3772B519B1C4DF54C5FE0D68A79BC /* Sources */,
+				E6CD7A2B892A777AFF93B34DF654D081 /* Frameworks */,
+				3F4E787CE9A3E20CA5E73B5185A3C67C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Format;
+			productName = Format;
+			productReference = 12BC74618A6EBC0D45348AC2193CF250 /* Format */;
+			productType = "com.apple.product-type.framework";
+		};
 		3E12D5ED3565D8FCC3DD9B9DD89246A9 /* Loaf */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A5F42E6E153E1DDFDDB689B6418FFA8 /* Build configuration list for PBXNativeTarget "Loaf" */;
@@ -221,17 +349,18 @@
 		};
 		6158F44348A6B239765C6A826FFF73EA /* Pods-ElektrikPiyasalariSimilasyonOyunu */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CD92022A803AA697D69BD7A3A6106A61 /* Build configuration list for PBXNativeTarget "Pods-ElektrikPiyasalariSimilasyonOyunu" */;
+			buildConfigurationList = 58918DBF333823E1DAF7E0703CA27955 /* Build configuration list for PBXNativeTarget "Pods-ElektrikPiyasalariSimilasyonOyunu" */;
 			buildPhases = (
-				2AAD4BE0B59BF4250E295E0AECF02F4E /* Headers */,
-				B1DFCAAC358D4B3E0EBDCB0600B0A403 /* Sources */,
-				F5E6A686B06F7DE473746928E69AC0ED /* Frameworks */,
-				A63FA7AD9E491E81DE4D9D0ED900F9EE /* Resources */,
+				491915E0E70DDECCEC2B02859071FA05 /* Headers */,
+				2459FB08BB411822334518A08A42FEBB /* Sources */,
+				AB9C4F7E24B0884B0D12E1FE66787CBF /* Frameworks */,
+				1D436120ACF181EFB9DAC951967C7DFE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C5048514073A55FE083D51E9DED996B9 /* PBXTargetDependency */,
+				FE30DAB33584E335BACF1D34494EDDE5 /* PBXTargetDependency */,
+				3905A30A140ECE8E4AE0918FF492E8A4 /* PBXTargetDependency */,
 			);
 			name = "Pods-ElektrikPiyasalariSimilasyonOyunu";
 			productName = Pods_ElektrikPiyasalariSimilasyonOyunu;
@@ -256,10 +385,11 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 8E64925B620D0D7DE6B37501448A8FA9 /* Products */;
+			productRefGroup = C41258102302E2D215DA3E94BD51EFF0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				279F962BFBA4F7FDC3796D5C9D99E499 /* Format */,
 				3E12D5ED3565D8FCC3DD9B9DD89246A9 /* Loaf */,
 				6158F44348A6B239765C6A826FFF73EA /* Pods-ElektrikPiyasalariSimilasyonOyunu */,
 			);
@@ -267,14 +397,21 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8266BB56EE2D63D2AFDBC99AFF6195AB /* Resources */ = {
+		1D436120ACF181EFB9DAC951967C7DFE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A63FA7AD9E491E81DE4D9D0ED900F9EE /* Resources */ = {
+		3F4E787CE9A3E20CA5E73B5185A3C67C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8266BB56EE2D63D2AFDBC99AFF6195AB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -284,6 +421,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2459FB08BB411822334518A08A42FEBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E36D71EE7F7878CBA8507365E738C4 /* Pods-ElektrikPiyasalariSimilasyonOyunu-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA3772B519B1C4DF54C5FE0D68A79BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDB7D3117D4B4911897D8B13E996725A /* AddressExtensions.swift in Sources */,
+				9B58E963A7DD30841D9CCDD78C598752 /* AddressFormatter.swift in Sources */,
+				CA133BAC6B1021024FC84913A8E5DEB6 /* ColorFormatter.swift in Sources */,
+				6BCDEFD07520F660C47811ED6099E3E9 /* Constants.swift in Sources */,
+				90EB1609E19D8632EEA531DC3C40D082 /* Currency.swift in Sources */,
+				9F8F0652791B387942E8C8B1753E0F3C /* Decimals.swift in Sources */,
+				DE11FEE31BE749763D2BB97E581AA764 /* Format-dummy.m in Sources */,
+				E9706D983DD16B96CB57B664123196C5 /* General.swift in Sources */,
+				0C5AF2B90650C7F0106A04BE29CADF6B /* Mass.swift in Sources */,
+				A60E087EC010B07430C99FA7FA833297 /* NumberExtensions.swift in Sources */,
+				4CE47F904F7FBD22D14BC935E8E40806 /* NumberFormatter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		30D24F6209E2ABACAB5D7EB5FA6DF650 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -298,64 +461,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B1DFCAAC358D4B3E0EBDCB0600B0A403 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B68E88DAC7C36E6673A70287A4BAC004 /* Pods-ElektrikPiyasalariSimilasyonOyunu-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C5048514073A55FE083D51E9DED996B9 /* PBXTargetDependency */ = {
+		3905A30A140ECE8E4AE0918FF492E8A4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Loaf;
 			target = 3E12D5ED3565D8FCC3DD9B9DD89246A9 /* Loaf */;
-			targetProxy = ABFFC0712BA73BD3A52BC31D5D5E92B2 /* PBXContainerItemProxy */;
+			targetProxy = E7D5EFAC996323B4D32476C64DBDB559 /* PBXContainerItemProxy */;
+		};
+		FE30DAB33584E335BACF1D34494EDDE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Format;
+			target = 279F962BFBA4F7FDC3796D5C9D99E499 /* Format */;
+			targetProxy = 2D651EA49F4853A0079DCA432026D11F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		079341A5C5045C5B291A85C9D1C40432 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FCEDB9BDBB0CFA8D745BDFA436CC3A21 /* Pods-ElektrikPiyasalariSimilasyonOyunu.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ElektrikPiyasalariSimilasyonOyunu/Pods-ElektrikPiyasalariSimilasyonOyunu-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ElektrikPiyasalariSimilasyonOyunu/Pods-ElektrikPiyasalariSimilasyonOyunu.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		51250F2F58F98CAB2EE495DCC18BC85F /* Release */ = {
+		6C05F39EE98D25A52F095D6C40BC66D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2DE36BD0162746B2A3C337A7F3781362 /* Pods-ElektrikPiyasalariSimilasyonOyunu.release.xcconfig */;
 			buildSettings = {
@@ -395,7 +519,7 @@
 		};
 		89FEB6A31677FECA1D17C9C1DD54D1AD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60D665D2DC770FD3BF4C964524679042 /* Loaf.debug.xcconfig */;
+			baseConfigurationReference = 4EB07B91B4BEED24F95EFEF715C2E309 /* Loaf.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -555,9 +679,115 @@
 			};
 			name = Release;
 		};
+		A8700145C894794DC360098F7C3B8277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCEDB9BDBB0CFA8D745BDFA436CC3A21 /* Pods-ElektrikPiyasalariSimilasyonOyunu.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ElektrikPiyasalariSimilasyonOyunu/Pods-ElektrikPiyasalariSimilasyonOyunu-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ElektrikPiyasalariSimilasyonOyunu/Pods-ElektrikPiyasalariSimilasyonOyunu.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B40B9AB8A7E50A722892A005FB349A3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0157D090BC49216D5B5F3B88FB42724 /* Format.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Format/Format-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Format/Format-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Format/Format.modulemap";
+				PRODUCT_MODULE_NAME = Format;
+				PRODUCT_NAME = Format;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EBF86BCB6192184709D558C523F9F3D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA1F4E01571242FA2236488A81C3EDDB /* Format.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Format/Format-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Format/Format-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Format/Format.modulemap";
+				PRODUCT_MODULE_NAME = Format;
+				PRODUCT_NAME = Format;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		F92AE0C420BE925E1ECDB2E3F0A576CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9EE600E4CBCB0CC5B1FB65AB2016FB7 /* Loaf.release.xcconfig */;
+			baseConfigurationReference = 2F5DAB081772CCF7B3BCE57071A21596 /* Loaf.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -602,20 +832,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		58918DBF333823E1DAF7E0703CA27955 /* Build configuration list for PBXNativeTarget "Pods-ElektrikPiyasalariSimilasyonOyunu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8700145C894794DC360098F7C3B8277 /* Debug */,
+				6C05F39EE98D25A52F095D6C40BC66D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68FA7C4D59E69A1936DA49186C56BA5B /* Build configuration list for PBXNativeTarget "Format" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBF86BCB6192184709D558C523F9F3D1 /* Debug */,
+				B40B9AB8A7E50A722892A005FB349A3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6A5F42E6E153E1DDFDDB689B6418FFA8 /* Build configuration list for PBXNativeTarget "Loaf" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				89FEB6A31677FECA1D17C9C1DD54D1AD /* Debug */,
 				F92AE0C420BE925E1ECDB2E3F0A576CD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CD92022A803AA697D69BD7A3A6106A61 /* Build configuration list for PBXNativeTarget "Pods-ElektrikPiyasalariSimilasyonOyunu" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				079341A5C5045C5B291A85C9D1C40432 /* Debug */,
-				51250F2F58F98CAB2EE495DCC18BC85F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

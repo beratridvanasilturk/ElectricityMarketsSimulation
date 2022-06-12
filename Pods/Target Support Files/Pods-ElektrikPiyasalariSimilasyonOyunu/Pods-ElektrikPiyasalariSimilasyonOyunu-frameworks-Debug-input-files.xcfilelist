@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-ElektrikPiyasalariSimilasyonOyunu/Pods-ElektrikPiyasalariSimilasyonOyunu-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Format/Format.framework
 ${BUILT_PRODUCTS_DIR}/Loaf/Loaf.framework

@@ -272,9 +272,7 @@ class YoneticiViewModel {
         var secilenOyuncular = oyuncuIsimleri.shuffled().prefix(14).map { isim in
             Oyuncu(isim: isim, butce: baslangicButcesi)
         }
-        if secilenOyuncular.count <= 8 {
-            return
-    }
+        
         let kullanici = Oyuncu(isim: kullaniciIsmi, butce: baslangicButcesi)
         
         secilenOyuncular.append(kullanici)

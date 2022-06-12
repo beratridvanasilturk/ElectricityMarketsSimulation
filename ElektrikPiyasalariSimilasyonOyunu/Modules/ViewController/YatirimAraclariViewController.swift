@@ -7,11 +7,9 @@
 
 import UIKit
 import Loaf
+import Format
 
 class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControllerDelegate {
-    
-    
-    
     
     @IBOutlet weak var nukleerLabel: UILabel!
     @IBOutlet weak var ruzgarLabel: UILabel!
@@ -117,7 +115,8 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
     fileprivate func uiGuncelle() {
         
         // Her periyotta Ui guncellenir
-        butceLabel.text = "\(butce)$"
+        butceUiGuncelle()
+        
         YoneticiViewModel.shared.periyot += 1
         periyotLabel.text = "\(YoneticiViewModel.shared.periyot)"
         
@@ -198,6 +197,11 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
     override func viewDidLoad() {
         super.viewDidLoad()
         sliderGuncelle()
+        butceUiGuncelle()
+    }
+    
+    fileprivate func butceUiGuncelle() {
+        butceLabel.text = butce.format(Currency.USD)
     }
     
     /// Yatirim Ekranindan Enerji Santrali Satin Alindiginda Tetiklenir,
@@ -217,22 +221,24 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
             
             alert.addAction(tamam)
             
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1 ) {
-                self.present(alert, animated: true, completion: nil)
-            }
-            
-            
+            self.present(alert, animated: true, completion: nil)
             
             return
         }
+        
+        if yatirimlarim.contains(enerjiTuru) {
+            Loaf("Bu santrali daha once satin aldin", state: .info, sender: self).show(.short)
+            return
+        }
+        
         /// Yatirim sonrasi butce ve ui guncellenir
         butce -= enerjiTuru.satinAlmaMaliyeti
-        butceLabel.text = "\(butce)$"
+        butceUiGuncelle()
         
         yatirimlarim.append(enerjiTuru)
         sliderGuncelle()
         
-        print(" 🔥 Şu santral satın alındı : \(enerjiTuru)")
+        Loaf("\(enerjiTuru) santrali satın alındı", state: .info, sender: self).show(.short)
         
         ///Her bir santralin ne zaman satin alindigini belirleyen durum
         switch enerjiTuru {

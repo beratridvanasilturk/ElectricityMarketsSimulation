@@ -6,6 +6,7 @@ target 'ElektrikPiyasalariSimilasyonOyunu' do
   use_frameworks!
 
   pod 'Loaf'
+  pod 'Format', '~> 0.5'
 
   # Pods for ElektrikPiyasalariSimilasyonOyunu
 

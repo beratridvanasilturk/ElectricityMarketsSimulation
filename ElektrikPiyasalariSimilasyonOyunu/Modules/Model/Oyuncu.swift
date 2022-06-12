@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Format
 
 class Oyuncu: CustomDebugStringConvertible {
     
@@ -168,7 +169,7 @@ class Oyuncu: CustomDebugStringConvertible {
         print(" OYUNCU ")
         print(" \(isim) ")
         print(" BUTCE ")
-        print(" \(butce) ")
+        print(butce.format(Currency.USD))
         print(" YATIRIMLARI ")
         print(" \(yatirimlar) ")
         
