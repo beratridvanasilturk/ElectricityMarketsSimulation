@@ -7,7 +7,7 @@
 
 import Foundation
 
-    /// uygulamada ekranlar arasinda kullanici verilerini yoneten sinif
+/// uygulamada ekranlar arasinda kullanici verilerini yoneten sinif
 class YoneticiViewModel {
     
     var periyot = 1
@@ -273,11 +273,13 @@ class YoneticiViewModel {
             Oyuncu(isim: isim, butce: baslangicButcesi)
         }
         
-        let kullanici = Oyuncu(isim: kullaniciIsmi, butce: baslangicButcesi)
-        
         secilenOyuncular.append(kullanici)
         
         oyuncular = secilenOyuncular
-        
     }
+    
+    /// uygulamaya kayit olup kullanan asil oyuncu
+    lazy var kullanici: Oyuncu = {
+        Oyuncu(isim: kullaniciIsmi, butce: baslangicButcesi, kullanici: true)
+    }()
 }

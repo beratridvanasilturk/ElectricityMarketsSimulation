@@ -15,31 +15,40 @@ class Oyuncu: CustomDebugStringConvertible {
         "İsim: \(isim), Bütçe: \(butce) \n"
     }
     
+    /// Oyuna kayit olan asil kullanici ise deger true olur.
+    /// Degerin false oldugu durumlarda sistemin belirledigi robot oyuncudur
+    /// Deger true oldugunda, sistem robot oyuncular gibi alim satim islemlerini otomatik yapmasini engeller.
+    private var kullanici: Bool
+    
+    /// private(set) : Salt Okunur
+    /// Kullanici ismi ve butcesi disardan erisilebilir fakat degistirilemez olmasi icin set metotu private edilmistir. 
     private(set) var isim: String
-    private(set) var butce: Int
+    var butce: Int
+    
     
     /// Oyuncunun yatirim yaptigi enerji santralleri
     /// Satin alinan santraller bu degiskende tutulur
-    private var yatirimlar : [YoneticiViewModel.EnerjiTurleri] = []
+    var yatirimlar : [YoneticiViewModel.EnerjiTurleri] = []
     
-    init(isim: String, butce: Int) {
+    init(isim: String, butce: Int, kullanici: Bool = false) {
         self.isim = isim
         self.butce = butce
+        self.kullanici = kullanici
     }
     /// Kullanicinin O Periyotta Verdigi Teklif
     /// Her Periyot Sifirlanir
-    private var komurTeklifi = 0
-    private var gunesTeklifi = 0
-    private var ruzgarTeklifi = 0
-    private var nukleerTeklifi = 0
-    private var bioTeklifi = 0
+    var komurTeklifi = 0
+    var gunesTeklifi = 0
+    var ruzgarTeklifi = 0
+    var nukleerTeklifi = 0
+    var bioTeklifi = 0
     
     ///Her bir santral icin default atanan baslangic degerleri
-    private var bioSatinAlinanPeriyot: Int?
-    private var komurSatinAlinanPeriyot: Int?
-    private var nukSatinAlinanPeriyot: Int?
-    private var ruzgarSatinAlinanPeriyot: Int?
-    private var gunesSatinAlinanPeriyot: Int?
+    var bioSatinAlinanPeriyot: Int?
+    var komurSatinAlinanPeriyot: Int?
+    var nukSatinAlinanPeriyot: Int?
+    var ruzgarSatinAlinanPeriyot: Int?
+    var gunesSatinAlinanPeriyot: Int?
     
     
     /// Kullanicinin her bir periyotta , butcesini hesplar .
@@ -159,12 +168,7 @@ class Oyuncu: CustomDebugStringConvertible {
         }
     }
     
-    /// Ana oyunda her bir periyot artiminda, onayla butonu tiklandiginda tetiklenir.
-    func teklifiOnayla() {
-        santralSatinAl()
-        teklifVer()
-        kullaniciGelirleriniHesapla()
-        
+    func sonucuYazdir() {
         print(" **** **** **** ")
         print(" OYUNCU ")
         print(" \(isim) ")
@@ -175,7 +179,19 @@ class Oyuncu: CustomDebugStringConvertible {
         
         print("")
         print(" **** **** **** ")
+    }
+    
+    /// Ana oyunda her bir periyot artiminda, onayla butonu tiklandiginda tetiklenir.
+    func teklifiOnayla() {
         
+        /// Deger true oldugunda, sistem robot oyuncular gibi alim satim islemlerini otomatik yapmasini engeller.
+        if kullanici == true {
+            return
+        }
+        
+        santralSatinAl()
+        teklifVer()
+        kullaniciGelirleriniHesapla()
     }
     
 }
