@@ -18,7 +18,7 @@ class Oyuncu: CustomDebugStringConvertible {
     /// Oyuna kayit olan asil kullanici ise deger true olur.
     /// Degerin false oldugu durumlarda sistemin belirledigi robot oyuncudur
     /// Deger true oldugunda, sistem robot oyuncular gibi alim satim islemlerini otomatik yapmasini engeller.
-    private var kullanici: Bool
+    private(set) var kullanici: Bool
     
     /// private(set) : Salt Okunur
     /// Kullanici ismi ve butcesi disardan erisilebilir fakat degistirilemez olmasi icin set metotu private edilmistir. 
