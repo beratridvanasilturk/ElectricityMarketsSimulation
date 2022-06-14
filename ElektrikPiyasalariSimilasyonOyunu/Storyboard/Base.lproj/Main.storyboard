@@ -611,7 +611,7 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view tag="1004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FFM-xx-UL3">
-                                            <rect key="frame" x="5" y="5" width="404" height="37"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="47"/>
                                             <color key="backgroundColor" red="1" green="0.14660131931304932" blue="0.0028666916768997908" alpha="0.083597953745860931" colorSpace="custom" customColorSpace="sRGB"/>
                                         </view>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="NDs-VY-cfj">
@@ -641,11 +641,11 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                                     <constraints>
                                         <constraint firstItem="NDs-VY-cfj" firstAttribute="leading" secondItem="WGI-Wr-bJX" secondAttribute="leading" constant="16" id="53a-hS-Yof"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="TLb-EG-VME" secondAttribute="trailing" id="K4n-12-eRN"/>
-                                        <constraint firstItem="FFM-xx-UL3" firstAttribute="top" secondItem="WGI-Wr-bJX" secondAttribute="top" constant="5" id="TmH-S1-Chw"/>
-                                        <constraint firstAttribute="trailing" secondItem="FFM-xx-UL3" secondAttribute="trailing" constant="5" id="UGy-hw-gvn"/>
+                                        <constraint firstItem="FFM-xx-UL3" firstAttribute="top" secondItem="WGI-Wr-bJX" secondAttribute="top" id="TmH-S1-Chw"/>
+                                        <constraint firstAttribute="trailing" secondItem="FFM-xx-UL3" secondAttribute="trailing" id="UGy-hw-gvn"/>
                                         <constraint firstItem="TLb-EG-VME" firstAttribute="centerY" secondItem="WGI-Wr-bJX" secondAttribute="centerY" id="VBO-lC-WhE"/>
-                                        <constraint firstAttribute="bottom" secondItem="FFM-xx-UL3" secondAttribute="bottom" constant="5" id="cht-ti-0Pw"/>
-                                        <constraint firstItem="FFM-xx-UL3" firstAttribute="leading" secondItem="WGI-Wr-bJX" secondAttribute="leading" constant="5" id="eNh-TA-Ps7"/>
+                                        <constraint firstAttribute="bottom" secondItem="FFM-xx-UL3" secondAttribute="bottom" id="cht-ti-0Pw"/>
+                                        <constraint firstItem="FFM-xx-UL3" firstAttribute="leading" secondItem="WGI-Wr-bJX" secondAttribute="leading" id="eNh-TA-Ps7"/>
                                         <constraint firstItem="NDs-VY-cfj" firstAttribute="top" secondItem="WGI-Wr-bJX" secondAttribute="top" id="fQ1-CV-Bkq"/>
                                         <constraint firstAttribute="bottom" secondItem="NDs-VY-cfj" secondAttribute="bottom" constant="8" id="il2-QN-4OD"/>
                                         <constraint firstItem="TLb-EG-VME" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="NDs-VY-cfj" secondAttribute="trailing" constant="50" id="oIu-al-BUK"/>
@@ -662,7 +662,7 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XkM-yi-bMR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3545" y="832"/>
+            <point key="canvasLocation" x="4493" y="858"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pzj-2H-X2i">

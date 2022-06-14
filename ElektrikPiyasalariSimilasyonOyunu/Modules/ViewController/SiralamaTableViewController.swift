@@ -46,7 +46,5 @@ class SiralamaTableViewController: UITableViewController {
         
         return cell
     }
-    
-
 
 }

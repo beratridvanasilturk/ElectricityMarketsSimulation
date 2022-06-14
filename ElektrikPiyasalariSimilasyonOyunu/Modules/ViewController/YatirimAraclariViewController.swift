@@ -124,7 +124,7 @@ class YatirimAraclariViewController: UIViewController , YatirimEkraniViewControl
     @IBAction func onaylaButton(_ sender: UIButton) {
         
         // Oyunun toplam tur sayisi
-        if YoneticiViewModel.shared.periyot == 10 {
+        if YoneticiViewModel.shared.periyot == 11 {
             print("OYUN BITTI !!!")
             print("KAZANAN OYUNCU: \(YoneticiViewModel.shared.butceyeGoreSiralananOyuncular.first) ")
             print("ISTE BUTCEYE GORE SIRALAMA: \(YoneticiViewModel.shared.butceyeGoreSiralananOyuncular) ")

@@ -79,7 +79,7 @@ class YoneticiViewModel {
             
             switch self {
             case .nukleer:
-                return 8
+                return 10
             case .ruzgar:
                 return 4
             case .gunes:
@@ -87,7 +87,7 @@ class YoneticiViewModel {
             case .komur:
                 return 6
             case .bio:
-                return 8
+                return 10
             }
         }
         

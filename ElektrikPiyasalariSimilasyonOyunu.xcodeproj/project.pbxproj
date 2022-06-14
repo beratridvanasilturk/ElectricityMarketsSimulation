@@ -69,7 +69,6 @@
 				7D10D425AA8177AA262D5489 /* Pods-ElektrikPiyasalariSimilasyonOyunu.debug.xcconfig */,
 				6F144BF7A21A9D42BACC7CC5 /* Pods-ElektrikPiyasalariSimilasyonOyunu.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -441,6 +440,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 899LNTN484;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ElektrikPiyasalariSimilasyonOyunu/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -469,6 +469,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 899LNTN484;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ElektrikPiyasalariSimilasyonOyunu/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
