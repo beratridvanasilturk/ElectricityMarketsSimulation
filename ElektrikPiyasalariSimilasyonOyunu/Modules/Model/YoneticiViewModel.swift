@@ -106,29 +106,22 @@ class YoneticiViewModel {
                 return 2
             }
         }
-        
-        
-        ///Nükleer Santralin Aktif Olması İçin Geçmesi Gereken Dönem: 3
-        ///Rüzgar Santralin Aktif Olması İçin Geçmesi Gereken Dönem: 2
-        ///Güneş Santralin Aktif Olması İçin Geçmesi Gereken Dönem: 1
-        ///Kömür Santralin Aktif Olması İçin Geçmesi Gereken Dönem: 1
-        ///Bio-Enerji Santralin Aktif Olması İçin Geçmesi Gereken Dönem: 2
-        ///
-        ///Nükleer Santralin Kullanım Ömrü: 8
-        ///Rüzgar  Santralin Kullanım Ömrü: 4
-        ///Güneş  Santralin Kullanım Ömrü: 3
-        ///Kömür  Santralin Kullanım Ömrü: 6
-        ///Bio-Enerji  Santralin Kullanım Ömrü: 10
-        ///
-        ///
-        ///
-        ///
     }
+    ///Nükleer Santralin Aktif Olması İçin Geçmesi Gereken Dönem: 2
+    ///Rüzgar Santralin Aktif Olması İçin Geçmesi Gereken Dönem: 1
+    ///Güneş Santralin Aktif Olması İçin Geçmesi Gereken Dönem: 1
+    ///Kömür Santralin Aktif Olması İçin Geçmesi Gereken Dönem: 1
+    ///Bio-Enerji Santralin Aktif Olması İçin Geçmesi Gereken Dönem: 2
+    ///
+    ///Nükleer Santralin Kullanım Ömrü: 10
+    ///Rüzgar  Santralin Kullanım Ömrü: 4
+    ///Güneş  Santralin Kullanım Ömrü: 5
+    ///Kömür  Santralin Kullanım Ömrü: 6
+    ///Bio-Enerji  Santralin Kullanım Ömrü: 10
+    ///
+    ///
     
-  
     let yildakiSaat = 8766
-    
-   
     
     /// Kullaniciya donen o turdaki gelir hesabi
     /// - Parameters:
@@ -143,13 +136,12 @@ class YoneticiViewModel {
     /// Mevcut periyot icin sistemin her bir enerji turune dondugu fiyat
     func minimumTeklifFiyati(_ periyot: Int, enerjiTuru: EnerjiTurleri) -> Int {
         
-        // ilk 2 donem boyunca , piyasa arz talep dengelemesi icin , kabul edilen teklif.
+        // piyasa arz talep dengelemesi ve kabul edilen teklifin belirlenmesi.
         guard periyot > 2 else {
             return 0
         }
         
         let fiyat = (0...300).randomElement()!
-        print("* sistemin teklifi: \(enerjiTuru) \(fiyat)")
         return fiyat
     }
     
@@ -187,7 +179,7 @@ class YoneticiViewModel {
         "Hande Aslan",
         "Çelem Zorlu",
         "Göktürk Sakarya",
-        "Oğuzhan Yaman",
+        "Samet Küpeli",
         "Feyza Yıldırım",
         "Erdoğan Akçay",
         "Sümeyra Sezgin",

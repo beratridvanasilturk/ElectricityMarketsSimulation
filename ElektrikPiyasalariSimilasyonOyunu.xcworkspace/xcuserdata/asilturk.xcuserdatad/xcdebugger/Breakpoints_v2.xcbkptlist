@@ -14,8 +14,8 @@
             filePath = "ElektrikPiyasalariSimilasyonOyunu/Modules/ViewController/YatirimAraclariViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
             landmarkName = "onaylaButton(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "ElektrikPiyasalariSimilasyonOyunu/Modules/ViewController/YatirimAraclariViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
             landmarkName = "onaylaButton(_:)"
             landmarkType = "7">
          </BreakpointContent>

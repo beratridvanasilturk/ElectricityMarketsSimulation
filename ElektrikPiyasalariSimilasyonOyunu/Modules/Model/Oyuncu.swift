@@ -51,7 +51,7 @@ class Oyuncu: CustomDebugStringConvertible {
     var gunesSatinAlinanPeriyot: Int?
     
     
-    /// Kullanicinin her bir periyotta , butcesini hesplar .
+    /// Kullanicinin her bir periyotta , butcesini hesaplar .t
     private func kullaniciGelirleriniHesapla() {
         /// Bio Yakit santarlin omru toplam periyottan kucuk esitse ve
         /// Bio Yakit santralin aktiflesme donemi ile satin alinan andaki periyotun oyun geneli toplam periyottan kucuk ve esit olmasi kosulunda ancak kodu calistiran kosul
@@ -60,7 +60,7 @@ class Oyuncu: CustomDebugStringConvertible {
            YoneticiViewModel.EnerjiTurleri.bio.santralinOmru >= YoneticiViewModel.shared.periyot,
            YoneticiViewModel.EnerjiTurleri.bio.santralinAktiflesmeDonemi + bioSatinAlinanPeriyot <= YoneticiViewModel.shared.periyot {
             butce += YoneticiViewModel.shared.gelir(teklif: bioTeklifi, enerjiTuru: .bio)
-            print("👍🏻 Bio Teklifi Kabul Edildi - \(isim) - \(bioTeklifi)")
+            print("👍🏻 Bio Yakıt Teklifi Kabul Edildi - \(isim) - \(bioTeklifi)")
     }
         /// Gunes santarlin omru toplam periyottan kucuk esitse ve
         /// Gunes santralin aktiflesme donemi ile satin alinan andaki periyotun oyun geneli toplam periyottan kucuk ve esit olmasi kosulunda ancak kodu calistiran kosul
@@ -69,7 +69,7 @@ class Oyuncu: CustomDebugStringConvertible {
            YoneticiViewModel.EnerjiTurleri.gunes.santralinOmru >= YoneticiViewModel.shared.periyot,
            YoneticiViewModel.EnerjiTurleri.gunes.santralinAktiflesmeDonemi + gunesSatinAlinanPeriyot <= YoneticiViewModel.shared.periyot {
             butce += YoneticiViewModel.shared.gelir(teklif: gunesTeklifi, enerjiTuru: .gunes)
-            print("👍🏻  Gunes Teklifi Kabul Edildi - \(isim) - \(gunesTeklifi)")
+            print("👍🏻  Gunes Enerji Teklifi Kabul Edildi - \(isim) - \(gunesTeklifi)")
         }
         
         /// Komur santarlin omru toplam periyottan kucuk esitse ve
@@ -79,7 +79,7 @@ class Oyuncu: CustomDebugStringConvertible {
            YoneticiViewModel.EnerjiTurleri.komur.santralinOmru >= YoneticiViewModel.shared.periyot,
            YoneticiViewModel.EnerjiTurleri.komur.santralinAktiflesmeDonemi + komurSatinAlinanPeriyot <= YoneticiViewModel.shared.periyot {
             butce += YoneticiViewModel.shared.gelir(teklif: komurTeklifi, enerjiTuru: .komur)
-            print("👍🏻  Komur Teklifi Kabul Edildi - \(isim) - \(komurTeklifi)")
+            print("👍🏻  Komur Santral Teklifi Kabul Edildi - \(isim) - \(komurTeklifi)")
         }
         /// Nukleer santarlin omru toplam periyottan kucuk esitse ve
         /// Nukleer santralin aktiflesme donemi ile satin alinan andaki periyotun oyun geneli toplam periyottan kucuk ve esit olmasi kosulunda ancak kodu calistiran kosul
@@ -88,7 +88,7 @@ class Oyuncu: CustomDebugStringConvertible {
            YoneticiViewModel.EnerjiTurleri.nukleer.santralinOmru >= YoneticiViewModel.shared.periyot,
            YoneticiViewModel.EnerjiTurleri.nukleer.santralinAktiflesmeDonemi + nukSatinAlinanPeriyot <= YoneticiViewModel.shared.periyot {
             butce += YoneticiViewModel.shared.gelir(teklif: nukleerTeklifi, enerjiTuru: .nukleer)
-            print("👍🏻  Nuk Teklifi Kabul Edildi - \(isim) - \(nukleerTeklifi)")
+            print("👍🏻  Nükleer Enerji Teklifi Kabul Edildi - \(isim) - \(nukleerTeklifi)")
         }
         /// Ruzgar santarlin omru toplam periyottan kucuk esitse ve
         /// ruzgar santralin aktiflesme donemi ile satin alinan andaki periyotun oyun geneli toplam periyottan kucuk ve esit olmasi kosulunda ancak kodu calistiran kosul
@@ -98,7 +98,7 @@ class Oyuncu: CustomDebugStringConvertible {
            YoneticiViewModel.EnerjiTurleri.ruzgar.santralinAktiflesmeDonemi + ruzgarSatinAlinanPeriyot <= YoneticiViewModel.shared.periyot {
             
             butce += YoneticiViewModel.shared.gelir(teklif: ruzgarTeklifi, enerjiTuru: .ruzgar)
-            print("👍🏻  Ruzgar Teklifi Kabul Edildi - \(isim) - \(ruzgarTeklifi)")
+            print("👍🏻  Rüzgar Enerji Teklifi Kabul Edildi - \(isim) - \(ruzgarTeklifi)")
         }
     }
     

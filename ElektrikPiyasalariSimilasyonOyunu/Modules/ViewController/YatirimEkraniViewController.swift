@@ -59,7 +59,7 @@ class YatirimEkraniViewController: UIViewController {
         }
         
         ///Ekrana verilen uyarilardaki buton icerikleri
-        let title = enerjiIsmi + "Bu Enerji Santralini Satın Almak İstiyor Musunuz?"
+        let title = enerjiIsmi + " - Bu Santrali Satın Almak İstiyor Musunuz?"
         let vazgec = UIAlertAction(title: "Vazgeç", style: .cancel)
         let satinAl = UIAlertAction(title: "Satın Al", style: .default) { action in
             print("Satin Al Tiklandi")
