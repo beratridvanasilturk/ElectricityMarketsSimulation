@@ -129,14 +129,14 @@ class YoneticiViewModel {
     ///   - enerjiTuru: kullanicinin teklif verdigi santral turu
     /// - Returns: Kullaniciya hesaplanan gelir doner
     func gelir(teklif: Int, enerjiTuru: EnerjiTurleri) -> Int {
-        return teklif * enerjiTuru.megawatt * yildakiSaat * 2
+        return teklif * enerjiTuru.megawatt * yildakiSaat
     }
     
     
     /// Mevcut periyot icin sistemin her bir enerji turune dondugu fiyat
+    ///        // piyasa arz talep dengelemesi ve kabul edilen teklifin belirlenmesi.
     func minimumTeklifFiyati(_ periyot: Int, enerjiTuru: EnerjiTurleri) -> Int {
         
-        // piyasa arz talep dengelemesi ve kabul edilen teklifin belirlenmesi.
         guard periyot > 2 else {
             return 0
         }
@@ -180,8 +180,8 @@ class YoneticiViewModel {
         "Çelem Zorlu",
         "Göktürk Sakarya",
         "Samet Küpeli",
-        "Feyza Yıldırım",
-        "Erdoğan Akçay",
+        "Berra Küpeli",
+        "Mehmet Yasin Özdemir",
         "Sümeyra Sezgin",
         "Kayra Demir",
         "Tümer Yorulmaz",

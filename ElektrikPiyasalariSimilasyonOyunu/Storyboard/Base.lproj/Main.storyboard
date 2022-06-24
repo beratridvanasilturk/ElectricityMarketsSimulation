@@ -26,7 +26,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="İsim &amp; Soyisim Giriniz" textAlignment="center" minimumFontSize="17" disabledBackground="pencil" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="k93-rK-b8Y">
                                 <rect key="frame" x="20" y="431" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.82230384903724751" green="0.81721892459189338" blue="0.78911454618344434" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" textContentType="username"/>
                             </textField>
@@ -34,21 +34,26 @@
                                 <rect key="frame" x="170" y="242" width="75" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.0" green="0.097714149764354996" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rox-Mh-00S">
                                 <rect key="frame" x="135" y="724" width="145" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Devam"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Devam" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background">
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="devamTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="WlV-Hm-wm9"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <color key="backgroundColor" red="1" green="0.87552312557469558" blue="0.52381157212852281" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="hPa-CC-6WE"/>
                     <connections>
@@ -70,12 +75,12 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zsM-kG-UPQ">
                                 <rect key="frame" x="20" y="159" width="374" height="719"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemTealColor"/>
-                                <string key="text">Elektrik Piyasası Simülasyonu Oyunu, insanlara elektrik piyasasının temelini öğretmek ve onlara gerçek market ortamında alıştırma yapma şansını vermek amacı ile tasarlanmıştır. Oyun içerisinde yatırım ve ticaret yapabilirsiniz. Oyun içerisinde ticaretini yapabileceğiniz enerji santralleri şunlardır; Rüzgar Enerjisi, Kömür, Bio-Yakıt, Nükleer ve Güneş Enerji Santrali. Bir satın alma işlemi yapmadan önce, her bir santralin
-özelliklerini kontrol edebilirsiniz. Bu özellikler arasinda santralin yatırım maaliyeti, santralin
-MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası gibi bilgiler yer almaktadır. Karbon cezasının asıl amacı oyuncuları yenilenebilir enerjilere teşvik etmektir. Her periyotta oyuncuya verilen oyun süresi dolmadan santral yatırımı veya santral ticareti yapmalısınız. Oyun stratejisi her oyuncuya göre değişiklik gösterebilir, her periyot sonunda kendi stratejinizi yeniden belirleyebilirsiniz. Oyun 10 periyot olup her periyot 1 yılı temsil etmektedir. Oyun sonunda ticaretten en fazla kar elde eden ve bütçesi en fazla olan oyuncu Elektrik Piyasaları Similasyon Oyununu kazanan oyuncu olur. Not: İzin verilen maksimum teklif fiyatı 200 $ 'dır. </string>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Elektrik Piyasası Simülasyonu Oyunu, insanlara elektrik piyasasının temelini öğretmek ve onlara gerçek market ortamında alıştırma yapma şansını vermek amacı ile tasarlanmıştır. Oyun içerisinde yatırım ve ticaret yapabilirsiniz. Oyun içerisinde ticaretini yapabileceğiniz enerji santralleri şunlardır; Rüzgar, Kömür, Bio-Yakıt, Nükleer ve Güneş Enerji Santralleri. Bir satın alma işlemi yapmadan önce, her bir santralin
+özelliklerini kontrol edebilirsiniz. Bu özellikler arasında santralin yatırım maliyeti ve santralin
+MW cinsinden toplam kapasitesi gibi bilgiler yer almaktadır. Santral yatırımı yapmadan santral ticareti yapılamaz. Oyun stratejisi her oyuncuya göre değişiklik gösterebilir, her periyot sonunda kendi stratejinizi yeniden belirleyebilirsiniz. Oyun 10 periyot olup her periyot 1 yılı temsil etmektedir. Oyun sonunda ticaretten en fazla kar elde eden ve bütçesi en fazla olan oyuncu Elektrik Piyasaları Similasyon Oyununu kazanan oyuncu olur. İzin verilen maksimum teklif fiyatı 200 $ 'dır. </mutableString>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y10-0h-jdX">
@@ -84,7 +89,11 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="İleri"/>
+                                <buttonConfiguration key="configuration" style="plain" title="İleri" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background">
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="BO8-IM-Fi4" kind="show" id="hct-C3-4sJ"/>
                                 </connections>
@@ -104,7 +113,7 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iD8-eF-fZG"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="udn-1B-0N5"/>
                 </viewController>
@@ -121,22 +130,22 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Oyuncular Yükleniyor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALi-mC-LA7">
-                                <rect key="frame" x="41" y="371" width="333" height="17"/>
+                                <rect key="frame" x="41" y="371" width="333" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lütfen Bekleyin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYO-PD-fIa">
-                                <rect key="frame" x="149" y="396" width="117" height="21"/>
+                                <rect key="frame" x="149" y="411" width="113" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OXp-VA-DP8"/>
-                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <color key="backgroundColor" red="0.75167053939999995" green="0.90346544979999999" blue="0.56072175499999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="tAt-JC-brt"/>
                 </viewController>
@@ -154,17 +163,17 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="a2n-fk-C2c">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="1zb-Ln-4Ui">
                                     <rect key="frame" x="0.0" y="110.5" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" title="Oyuna Başla" cornerStyle="capsule">
                                         <backgroundConfiguration key="background">
-                                            <color key="backgroundColor" red="0.71418005228042603" green="0.074710734188556671" blue="0.82265716791152954" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="backgroundColor" red="0.75167053939999995" green="0.90346544979999999" blue="0.56072175499999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="strokeColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </backgroundConfiguration>
-                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </buttonConfiguration>
                                     <connections>
                                         <segue destination="Fvj-XW-K75" kind="show" id="p8B-OF-fSQ"/>
@@ -217,6 +226,7 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="sy5-pR-WcY">
                                 <rect key="frame" x="45" y="366" width="324" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.30548307299999999" green="0.59290403130000002" blue="0.24697864059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
                                     <action selector="gunesSlider:" destination="Fvj-XW-K75" eventType="valueChanged" id="ytg-Ia-QCh"/>
                                 </connections>
@@ -245,6 +255,7 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="vgw-9o-tNQ">
                                 <rect key="frame" x="40" y="553" width="322" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
                                 <connections>
                                     <action selector="bioSlider:" destination="Fvj-XW-K75" eventType="valueChanged" id="XxV-mk-y3K"/>
                                 </connections>
@@ -252,6 +263,7 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="1iI-qv-2J5">
                                 <rect key="frame" x="40" y="638" width="322" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemPurpleColor"/>
                                 <connections>
                                     <action selector="ruzgarSlider:" destination="Fvj-XW-K75" eventType="valueChanged" id="xaf-Ce-aGq"/>
                                 </connections>
@@ -259,6 +271,7 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="Vlp-F5-fCd">
                                 <rect key="frame" x="40" y="740" width="322" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
                                 <connections>
                                     <action selector="nukleerSlider:" destination="Fvj-XW-K75" eventType="valueChanged" id="W5w-xM-MiU"/>
                                 </connections>
@@ -330,8 +343,8 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                                 <rect key="frame" x="79" y="100" width="263" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="31"/>
-                                <color key="textColor" systemColor="systemIndigoColor"/>
-                                <color key="highlightedColor" systemColor="labelColor"/>
+                                <color key="textColor" red="0.093112669885158539" green="0.5682365894317627" blue="0.12292055040597916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYl-Lk-JAC">
                                 <rect key="frame" x="214" y="138" width="75" height="21"/>
@@ -346,7 +359,7 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Onayla" cornerStyle="capsule">
                                     <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                        <color key="backgroundColor" red="0.70532411336898804" green="0.93106979131698608" blue="0.92231589555740356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -361,7 +374,7 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Santral Yatırımı Yap" cornerStyle="capsule">
                                     <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" red="0.71418005228042603" green="0.074710734188556671" blue="0.82265716791152954" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.64350428725733899" green="0.48024802563235353" blue="0.4060916856364401" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
@@ -377,7 +390,7 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sıralamayı Gör" cornerStyle="capsule">
                                     <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="tintColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.53656854692673839" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
@@ -397,11 +410,11 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26e-8o-9bo">
                                 <rect key="frame" x="305" y="331" width="28" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="labelColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="i" cornerStyle="large">
                                     <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <color key="backgroundColor" red="0.96937388179999995" green="0.81483012440000002" blue="0.27431944009999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="strokeColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
@@ -416,7 +429,7 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="i" cornerStyle="large">
                                     <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <color key="backgroundColor" red="0.96937388179999995" green="0.81483012440000002" blue="0.27431944009999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="strokeColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
@@ -427,11 +440,11 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QkN-uU-WhR">
                                 <rect key="frame" x="305" y="518" width="28" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="labelColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="i" cornerStyle="large">
                                     <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <color key="backgroundColor" red="0.96937388179999995" green="0.81483012440000002" blue="0.27431944009999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="strokeColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
@@ -446,7 +459,7 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="i" cornerStyle="large">
                                     <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <color key="backgroundColor" red="0.96937388179999995" green="0.81483012440000002" blue="0.27431944009999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="strokeColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
@@ -472,10 +485,11 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FT2-e9-rkz">
                                 <rect key="frame" x="303" y="131" width="32" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="?" cornerStyle="large">
                                     <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <color key="backgroundColor" red="0.96937376259999997" green="0.80691319699999997" blue="0.27432310580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="strokeColor" systemColor="labelColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
@@ -485,7 +499,7 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nl3-mX-bv5"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <color key="backgroundColor" red="0.98456662893295288" green="0.97674459218978882" blue="0.95343106985092163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="f6B-4V-srd"/>
                     <connections>
@@ -515,20 +529,20 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YATIRIM ARAÇLARI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NnQ-nL-Qps">
-                                <rect key="frame" x="128" y="98" width="158" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YATIRIM EKRANI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NnQ-nL-Qps">
+                                <rect key="frame" x="140" y="72" width="135" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mlg-d6-6ML">
-                                <rect key="frame" x="153" y="198" width="106" height="31"/>
+                                <rect key="frame" x="154" y="236" width="106" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Satın Al" cornerStyle="capsule">
                                     <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <color key="backgroundColor" red="0.70993798971176147" green="0.9112505316734314" blue="0.51698487997055054" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -543,7 +557,7 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Satın Al" cornerStyle="capsule">
                                     <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <color key="backgroundColor" red="0.75167053939999995" green="0.90346544979999999" blue="0.56072175499999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
@@ -553,7 +567,7 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bio-Yakıt Santrali (300 MW)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3NK-hX-l8l">
-                                <rect key="frame" x="105" y="415" width="211" height="21"/>
+                                <rect key="frame" x="105" y="434" width="211" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -565,7 +579,7 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Satın Al" cornerStyle="capsule">
                                     <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <color key="backgroundColor" red="0.75167053939999995" green="0.90346544979999999" blue="0.56072175499999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -574,34 +588,27 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                                     <action selector="ruzgarButtonTapped:" destination="ZxX-ww-ebP" eventType="touchUpInside" id="yNK-89-uAy"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Güneş Enerji Santrali (60 MW)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Fh-9A-bCm">
-                                <rect key="frame" x="96" y="127" width="229" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kömür Santrali (600 MW)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rc3-Fb-4Gv">
-                                <rect key="frame" x="113" y="280" width="194" height="21"/>
+                                <rect key="frame" x="111" y="306" width="194" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nükleer Santrali (900 MW)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykG-7J-Wnn">
-                                <rect key="frame" x="105" y="702" width="203" height="26"/>
+                                <rect key="frame" x="105" y="688" width="203" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAH-d2-e0h">
-                                <rect key="frame" x="154" y="348" width="106" height="31"/>
+                                <rect key="frame" x="154" y="378" width="106" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Satın Al" cornerStyle="capsule">
                                     <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <color key="backgroundColor" red="0.75167053939999995" green="0.90346544979999999" blue="0.56072175499999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -611,7 +618,7 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="950.000.000 $" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8W-WA-kd4">
-                                <rect key="frame" x="149" y="309" width="114" height="21"/>
+                                <rect key="frame" x="149" y="335" width="114" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -625,7 +632,7 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2.200.000.000  $" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ApC-ws-l6q">
-                                <rect key="frame" x="150" y="736" width="132" height="21"/>
+                                <rect key="frame" x="144" y="722" width="132" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -639,26 +646,26 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.000.000.000 $" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsc-lU-ebE">
-                                <rect key="frame" x="151" y="444" width="125" height="21"/>
+                                <rect key="frame" x="146" y="463" width="125" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="450.000.000 $" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNn-jk-UIt">
-                                <rect key="frame" x="151" y="156" width="114" height="21"/>
+                                <rect key="frame" x="151" y="198" width="114" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXx-TB-wTs">
-                                <rect key="frame" x="153" y="786" width="106" height="31"/>
+                                <rect key="frame" x="153" y="751" width="106" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Satın Al" cornerStyle="capsule">
                                     <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <color key="backgroundColor" red="0.75167053939999995" green="0.90346544979999999" blue="0.56072175499999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -667,9 +674,16 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                                     <action selector="nukleerButtonTapped:" destination="ZxX-ww-ebP" eventType="touchUpInside" id="IHx-2t-yU7"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Güneş Enerji Santrali (60 MW)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Fh-9A-bCm">
+                                <rect key="frame" x="96" y="169" width="229" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ybo-ZS-jz5"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" red="0.92601162195205688" green="0.93697279691696167" blue="0.73027241230010986" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="bioButton" destination="BqK-c4-QsD" id="eMM-V0-tKm"/>
@@ -701,7 +715,7 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                                     <subviews>
                                         <view tag="1004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FFM-xx-UL3">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="47"/>
-                                            <color key="backgroundColor" red="1" green="0.14660131931304932" blue="0.0028666916768997908" alpha="0.083597953745860931" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" red="1" green="0.68855315637750325" blue="0.91616661894056062" alpha="0.22477995007243379" colorSpace="custom" customColorSpace="displayP3"/>
                                         </view>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="NDs-VY-cfj">
                                             <rect key="frame" x="16" y="0.0" width="41.5" height="39"/>
@@ -794,8 +808,8 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Berat Rıdvan Asiltürk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ap0-er-v3H">
-                                        <rect key="frame" x="67.5" y="44.5" width="155" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Berat Rıdvan ASİLTÜRK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ap0-er-v3H">
+                                        <rect key="frame" x="58" y="44.5" width="174.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -811,19 +825,19 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ERCİYES ÜNİVERSİTESİ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbi-yt-MZg">
                                         <rect key="frame" x="47.5" y="0.0" width="249" height="27.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
-                                        <color key="textColor" systemColor="systemYellowColor"/>
+                                        <color key="textColor" red="0.71546703580000004" green="0.25854051109999998" blue="0.29410541060000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENERJİ SİSTEMLERİ MÜHENDİSLİĞİ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ajr-o4-ul2">
                                         <rect key="frame" x="0.0" y="67.5" width="344" height="25.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
-                                        <color key="textColor" red="0.0" green="0.76215248520000001" blue="0.99325615170000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" red="0.46168798210000001" green="0.65329390759999995" blue="0.72158032660000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EPSO BİTİRME PROJESİ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q0r-pN-qJm">
                                         <rect key="frame" x="62.5" y="133" width="219" height="24"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                        <color key="textColor" red="0.91976243257522583" green="0.45703244741518956" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" systemColor="systemGreenColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -865,23 +879,17 @@ MW cinsinden toplam kapasitesi ve santralin kullanımına bağlı karbon cezası
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="tertiarySystemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
