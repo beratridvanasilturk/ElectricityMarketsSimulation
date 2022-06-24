@@ -53,7 +53,7 @@ class Oyuncu: CustomDebugStringConvertible {
     
     /// Kullanicinin her bir periyotta , butcesini hesaplar .t
     private func kullaniciGelirleriniHesapla() {
-        /// Bio Yakit santarlin omru toplam periyottan kucuk esitse ve
+        /// Bio Yakit santarlin omru o periyottan büyük esitse ve
         /// Bio Yakit santralin aktiflesme donemi ile satin alinan andaki periyotun oyun geneli toplam periyottan kucuk ve esit olmasi kosulunda ancak kodu calistiran kosul
         if let bioSatinAlinanPeriyot = bioSatinAlinanPeriyot,
            bioTeklifi > YoneticiViewModel.shared.minimumTeklifFiyati(YoneticiViewModel.shared.periyot, enerjiTuru: .bio),
@@ -62,7 +62,7 @@ class Oyuncu: CustomDebugStringConvertible {
             butce += YoneticiViewModel.shared.gelir(teklif: bioTeklifi, enerjiTuru: .bio)
             print("👍🏻 Bio Yakıt Teklifi Kabul Edildi - \(isim) - \(bioTeklifi)")
     }
-        /// Gunes santarlin omru toplam periyottan kucuk esitse ve
+        /// Gunes santarlin omru o periyottan büyük esitse ve
         /// Gunes santralin aktiflesme donemi ile satin alinan andaki periyotun oyun geneli toplam periyottan kucuk ve esit olmasi kosulunda ancak kodu calistiran kosul
         if let gunesSatinAlinanPeriyot = gunesSatinAlinanPeriyot,
            gunesTeklifi > YoneticiViewModel.shared.minimumTeklifFiyati(YoneticiViewModel.shared.periyot, enerjiTuru: .gunes),
@@ -72,7 +72,7 @@ class Oyuncu: CustomDebugStringConvertible {
             print("👍🏻  Gunes Enerji Teklifi Kabul Edildi - \(isim) - \(gunesTeklifi)")
         }
         
-        /// Komur santarlin omru toplam periyottan kucuk esitse ve
+        /// Komur santarlin omru o periyottan büyük esitse ve
         /// Komur santralin aktiflesme donemi ile satin alinan andaki periyotun oyun geneli toplam periyottan kucuk ve esit olmasi kosulunda ancak kodu calistiran kosul
         if let komurSatinAlinanPeriyot = komurSatinAlinanPeriyot,
            komurTeklifi > YoneticiViewModel.shared.minimumTeklifFiyati(YoneticiViewModel.shared.periyot, enerjiTuru: .komur),
@@ -81,7 +81,7 @@ class Oyuncu: CustomDebugStringConvertible {
             butce += YoneticiViewModel.shared.gelir(teklif: komurTeklifi, enerjiTuru: .komur)
             print("👍🏻  Komur Santral Teklifi Kabul Edildi - \(isim) - \(komurTeklifi)")
         }
-        /// Nukleer santarlin omru toplam periyottan kucuk esitse ve
+        /// Nukleer santarlin omru o periyottan büyük esitse ve
         /// Nukleer santralin aktiflesme donemi ile satin alinan andaki periyotun oyun geneli toplam periyottan kucuk ve esit olmasi kosulunda ancak kodu calistiran kosul
         if let nukSatinAlinanPeriyot = nukSatinAlinanPeriyot,
            nukleerTeklifi > YoneticiViewModel.shared.minimumTeklifFiyati(YoneticiViewModel.shared.periyot, enerjiTuru: .nukleer),
@@ -90,7 +90,7 @@ class Oyuncu: CustomDebugStringConvertible {
             butce += YoneticiViewModel.shared.gelir(teklif: nukleerTeklifi, enerjiTuru: .nukleer)
             print("👍🏻  Nükleer Enerji Teklifi Kabul Edildi - \(isim) - \(nukleerTeklifi)")
         }
-        /// Ruzgar santarlin omru toplam periyottan kucuk esitse ve
+        /// Ruzgar santarlin omru o periyottan büyük esitse ve
         /// ruzgar santralin aktiflesme donemi ile satin alinan andaki periyotun oyun geneli toplam periyottan kucuk ve esit olmasi kosulunda ancak kodu calistiran kosul
         if let ruzgarSatinAlinanPeriyot = ruzgarSatinAlinanPeriyot,
            ruzgarTeklifi > YoneticiViewModel.shared.minimumTeklifFiyati(YoneticiViewModel.shared.periyot, enerjiTuru: .ruzgar),
@@ -102,7 +102,7 @@ class Oyuncu: CustomDebugStringConvertible {
         }
     }
     
-    /// Butcenin yeterli olmasi durumunda satin almayi dener
+    /// Butcenin yeterli olmasi durumunda bu fonksiyon satin almayi dener
     private func santralSatinAl() {
         guard let alinacakSantral = YoneticiViewModel.shared.santraller.randomElement() else {
             return
