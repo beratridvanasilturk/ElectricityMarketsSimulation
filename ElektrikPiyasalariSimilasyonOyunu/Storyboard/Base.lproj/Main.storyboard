@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fnf-cc-ul6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fnf-cc-ul6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -76,9 +76,9 @@
                                 <rect key="frame" x="20" y="159" width="374" height="719"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Elektrik Piyasası Simülasyonu Oyunu, insanlara elektrik piyasasının temelini öğretmek ve onlara gerçek market ortamında alıştırma yapma şansını vermek amacı ile tasarlanmıştır. Oyun içerisinde yatırım ve ticaret yapabilirsiniz. Oyun içerisinde ticaretini yapabileceğiniz enerji santralleri şunlardır; Rüzgar, Kömür, Bio-Yakıt, Nükleer ve Güneş Enerji Santralleri. Bir satın alma işlemi yapmadan önce, her bir santralin
+                                <string key="text">Elektrik Piyasası Simülasyonu Oyunu, insanlara elektrik piyasasının temelini öğretmek ve onlara gerçek market ortamında alıştırma yapma şansını vermek amacı ile tasarlanmıştır. Oyun içerisinde yatırım ve ticaret yapabilirsiniz. Oyun içerisinde ticaretini yapabileceğiniz enerji santralleri şunlardır; Rüzgar, Kömür, Bio-Yakıt, Nükleer ve Güneş Enerji Santralleri. Bir satın alma işlemi yapmadan önce, her bir santralin
 özelliklerini kontrol edebilirsiniz. Bu özellikler arasında santralin yatırım maliyeti ve santralin
-MW cinsinden toplam kapasitesi gibi bilgiler yer almaktadır. Santral yatırımı yapmadan santral ticareti yapılamaz. Oyun stratejisi her oyuncuya göre değişiklik gösterebilir, her periyot sonunda kendi stratejinizi yeniden belirleyebilirsiniz. Oyun 10 periyot olup her periyot 1 yılı temsil etmektedir. Oyun sonunda ticaretten en fazla kar elde eden ve bütçesi en fazla olan oyuncu Elektrik Piyasaları Similasyon Oyununu kazanan oyuncu olur. İzin verilen maksimum teklif fiyatı 200 $ 'dır. </mutableString>
+MW cinsinden toplam kapasitesi gibi bilgiler yer almaktadır. Santral yatırımı yapmadan santral ticareti yapılamaz. Oyun stratejisi her oyuncuya göre değişiklik gösterebilir, her periyot sonunda kendi stratejinizi yeniden belirleyebilirsiniz. Oyun 10 periyot olup her periyot 1 yılı temsil etmektedir. Oyun sonunda ticaretten en fazla kar elde eden ve bütçesi en fazla olan oyuncu Elektrik Piyasaları Similasyon Oyununu kazanan oyuncu olur. İzin verilen maksimum teklif fiyatı 200 $ 'dır. </string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

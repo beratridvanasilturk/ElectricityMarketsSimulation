@@ -12,7 +12,7 @@ class YoneticiViewModel {
     
     var periyot = 1
     let baslangicButcesi = 2_000_000_000
-    
+    var oyuncularToplamTeklif = 10000
     var santraller: [EnerjiTurleri] {[
         YoneticiViewModel.EnerjiTurleri.gunes,
         YoneticiViewModel.EnerjiTurleri.ruzgar,
@@ -138,11 +138,23 @@ class YoneticiViewModel {
     func minimumTeklifFiyati(_ periyot: Int, enerjiTuru: EnerjiTurleri) -> Int {
         
         guard periyot > 2 else {
-            return 0
+            return 0 }
+            
+        let toplamTalep = 10000
+        if toplamTalep == oyuncularToplamTeklif
+        {
+            print("talep karsilandi")
         }
+        ///    guard periyot > 2 else {
+        ///    return 0
+        ///}
         
         let fiyat = (0...300).randomElement()!
+        print("* sistemin her bir enerji türünde kabul edilen piyasa takas fiyatı : \(enerjiTuru), \(fiyat)")
         return fiyat
+        if fiyat >= 200 {
+            print("teklif onaylanmasina izin verilmedi")
+        }
     }
     
     
