@@ -1,4 +1,4 @@
-# ElectricityMarketsSimulation
+# Electricity Markets Simulation Game 
 
 - Üniversitemdeki bu bitirme projemde kullanıcı yatırımcı olarak yatırım yapmak istediği enerji santraline göre piyasadan arz talep dengesinde kapanan enerji pazarında en yüksek fiyattan devlete enerji satmayı hedefler.
 Ancak zengin olma hevesi bazı riskleri de beraberinde getirir. Şöyle ki;
