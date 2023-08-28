@@ -18,11 +18,13 @@ In such cases, there is no change in your budget because you cannot sell energy 
 The game consists of 10 periods and the player with the highest budget at the end of the game is selected first. Player ranking continues according to budget.
 (Power plant maintenance is ignored and all actions of other users in the game (buying & selling energy, bidding values, etc.) are set to randomly.)
 
-Project Video: 
+- Project Video: 
 
-https://github.com/beratridvanasilturk/ElectricityMarketsSimulation/assets/99040236/839ae9dc-cdba-4fb5-b237-6d2999dfbcdb
 
-Project Images: 
+https://github.com/beratridvanasilturk/ElectricityMarketsSimulation/assets/99040236/4c36a3da-e433-44bb-98ab-0ce6ebff54fc
+
+
+- Project Images: 
 
 ![ems1](https://github.com/beratridvanasilturk/ElectricityMarketsSimulation/assets/99040236/509f1db6-2020-4519-a4bf-0e01174c7233)
 ![ems2](https://github.com/beratridvanasilturk/ElectricityMarketsSimulation/assets/99040236/e5c30a51-5918-46b8-924b-efd3606263f0)
